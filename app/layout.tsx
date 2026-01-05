@@ -1,28 +1,22 @@
 import type { Metadata } from 'next'
-import { Inter, Inter_Tight, Instrument_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['600', '700'],
-  variable: '--font-inter',
-})
-
-const interTight = Inter_Tight({
-  subsets: ['latin'],
-  weight: ['600', '700', '900'],
-  variable: '--font-inter-tight',
-})
-
-const instrumentSans = Instrument_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-instrument-sans',
-})
-
 export const metadata: Metadata = {
-  title: 'Appit Social - Connect, Share, and Grow',
-  description: 'Join Appit to build authentic connections and share your passions effortlessly.',
+  title: 'Appit',
+  description: 'Appit Social empowers you to connect, share, and grow by building authentic connections and sharing your passions effortlessly.',
+  icons: {
+    icon: 'https://framerusercontent.com/images/f4npQR8d0gA4vor2TIEJP7fg9EI.svg',
+  },
+  openGraph: {
+    type: 'website',
+    title: 'Appit',
+    description: 'Appit Social empowers you to connect, share, and grow by building authentic connections and sharing your passions effortlessly.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Appit',
+    description: 'Appit Social empowers you to connect, share, and grow by building authentic connections and sharing your passions effortlessly.',
+  },
 }
 
 export default function RootLayout({
@@ -31,10 +25,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${interTight.variable} ${instrumentSans.variable} font-sans bg-black text-white antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" 
+          rel="stylesheet" 
+        />
+      </head>
+      <body>{children}</body>
     </html>
   )
 }

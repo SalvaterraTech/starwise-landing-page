@@ -2,50 +2,306 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --appit-black: #000000;
+  --appit-bg: #000000;
+  --appit-card: rgb(9, 9, 10);
+  --appit-border: rgb(29, 29, 32);
+  --appit-border-light: rgb(40, 40, 44);
+  --appit-surface: rgb(24, 24, 26);
+  --appit-surface-dark: rgb(19, 19, 21);
+  --appit-gray: rgb(148, 150, 157);
+  --appit-gray-dark: rgb(98, 100, 108);
+  --appit-white: rgb(255, 255, 255);
+  --appit-accent: rgb(50, 191, 93);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  font-family: 'Instrument Sans', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-feature-settings: normal;
+  letter-spacing: 0em;
+}
+
+@layer base {
+  /* Selection style */
+  ::selection {
+    background: rgba(50, 191, 93, 0.3);
+    color: white;
+  }
+}
+
+@layer components {
+  /* Button styles */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+           bg-white text-black font-medium rounded-12 
+           transition-all duration-300 hover:opacity-90;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+           bg-appit-surface text-white font-medium rounded-12 
+           border border-appit-border transition-all duration-300 
+           hover:bg-appit-border-light;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 
+           text-appit-gray hover:text-white transition-colors duration-300;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-appit-card border border-appit-surface rounded-14 p-6;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-appit-border-light;
+  }
+
+  /* Text styles */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(90deg, #ffffff 0%, #a0a0a0 100%);
+  }
+
+  /* Section container */
+  .section-container {
+    @apply max-w-[1200px] mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply backdrop-blur-md bg-black/20;
+  }
+
+  /* Radial gradient backgrounds */
+  .bg-radial-top {
+    background: radial-gradient(50% 50% at 50% 0%, rgba(50, 191, 93, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .bg-radial-center {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(50, 191, 93, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+
 @layer utilities {
-  .animate-fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
+  /* Custom animations */
+  .animate-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-in-delay-1 {
+    animation: fadeInUp 0.6s ease-out 0.1s forwards;
     opacity: 0;
   }
 
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
+  .animate-in-delay-2 {
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
     opacity: 0;
   }
 
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .animate-in-delay-3 {
+    animation: fadeInUp 0.6s ease-out 0.3s forwards;
+    opacity: 0;
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  .animate-in-delay-4 {
+    animation: fadeInUp 0.6s ease-out 0.4s forwards;
+    opacity: 0;
   }
 
-  .delay-100 {
-    animation-delay: 0.1s;
+  .animate-in-delay-5 {
+    animation: fadeInUp 0.6s ease-out 0.5s forwards;
+    opacity: 0;
   }
 
-  .delay-200 {
-    animation-delay: 0.2s;
+  .animate-in-delay-6 {
+    animation: fadeInUp 0.6s ease-out 0.6s forwards;
+    opacity: 0;
   }
 
-  .delay-300 {
-    animation-delay: 0.3s;
+  .animate-in-delay-7 {
+    animation: fadeInUp 0.6s ease-out 0.7s forwards;
+    opacity: 0;
   }
 
-  .delay-400 {
-    animation-delay: 0.4s;
+  /* Gradient stroke top */
+  .stroke-gradient-top {
+    background: radial-gradient(40% 50% at 50% 50%, rgb(40, 40, 44) 0%, rgb(0, 0, 0) 100%);
   }
+
+  /* Gradient backgrounds for sections */
+  .hero-gradient {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(50, 191, 93, 0.15) 0%, transparent 50%);
+  }
+
+  .footer-gradient {
+    background: radial-gradient(27.27% 35.9% at 50% 0%, rgba(19, 19, 21, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(9, 9, 10);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(40, 40, 44);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(60, 60, 66);
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(50, 191, 93, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(50, 191, 93, 0.5);
+  }
+}
+
+/* Phone mockup glow effect */
+.phone-glow {
+  position: relative;
+}
+
+.phone-glow::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(180deg, rgba(50, 191, 93, 0.4) 0%, rgba(138, 43, 226, 0.4) 100%);
+  border-radius: 40px;
+  filter: blur(20px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Star/sparkle animation */
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* FAQ accordion styles */
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(24, 24, 26, 0.8);
+}
+
+/* Pricing card highlight */
+.pricing-popular {
+  position: relative;
+}
+
+.pricing-popular::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(180deg, rgb(50, 191, 93) 0%, rgba(50, 191, 93, 0) 100%);
+  border-radius: inherit;
+  z-index: -1;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  padding: 1px;
+}
+
+/* Testimonial carousel */
+.testimonial-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonial-track:hover {
+  animation-play-state: paused;
+}
+
+/* Mobile menu overlay */
+.mobile-menu-overlay {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Feature card icon container */
+.feature-icon {
+  background: linear-gradient(135deg, rgba(50, 191, 93, 0.2) 0%, rgba(50, 191, 93, 0.05) 100%);
+}
+
+/* Waitlist form input styles */
+.waitlist-input {
+  @apply w-full px-4 py-3 bg-appit-surface border border-appit-border 
+         rounded-12 text-white placeholder:text-appit-gray 
+         focus:outline-none focus:border-appit-border-light 
+         transition-colors duration-300;
 }
