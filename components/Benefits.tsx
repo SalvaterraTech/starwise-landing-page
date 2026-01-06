@@ -163,9 +163,9 @@ export default function Benefits() {
             <div
               className="relative"
               style={{
-                width: '380px',
+                width: '392px',
                 height: '100%',
-                padding: '28px',
+                padding: '0px',
                 zIndex: 1,
                 borderRadius: '20px',
                 overflow: 'hidden',
@@ -230,9 +230,9 @@ export default function Benefits() {
                   style={{
                     position: 'absolute',
                     left: '50%',
-                    bottom: '0',
-                    width: '284px',
-                    transform: 'translateX(-50%) translateY(60px)',
+                    top: '0',
+                    width: '332px',
+                    transform: 'translateX(-50%)',
                     transformOrigin: 'center',
                     zIndex: 3,
                   }}
@@ -245,27 +245,6 @@ export default function Benefits() {
                   style={{ width: '100%', height: 'auto', display: 'block' }}
                   unoptimized
                 />
-                {/* Screenshot inside phone */}
-                <div
-                  className="absolute"
-                  style={{
-                    top: '5.6%',
-                    left: '5.6%',
-                    right: '5.6%',
-                    bottom: '5.6%',
-                    borderRadius: '12.7%',
-                    overflow: 'hidden',
-                  }}
-                >
-                  <Image
-                    src="https://framerusercontent.com/images/4PMUjM37QV5xqmOThq7gnKNHOBs.jpg"
-                    alt="App Screenshot"
-                    width={390}
-                    height={844}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }}
-                    unoptimized
-                  />
-                </div>
               </div>
               </div>
             </div>
