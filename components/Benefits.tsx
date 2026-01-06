@@ -145,10 +145,10 @@ export default function Benefits() {
                 <p 
                   style={{ 
                     fontFamily: '"Instrument Sans", sans-serif',
-                    fontSize: '17px',
+                    fontSize: '18px',
                     fontWeight: 500,
                     lineHeight: '150%',
-                    color: 'rgb(121, 123, 133)',
+                    color: 'rgb(148, 150, 157)',
                   }}
                 >
                   {benefit.description}
@@ -300,10 +300,10 @@ export default function Benefits() {
                 <p 
                   style={{ 
                     fontFamily: '"Instrument Sans", sans-serif',
-                    fontSize: '17px',
+                    fontSize: '18px',
                     fontWeight: 500,
                     lineHeight: '150%',
-                    color: 'rgb(121, 123, 133)',
+                    color: 'rgb(148, 150, 157)',
                   }}
                 >
                   {benefit.description}
@@ -363,10 +363,10 @@ export default function Benefits() {
               <p 
                 style={{ 
                   fontFamily: '"Instrument Sans", sans-serif',
-                  fontSize: '17px',
+                  fontSize: '18px',
                   fontWeight: 500,
                   lineHeight: '150%',
-                  color: 'rgb(121, 123, 133)',
+                  color: 'rgb(148, 150, 157)',
                 }}
               >
                 {benefit.description}
