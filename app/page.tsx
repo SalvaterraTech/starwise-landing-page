@@ -4,6 +4,7 @@ import Stats from '@/components/Stats'
 import Benefits from '@/components/Benefits'
 import Features from '@/components/Features'
 import AdvancedCapabilities from '@/components/AdvancedCapabilities'
+import DiscoverFeatures from '@/components/DiscoverFeatures'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Benefits />
       <Features />
       <AdvancedCapabilities />
+      <DiscoverFeatures />
     </main>
   )
 }
