@@ -305,3 +305,8 @@ body {
          focus:outline-none focus:border-appit-border-light 
          transition-colors duration-300;
 }
+
+/* Framer Responsive Utilities */
+@media(min-width: 1200px) { .hidden-72rtr7 { display: none !important; } }
+@media(min-width: 810px) and (max-width: 1199px) { .hidden-s4vk9i { display: none !important; } }
+@media(max-width: 809px) { .hidden-121i3k8 { display: none !important; } }

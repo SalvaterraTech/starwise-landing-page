@@ -1,0 +1,30 @@
+/* Testimonials Section Adjustments */
+
+/* Fix section padding */
+.framer-be8kg4 {
+  padding-top: 40px !important;
+  padding-bottom: 200px !important;
+}
+
+/* Add carousel animation */
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply animation to the carousel UL */
+.framer-gplve6-container section ul {
+  animation: scroll-carousel 33.5s linear infinite;
+  will-change: transform;
+}
+
+/* Ensure the carousel container has proper masking */
+.framer-gplve6-container section {
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import './testimonials_framer.css'
+import './testimonials_adjustments.css'
 
 export const metadata: Metadata = {
   title: 'Appit',
