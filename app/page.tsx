@@ -5,6 +5,7 @@ import Benefits from '@/components/Benefits'
 import Features from '@/components/Features'
 import AdvancedCapabilities from '@/components/AdvancedCapabilities'
 import DiscoverFeatures from '@/components/DiscoverFeatures'
+import Pricing from '@/components/Pricing'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <AdvancedCapabilities />
       <DiscoverFeatures />
+      <Pricing />
     </main>
   )
 }
