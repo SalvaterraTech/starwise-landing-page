@@ -44,7 +44,7 @@ export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false)
 
   return (
-    <section id="pricing" className="relative pt-24 pb-12 overflow-hidden">
+    <section id="pricing" className="relative pb-12 overflow-hidden">
       {/* Top Stroke Gradient */}
       <div
         className="absolute left-0 right-0 top-0 pointer-events-none"
@@ -131,44 +131,48 @@ export default function Pricing() {
           </div>
 
           {/* Toggle Monthly/Yearly */}
-          <div className="flex items-center justify-center" style={{ marginTop: '60px' }}>
+          <div className="flex items-center justify-center">
             <div
               className="inline-flex items-center rounded-full"
               style={{
-                backgroundColor: 'rgb(24, 24, 26)',
+                backgroundColor: 'transparent',
                 border: '1px solid rgb(24, 24, 26)',
                 padding: '8px',
-                gap: '1px'
+                gap: '4px',
+                marginTop: '68px',
+                marginBottom: '48px'
               }}
             >
               <button
                 onClick={() => setIsYearly(false)}
-                className="rounded-full transition-all"
+                className="rounded-full"
                 style={{
                   fontFamily: 'Instrument Sans, sans-serif',
                   fontSize: '18px',
                   fontWeight: 500,
-                  backgroundColor: !isYearly ? 'rgb(255, 255, 255)' : 'transparent',
-                  color: !isYearly ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)',
-                  border: 'none',
+                  backgroundColor: !isYearly ? 'rgb(14, 14, 16)' : 'transparent',
+                  color: !isYearly ? 'rgb(255, 255, 255)' : 'rgb(121, 123, 133)',
+                  border: !isYearly ? '1px solid rgb(29, 29, 32)' : 'none',
                   cursor: 'pointer',
-                  padding: '8px 24px'
+                  padding: '12px 20px',
+                  transition: 'none'
                 }}
               >
                 Monthly
               </button>
               <button
                 onClick={() => setIsYearly(true)}
-                className="rounded-full transition-all"
+                className="rounded-full"
                 style={{
                   fontFamily: 'Instrument Sans, sans-serif',
                   fontSize: '18px',
                   fontWeight: 500,
-                  backgroundColor: isYearly ? 'rgb(255, 255, 255)' : 'transparent',
-                  color: isYearly ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)',
-                  border: 'none',
+                  backgroundColor: isYearly ? 'rgb(14, 14, 16)' : 'transparent',
+                  color: isYearly ? 'rgb(255, 255, 255)' : 'rgb(121, 123, 133)',
+                  border: isYearly ? '1px solid rgb(29, 29, 32)' : 'none',
                   cursor: 'pointer',
-                  padding: '8px 24px'
+                  padding: '12px 20px',
+                  transition: 'none'
                 }}
               >
                 Yearly
@@ -189,7 +193,7 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="relative p-8 rounded-20 border transition-all duration-300"
+              className="relative p-8 rounded-20 border"
               style={{
                 backgroundColor: 'rgb(9, 9, 10)',
                 borderColor: 'rgb(29, 29, 32)',
@@ -208,26 +212,26 @@ export default function Pricing() {
                 }}
               />
 
-              {/* Badge Save 20% - apenas no Premium e quando Yearly */}
-              {isYearly && plan.name === 'Premium Plan' && (
-                <div
-                  className="absolute"
-                  style={{
-                    top: '10px',
-                    right: '10px',
-                    padding: '5px 12px',
-                    backgroundColor: 'rgb(24, 24, 26)',
-                    borderRadius: '100px',
-                    fontFamily: 'Instrument Sans, sans-serif',
-                    fontSize: '16px',
-                    fontWeight: 500,
-                    color: 'rgb(201, 202, 206)',
-                    zIndex: 1
-                  }}
-                >
-                  Save 20% on Yearly
-                </div>
-              )}
+              {/* Badge Save 20% - sempre renderizado, mas escondido quando Monthly */}
+              <div
+                className="absolute"
+                style={{
+                  top: '10px',
+                  right: '10px',
+                  padding: '5px 12px',
+                  backgroundColor: 'rgb(24, 24, 26)',
+                  borderRadius: '100px',
+                  fontFamily: 'Instrument Sans, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: 500,
+                  color: 'rgb(201, 202, 206)',
+                  zIndex: 1,
+                  opacity: isYearly && plan.name === 'Premium Plan' ? 1 : 0,
+                  pointerEvents: isYearly && plan.name === 'Premium Plan' ? 'auto' : 'none'
+                }}
+              >
+                Save 20% on Yearly
+              </div>
 
               {/* Plan Name */}
               <h3
