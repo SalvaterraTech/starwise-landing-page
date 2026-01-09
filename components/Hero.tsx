@@ -12,10 +12,10 @@ const avatars = [
 
 export default function Hero() {
   return (
-    <section 
-      id="hero" 
+    <section
+      id="hero"
       className="relative min-h-screen flex flex-col items-center overflow-hidden"
-      style={{ 
+      style={{
         backgroundColor: '#000000',
         paddingTop: '175px'
       }}
@@ -23,12 +23,12 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-[1320px] px-5 lg:px-[60px]">
         {/* Badge with avatars */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30, scale: 0.8 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="flex items-center mb-4"
-          style={{ 
+          style={{
             backgroundColor: 'rgb(24, 24, 26)',
             border: '1px solid rgb(40, 40, 44)',
             borderRadius: '100px',
@@ -39,15 +39,15 @@ export default function Hero() {
           }}
         >
           {/* Avatar Stack - 68px wide container with 28px avatars */}
-          <div 
+          <div
             className="relative flex items-center"
             style={{ width: '68px', height: '28px' }}
           >
             {avatars.map((avatar, index) => (
-              <div 
+              <div
                 key={index}
                 className="absolute rounded-full overflow-hidden"
-                style={{ 
+                style={{
                   width: '28px',
                   height: '28px',
                   left: index === 0 ? '0' : index === 1 ? '50%' : undefined,
@@ -66,8 +66,8 @@ export default function Hero() {
               </div>
             ))}
           </div>
-          <span 
-            style={{ 
+          <span
+            style={{
               fontFamily: '"Instrument Sans", sans-serif',
               fontSize: '16px',
               fontWeight: 500,
@@ -81,14 +81,14 @@ export default function Hero() {
         </motion.div>
 
         {/* Headline */}
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 30, scale: 0.8 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
           className="text-center text-[34px] md:text-[60px] lg:text-[64px] font-bold leading-[1.2] mb-5 max-w-[800px] text-white"
           style={{ fontFamily: 'Inter Tight, sans-serif' }}
         >
-          Connect, Share, and Grow with Appit Social
+          Struggling to explain your experience in interviews?
         </motion.h1>
 
         {/* Subheadline */}
@@ -99,9 +99,9 @@ export default function Hero() {
           className="max-w-[480px]"
           style={{ marginBottom: '50px' }}
         >
-          <p 
+          <p
             className="text-center"
-            style={{ 
+            style={{
               fontFamily: '"Instrument Sans", sans-serif',
               fontSize: '20px',
               fontWeight: 500,
@@ -109,12 +109,12 @@ export default function Hero() {
               color: 'rgb(148, 150, 157)'
             }}
           >
-            Join Appit to build authentic connections and share your passions effortlessly.
+            Practice real answers, get instant AI-powered feedback, and improve every response before the interview.
           </p>
         </motion.div>
 
         {/* Single CTA Button - Join Waitlist */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30, scale: 0.8 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
@@ -146,8 +146,8 @@ export default function Hero() {
               className="object-cover"
             />
           </div>
-          <span 
-            style={{ 
+          <span
+            style={{
               fontFamily: '"Instrument Sans", sans-serif',
               fontSize: '16px',
               fontWeight: 500,
@@ -159,9 +159,9 @@ export default function Hero() {
             App Available For
           </span>
           {/* Store icons container */}
-          <div 
+          <div
             className="flex items-center overflow-hidden"
-            style={{ 
+            style={{
               backgroundColor: 'rgb(14, 14, 16)',
               border: '1px solid rgb(29, 29, 32)',
               borderRadius: '100px',
@@ -190,17 +190,17 @@ export default function Hero() {
         </motion.div>
 
         {/* Phone Mockups Container */}
-        <div 
+        <div
           className="relative w-full"
           style={{ height: '611px', overflow: 'visible', pointerEvents: 'none', userSelect: 'none' }}
         >
           {/* Right Phone - Thread screen */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 60, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5, ease: 'easeOut' }}
             className="absolute hidden lg:block overflow-hidden"
-            style={{ 
+            style={{
               right: '0',
               top: '-210px',
               width: '297px',
@@ -208,9 +208,9 @@ export default function Hero() {
             }}
           >
             {/* Phone UI container */}
-            <div 
+            <div
               className="absolute"
-              style={{ 
+              style={{
                 bottom: '0',
                 left: '50%',
                 transform: 'translateX(-50%)',
@@ -227,9 +227,9 @@ export default function Hero() {
                 style={{ zIndex: 2 }}
               />
               {/* Screen content */}
-              <div 
+              <div
                 className="absolute overflow-hidden"
-                style={{ 
+                style={{
                   top: '15px',
                   left: '5px',
                   right: '23px',
@@ -249,27 +249,27 @@ export default function Hero() {
               </div>
             </div>
             {/* Bottom gradients */}
-            <div 
+            <div
               className="absolute left-0 right-0"
               style={{ bottom: '-2px', height: '254px', background: 'linear-gradient(180deg, transparent 0%, #000 70%, #000 100%)', zIndex: 3 }}
             />
-            <div 
+            <div
               className="absolute left-0 right-0"
               style={{ bottom: '-2px', height: '130px', background: 'linear-gradient(180deg, transparent 0%, #000 60%, #000 100%)', zIndex: 3 }}
             />
           </motion.div>
 
           {/* Center Phone - Main app screen */}
-          <div 
+          <div
             className="absolute flex justify-center w-full"
             style={{ top: '50px' }}
           >
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 60, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
               className="relative overflow-hidden"
-              style={{ 
+              style={{
                 width: '260px',
                 height: '515px'
               }}
@@ -283,9 +283,9 @@ export default function Hero() {
                 style={{ zIndex: 2 }}
               />
               {/* Screen content */}
-              <div 
+              <div
                 className="absolute overflow-hidden"
-                style={{ 
+                style={{
                   top: '10px',
                   left: '14px',
                   right: '14px',
@@ -301,11 +301,11 @@ export default function Hero() {
                 />
               </div>
               {/* Bottom gradients */}
-              <div 
+              <div
                 className="absolute bottom-0 left-0 right-0"
                 style={{ height: '423px', background: 'linear-gradient(180deg, transparent, #000)', zIndex: 3 }}
               />
-              <div 
+              <div
                 className="absolute bottom-0 left-0 right-0"
                 style={{ height: '216px', background: 'linear-gradient(180deg, transparent, #000)', zIndex: 3 }}
               />
@@ -313,12 +313,12 @@ export default function Hero() {
           </div>
 
           {/* Left Phone - Search screen */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 60, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5, ease: 'easeOut' }}
             className="absolute hidden lg:block overflow-hidden"
-            style={{ 
+            style={{
               left: '0',
               top: '-210px',
               width: '296px',
@@ -326,9 +326,9 @@ export default function Hero() {
             }}
           >
             {/* Phone UI container */}
-            <div 
+            <div
               className="absolute"
-              style={{ 
+              style={{
                 top: '25px',
                 left: '50%',
                 transform: 'translateX(-50%)',
@@ -345,9 +345,9 @@ export default function Hero() {
                 style={{ zIndex: 2 }}
               />
               {/* Screen content */}
-              <div 
+              <div
                 className="absolute overflow-hidden"
-                style={{ 
+                style={{
                   top: '8px',
                   left: '20px',
                   right: '4px',
@@ -367,11 +367,11 @@ export default function Hero() {
               </div>
             </div>
             {/* Bottom gradients */}
-            <div 
+            <div
               className="absolute left-0 right-0"
               style={{ bottom: '-2px', height: '254px', background: 'linear-gradient(180deg, transparent 0%, #000 70%, #000 100%)', zIndex: 3 }}
             />
-            <div 
+            <div
               className="absolute left-0 right-0"
               style={{ bottom: '-2px', height: '130px', background: 'linear-gradient(180deg, transparent 0%, #000 60%, #000 100%)', zIndex: 3 }}
             />
