@@ -11,18 +11,18 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { 
-    href: 'https://in.linkedin.com/', 
+  {
+    href: 'https://in.linkedin.com/',
     icon: 'https://framerusercontent.com/images/e29n3ck4a9kvBPgl9YhDr9UrVe0.svg',
     alt: 'LinkedIn'
   },
-  { 
-    href: 'https://x.com', 
+  {
+    href: 'https://x.com',
     icon: 'https://framerusercontent.com/images/1z5NCIcMnM2ERwz5QuTnWfDS1uc.svg',
     alt: 'X.com'
   },
-  { 
-    href: 'https://www.instagram.com/', 
+  {
+    href: 'https://www.instagram.com/',
     icon: 'https://framerusercontent.com/images/4I0uO5WpISDay2aPXHK8Kb9HAc.svg',
     alt: 'Instagram'
   },
@@ -30,23 +30,23 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer 
-      className="relative w-full pt-16 pb-8"
-      style={{ 
-        background: 'radial-gradient(27.27% 35.9% at 50% 0%, rgba(19, 19, 21, 1) 0%, rgba(0, 0, 0, 1) 100%)' 
+    <footer
+      className="relative w-full pt-20 pb-8"
+      style={{
+        background: 'radial-gradient(27.27% 35.9% at 50% 0%, rgba(19, 19, 21, 1) 0%, rgba(0, 0, 0, 1) 100%)'
       }}
     >
       {/* Top Stroke */}
-      <div 
+      <div
         className="absolute top-0 left-0 right-0 h-[1px]"
-        style={{ 
-          background: 'radial-gradient(40% 50% at 50% 50%, rgb(40, 40, 44) 0%, rgb(0, 0, 0) 100%)' 
+        style={{
+          background: 'radial-gradient(40% 50% at 50% 50%, rgb(40, 40, 44) 0%, rgb(0, 0, 0) 100%)'
         }}
       />
 
       <div className="section-container">
         {/* Top Section */}
-        <div className="flex flex-col items-center gap-8 mb-12">
+        <div className="flex flex-col items-center gap-[30px] mb-[88px]">
           {/* Logo and Tagline */}
           <div className="flex flex-col items-center gap-4">
             <Link href="/" className="relative w-[150px] h-[50px]">
@@ -57,7 +57,7 @@ export default function Footer() {
                 className="object-contain"
               />
             </Link>
-            <div 
+            <div
               className="text-center text-xl font-semibold"
               style={{ fontFamily: 'Inter Tight, sans-serif' }}
             >
@@ -68,7 +68,7 @@ export default function Footer() {
 
           {/* Email Button */}
           <Link
-            href="mailto:mail@appit.com"
+            href="mailto:hello@appit.com"
             className="flex items-center gap-3 px-5 py-3 bg-appit-surface border border-appit-border-light rounded-12 hover:bg-appit-border-light transition-colors"
           >
             <Image
@@ -77,19 +77,19 @@ export default function Footer() {
               width={24}
               height={24}
             />
-            <span 
+            <span
               className="text-white text-[17px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              mail@appit.com
+              hello@appit.com
             </span>
           </Link>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
           {footerLinks.map((link, index) => (
-            <div key={link.href} className="flex items-center gap-4">
+            <div key={link.href} className="flex items-center gap-6">
               <Link
                 href={link.href}
                 className="text-appit-gray hover:text-white transition-colors text-[17px] font-medium"
