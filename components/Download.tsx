@@ -36,7 +36,7 @@ export default function Download() {
                         maxWidth: '620px'
                     }}
                 >
-                    Download Appit Social and Connect Today
+                    Download Starwise and Start Preparing Today
                 </h2>
 
                 {/* Subtitle */}
@@ -52,7 +52,7 @@ export default function Download() {
                         marginBottom: '48px'
                     }}
                 >
-                    Download Appit now to start connecting with like-minded people and enjoy a seamless social experience!
+                    Download Starwise now to start practicing interview questions and get AI-powered feedback for a seamless preparation experience!
                 </p>
 
                 {/* Buttons Container */}

@@ -61,14 +61,14 @@ export default function Footer() {
               className="text-center text-xl font-semibold"
               style={{ fontFamily: 'Inter Tight, sans-serif' }}
             >
-              <p>Empower Your Social Connections</p>
-              <p>with Appit Social</p>
+              <p>Empower Your Interview Preparation</p>
+              <p>with Starwise</p>
             </div>
           </div>
 
           {/* Email Button */}
           <Link
-            href="mailto:hello@appit.com"
+            href="mailto:hello@starwise.com"
             className="flex items-center gap-3 px-5 py-3 bg-appit-surface border border-appit-border-light rounded-12 hover:bg-appit-border-light transition-colors"
           >
             <Image
@@ -81,7 +81,7 @@ export default function Footer() {
               className="text-white text-[17px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              hello@appit.com
+              hello@starwise.com
             </span>
           </Link>
         </div>

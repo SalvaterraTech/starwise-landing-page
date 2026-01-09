@@ -4,20 +4,20 @@ import './testimonials_framer.css'
 import './testimonials_adjustments.css'
 
 export const metadata: Metadata = {
-  title: 'Appit',
-  description: 'Appit Social empowers you to connect, share, and grow by building authentic connections and sharing your passions effortlessly.',
+  title: 'Starwise',
+  description: 'Starwise empowers candidates to answer interviews with clarity and confidence — and land the job they want.',
   icons: {
-    icon: 'https://framerusercontent.com/images/f4npQR8d0gA4vor2TIEJP7fg9EI.svg',
+    icon: '/favicon.ico',
   },
   openGraph: {
     type: 'website',
-    title: 'Appit',
-    description: 'Appit Social empowers you to connect, share, and grow by building authentic connections and sharing your passions effortlessly.',
+    title: 'Starwise',
+    description: 'Starwise empowers candidates to answer interviews with clarity and confidence — and land the job they want.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Appit',
-    description: 'Appit Social empowers you to connect, share, and grow by building authentic connections and sharing your passions effortlessly.',
+    title: 'Starwise',
+    description: 'Starwise empowers candidates to answer interviews with clarity and confidence — and land the job they want.',
   },
 }
 
@@ -31,9 +31,9 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" 
-          rel="stylesheet" 
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
         />
       </head>
       <body>{children}</body>

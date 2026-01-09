@@ -3,30 +3,30 @@ import Image from 'next/image';
 const benefits = [
   {
     icon: 'https://framerusercontent.com/images/AjjAxBc5v6SZHOkJzG2bwrSMk.svg',
-    title: 'Authentic Connections',
-    description: 'Build genuine relationships with like-minded individuals.',
+    title: 'Clear, structured answers',
+    description: 'Turn your experiences into STAR-based answers that interviewers actually understand.',
   },
   {
     icon: 'https://framerusercontent.com/images/rxSlFR0RyaC3WCayigHX4RPQZs.svg',
-    title: 'Global Reach',
-    description: 'Connect with people across 50+ countries effortlessly.',
+    title: 'Confidence before the interview',
+    description: 'Practice your answers in advance and walk into interviews knowing exactly what to say.',
   },
   {
     icon: 'https://framerusercontent.com/images/pvxqwt0ZG86WIRPPnHxDCgV7rkQ.svg',
-    title: 'Personalized Experience',
-    description: 'Tailored content and recommendations just for you.',
+    title: 'AI-generated improvements',
+    description: 'Get instant feedback and AI-generated answer improvements using your own experience as the base.',
   },
   {
     icon: 'https://framerusercontent.com/images/u8fjSIAgWQzhagulXkIoN7PzI.svg',
-    title: 'Community Support',
-    description: 'Join thriving communities around your interests.',
+    title: 'Practice that actually evolves',
+    description: 'Each practice session helps you refine, improve, and reuse better answers for future interviews.',
   },
 ];
 
 export default function Benefits() {
   return (
-    <section 
-      id="benefits" 
+    <section
+      id="benefits"
       className="relative py-24 overflow-hidden"
       style={{ backgroundColor: '#000000' }}
     >
@@ -34,7 +34,7 @@ export default function Benefits() {
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16">
           {/* Badge */}
-          <div 
+          <div
             className="inline-flex items-center gap-2 mb-6"
             style={{
               backgroundColor: 'rgb(19, 19, 21)',
@@ -52,8 +52,8 @@ export default function Benefits() {
                 style={{ width: '24px', height: '24px' }}
               />
             </div>
-            <span 
-              style={{ 
+            <span
+              style={{
                 fontFamily: '"Instrument Sans", sans-serif',
                 fontSize: '15px',
                 fontWeight: 600,
@@ -66,20 +66,20 @@ export default function Benefits() {
           </div>
 
           {/* Heading */}
-          <h2 
+          <h2
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
-            style={{ 
+            style={{
               fontFamily: '"Inter Tight", sans-serif',
               maxWidth: '800px',
             }}
           >
-            Discover Appit&apos;s Benefits
+            Discover Starwise&apos;s Benefits
           </h2>
 
           {/* Description */}
-          <p 
+          <p
             className="mx-auto"
-            style={{ 
+            style={{
               fontFamily: '"Instrument Sans", sans-serif',
               fontSize: '18px',
               fontWeight: 500,
@@ -88,8 +88,7 @@ export default function Benefits() {
               textAlign: 'center',
             }}
           >
-            Unlock a world of meaningful connections, tailored experiences,<br />
-            and seamless social interaction.
+            Everything you need to prepare better answers and perform with confidence in interviews.
           </p>
         </div>
 
@@ -108,7 +107,7 @@ export default function Benefits() {
                 }}
               >
                 {/* Icon Container */}
-                <div 
+                <div
                   className="mb-6"
                   style={{
                     width: '60px',
@@ -131,9 +130,9 @@ export default function Benefits() {
                 </div>
 
                 {/* Content */}
-                <h3 
+                <h3
                   className="text-xl font-semibold text-white mb-3"
-                  style={{ 
+                  style={{
                     fontFamily: '"Inter Tight", sans-serif',
                     fontSize: '24px',
                     fontWeight: 600,
@@ -142,8 +141,8 @@ export default function Benefits() {
                 >
                   {benefit.title}
                 </h3>
-                <p 
-                  style={{ 
+                <p
+                  style={{
                     fontFamily: '"Instrument Sans", sans-serif',
                     fontSize: '18px',
                     fontWeight: 500,
@@ -237,15 +236,15 @@ export default function Benefits() {
                     zIndex: 3,
                   }}
                 >
-                <Image
-                  src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png"
-                  alt="Mobile App Preview"
-                  width={546}
-                  height={1080}
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
-                  unoptimized
-                />
-              </div>
+                  <Image
+                    src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png"
+                    alt="Mobile App Preview"
+                    width={546}
+                    height={1080}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                    unoptimized
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -263,7 +262,7 @@ export default function Benefits() {
                 }}
               >
                 {/* Icon Container */}
-                <div 
+                <div
                   className="mb-6"
                   style={{
                     width: '60px',
@@ -286,9 +285,9 @@ export default function Benefits() {
                 </div>
 
                 {/* Content */}
-                <h3 
+                <h3
                   className="text-xl font-semibold text-white mb-3"
-                  style={{ 
+                  style={{
                     fontFamily: '"Inter Tight", sans-serif',
                     fontSize: '24px',
                     fontWeight: 600,
@@ -297,8 +296,8 @@ export default function Benefits() {
                 >
                   {benefit.title}
                 </h3>
-                <p 
-                  style={{ 
+                <p
+                  style={{
                     fontFamily: '"Instrument Sans", sans-serif',
                     fontSize: '18px',
                     fontWeight: 500,
@@ -326,7 +325,7 @@ export default function Benefits() {
               }}
             >
               {/* Icon Container */}
-              <div 
+              <div
                 className="mb-6"
                 style={{
                   width: '60px',
@@ -349,9 +348,9 @@ export default function Benefits() {
               </div>
 
               {/* Content */}
-              <h3 
+              <h3
                 className="text-xl font-semibold text-white mb-3"
-                style={{ 
+                style={{
                   fontFamily: '"Inter Tight", sans-serif',
                   fontSize: '24px',
                   fontWeight: 600,
@@ -360,8 +359,8 @@ export default function Benefits() {
               >
                 {benefit.title}
               </h3>
-              <p 
-                style={{ 
+              <p
+                style={{
                   fontFamily: '"Instrument Sans", sans-serif',
                   fontSize: '18px',
                   fontWeight: 500,

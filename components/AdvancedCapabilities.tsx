@@ -66,7 +66,7 @@ export default function AdvancedCapabilities() {
                   margin: 0,
                 }}
               >
-                Appit&apos;s Advanced Capabilities
+                Starwise&apos;s Advanced Capabilities
               </h2>
 
               {/* Subtitle */}
@@ -411,7 +411,7 @@ export default function AdvancedCapabilities() {
                   pointerEvents: 'none',
                 }}
               />
-              
+
               {/* Bottom gradient overlay 2 */}
               <div
                 style={{

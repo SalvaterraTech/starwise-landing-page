@@ -40,7 +40,7 @@ const policySections = [
   },
   {
     title: 'Contact Us',
-    content: `If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at hello@appit.com. We are committed to addressing your inquiries promptly and transparently.`,
+    content: `If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at hello@starwise.com. We are committed to addressing your inquiries promptly and transparently.`,
   },
 ]
 
@@ -48,11 +48,11 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-appit-bg">
       <Navbar />
-      
+
       {/* Privacy Policy Section */}
       <section className="relative pt-44 pb-32">
         {/* Background gradient */}
-        <div 
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background: 'radial-gradient(ellipse 60% 40% at 50% 0%, rgba(50, 191, 93, 0.06) 0%, transparent 60%)'
@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
           {/* Header */}
           <div className="flex flex-col items-center gap-4 mb-16">
             {/* Badge */}
-            <div 
+            <div
               className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
             >
               <Image
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
                 width={20}
                 height={20}
               />
-              <span 
+              <span
                 className="text-sm text-white font-medium"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
@@ -81,13 +81,13 @@ export default function PrivacyPolicyPage() {
             </div>
 
             {/* Title */}
-            <h1 
+            <h1
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center"
               style={{ fontFamily: 'Inter Tight, sans-serif' }}
             >
               Your Privacy Matters
             </h1>
-            <p 
+            <p
               className="text-appit-gray text-lg text-center max-w-2xl"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           {/* Last Updated */}
-          <div 
+          <div
             className="flex items-center gap-3 p-4 border border-appit-border rounded-14 bg-appit-card mb-12"
           >
             <Image
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
               width={20}
               height={20}
             />
-            <span 
+            <span
               className="text-appit-gray font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
@@ -118,13 +118,13 @@ export default function PrivacyPolicyPage() {
             {policySections.map((section, index) => (
               <div key={index} className="space-y-6">
                 <div className="space-y-4">
-                  <h3 
+                  <h3
                     className="text-xl md:text-2xl font-semibold text-white"
                     style={{ fontFamily: 'Inter, sans-serif' }}
                   >
                     {section.title}
                   </h3>
-                  <p 
+                  <p
                     className="text-appit-gray leading-relaxed"
                     style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                   >
@@ -133,7 +133,7 @@ export default function PrivacyPolicyPage() {
                   {section.list && (
                     <ol className="list-decimal list-inside space-y-2 text-appit-gray pl-4">
                       {section.list.map((item, idx) => (
-                        <li 
+                        <li
                           key={idx}
                           style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                         >

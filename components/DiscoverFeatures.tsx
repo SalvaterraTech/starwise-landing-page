@@ -67,7 +67,7 @@ export default function DiscoverFeatures() {
           zIndex: 1,
         }}
       />
-      
+
       <div
         style={{
           maxWidth: '1200px',
@@ -156,7 +156,7 @@ export default function DiscoverFeatures() {
                 margin: 0,
               }}
             >
-              Discover Appit Features
+              Discover Starwise Features
             </h2>
 
             {/* Paragraph Container */}
@@ -181,7 +181,7 @@ export default function DiscoverFeatures() {
                   margin: 0,
                 }}
               >
-                Explore Appit&apos;s powerful features designed to help you connect, share, and engage with your community effortlessly.
+                Explore Starwise&apos;s powerful features designed to help you prepare for interviews, practice answers, and improve your performance effortlessly.
               </p>
             </div>
           </div>
