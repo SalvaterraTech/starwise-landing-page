@@ -4,32 +4,36 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: 'How do I create an account?',
-    answer: 'To create an account, download Appit, open the app, and follow the on-screen instructions to sign up using your email or social media.',
+    question: 'What is Starwise and who is it for?',
+    answer: 'Starwise is an AI-powered interview preparation app for candidates who want clearer, more structured answers. Beyond feedback, Starwise also generates improved STAR-based answers using your own experiences, so you can refine and adapt them for different interviews.',
   },
   {
-    question: 'Can I customize my profile?',
-    answer: 'Yes! You can customize your profile by going to settings and selecting "Edit Profile." From there, you can update your photo, bio, and other details.',
+    question: 'How does Starwise help me prepare for interviews?',
+    answer: 'You answer real interview questions using your own experience. Starwise analyzes your response, highlights improvements, and generates a clearer, STAR-structured version using AI - giving you a strong base that you can customize before the interview.',
   },
   {
-    question: 'Is Appit available on all devices?',
-    answer: 'Appit is available on iOS, Android, and web browsers, ensuring you can stay connected no matter what device you use.',
+    question: 'What is the STAR method?',
+    answer: 'The STAR method stands for Situation, Task, Action, and Result. Starwise not only evaluates whether your answer follows STAR, but also rewrites your response using this structure, keeping your original experience while improving clarity and impact.',
   },
   {
-    question: 'What privacy controls are available?',
-    answer: 'We offer robust privacy controls including the ability to make your profile private, control who can message you, and manage data sharing preferences.',
+    question: 'Is Starwise useful even if I already have experience?',
+    answer: 'Yes. Experienced professionals often have strong backgrounds but struggle to communicate impact clearly. Starwise uses your input to generate more concise, result-driven answers, helping you highlight what really matters in senior-level interviews.',
   },
   {
-    question: 'How does the smart matching work?',
-    answer: 'Our smart matching algorithm uses your interests, activity, and preferences to suggest connections that align with your goals and values.',
+    question: 'Do I need to know the STAR method beforehand?',
+    answer: 'No. You can answer naturally. Starwise takes your raw response and automatically generates a STAR-structured version using AI, while also explaining what was improved and why.',
   },
   {
-    question: 'Can I share multimedia content?',
-    answer: 'Absolutely! You can share photos, videos, and other multimedia content directly within the app to engage with your network.',
+    question: 'How is AI used in Starwise?',
+    answer: 'AI analyzes your answers, identifies gaps, and generates improved versions based on your information. The goal is not to replace your voice, but to give you a high-quality baseline that you can edit, personalize, and reuse.',
   },
   {
-    question: 'What should I do if I encounter issues?',
-    answer: 'If you encounter any issues, please contact our support team through the app or visit our help center for troubleshooting guides.',
+    question: 'Can I practice for different roles and seniority levels?',
+    answer: 'Yes. Starwise offers questions by role, difficulty, and competency. For each answer, the AI adapts the generated improvement to the context of the role and level you are practicing for.',
+  },
+  {
+    question: 'Is my data and interview content private?',
+    answer: 'Yes. Your answers are private and used only to generate feedback and improved responses for you. Starwise does not share your content with recruiters or third parties.',
   },
 ]
 
