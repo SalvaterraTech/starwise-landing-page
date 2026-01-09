@@ -8,6 +8,7 @@ import DiscoverFeatures from '@/components/DiscoverFeatures'
 import Pricing from '@/components/Pricing'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
+import Download from '@/components/Download'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <FAQ />
+      <Download />
     </main>
   )
 }
