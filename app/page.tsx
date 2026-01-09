@@ -7,6 +7,7 @@ import AdvancedCapabilities from '@/components/AdvancedCapabilities'
 import DiscoverFeatures from '@/components/DiscoverFeatures'
 import Pricing from '@/components/Pricing'
 import Testimonials from '@/components/Testimonials'
+import FAQ from '@/components/FAQ'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <DiscoverFeatures />
       <Pricing />
       <Testimonials />
+      <FAQ />
     </main>
   )
 }

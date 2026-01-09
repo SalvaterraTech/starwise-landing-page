@@ -1,36 +1,35 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 
 const faqs = [
   {
     question: 'How do I create an account?',
-    answer: 'Creating an account is simple! Just download the app, tap "Sign Up", and follow the prompts. You can sign up with your email or connect your existing social accounts for a faster experience.',
+    answer: 'To create an account, download Appit, open the app, and follow the on-screen instructions to sign up using your email or social media.',
   },
   {
     question: 'Can I customize my profile?',
-    answer: 'Absolutely! Appit offers extensive profile customization options. You can add a bio, profile picture, cover photo, and showcase your interests. Pro users get access to custom themes and additional customization features.',
+    answer: 'Yes! You can customize your profile by going to settings and selecting "Edit Profile." From there, you can update your photo, bio, and other details.',
   },
   {
     question: 'Is Appit available on all devices?',
-    answer: 'Yes! Appit is available on iOS, Android, and web. Your data syncs seamlessly across all your devices, so you can stay connected wherever you are.',
+    answer: 'Appit is available on iOS, Android, and web browsers, ensuring you can stay connected no matter what device you use.',
   },
   {
     question: 'What privacy controls are available?',
-    answer: 'We take privacy seriously. You have full control over who can see your profile, posts, and activity. We offer granular privacy settings, two-factor authentication, and end-to-end encrypted messaging.',
+    answer: 'We offer robust privacy controls including the ability to make your profile private, control who can message you, and manage data sharing preferences.',
   },
   {
     question: 'How does the smart matching work?',
-    answer: 'Our AI-powered matching algorithm analyzes your interests, activity patterns, and preferences to suggest connections that are most likely to be meaningful to you. The more you use Appit, the better it gets at finding your perfect matches.',
+    answer: 'Our smart matching algorithm uses your interests, activity, and preferences to suggest connections that align with your goals and values.',
   },
   {
     question: 'Can I share multimedia content?',
-    answer: 'Yes! You can share photos, videos, stories, and more. Our built-in editing tools help you create stunning content right from the app. Pro users get access to advanced editing features and higher quality uploads.',
+    answer: 'Absolutely! You can share photos, videos, and other multimedia content directly within the app to engage with your network.',
   },
   {
     question: 'What should I do if I encounter issues?',
-    answer: 'If you experience any issues, you can reach out to our support team through the app or email us at support@appit.com. We also have an extensive help center with guides and FAQs to help you troubleshoot common issues.',
+    answer: 'If you encounter any issues, please contact our support team through the app or visit our help center for troubleshooting guides.',
   },
 ]
 
@@ -38,9 +37,9 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section id="faq" className="relative py-24 overflow-hidden">
+    <section id="faq" className="relative pb-24 overflow-hidden">
       {/* Background */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background: 'radial-gradient(ellipse 60% 40% at 50% 100%, rgba(50, 191, 93, 0.06) 0%, transparent 60%)'
@@ -50,28 +49,62 @@ export default function FAQ() {
       <div className="section-container relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div 
-            className="inline-flex items-center gap-2 px-4 py-2 mb-6 border border-appit-border rounded-full bg-appit-surface/50"
+          {/* Badge with Icon */}
+          <div
+            className="inline-flex items-center gap-2 px-3 py-2 mb-6 border border-appit-border rounded-full"
+            style={{ backgroundColor: 'rgb(19, 19, 21)' }}
           >
-            <span 
-              className="text-sm text-appit-gray font-medium"
-              style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+            {/* Question Mark Icon */}
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              FAQ
+              <circle
+                cx="10"
+                cy="10"
+                r="9"
+                stroke="rgb(148, 150, 157)"
+                strokeWidth="1"
+                fill="none"
+              />
+              <path
+                d="M10 14.5C10.4142 14.5 10.75 14.1642 10.75 13.75C10.75 13.3358 10.4142 13 10 13C9.58579 13 9.25 13.3358 9.25 13.75C9.25 14.1642 9.58579 14.5 10 14.5Z"
+                fill="rgb(148, 150, 157)"
+              />
+              <path
+                d="M10 11.5V11C10.8284 11 11.5 10.3284 11.5 9.5C11.5 8.67157 10.8284 8 10 8C9.17157 8 8.5 8.67157 8.5 9.5"
+                stroke="rgb(148, 150, 157)"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+            <span
+              className="font-medium"
+              style={{
+                fontFamily: 'Instrument Sans, sans-serif',
+                fontSize: '16px',
+                color: 'rgb(148, 150, 157)'
+              }}
+            >
+              FAQ&apos;s
             </span>
           </div>
-          <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
-            style={{ fontFamily: 'Inter Tight, sans-serif' }}
+
+          {/* Title - 58px Inter Tight */}
+          <h2
+            className="font-bold text-white"
+            style={{
+              fontFamily: 'Inter Tight, sans-serif',
+              fontSize: '58px',
+              fontWeight: 700,
+              lineHeight: '1.2'
+            }}
           >
             Frequently Asked Questions
           </h2>
-          <p 
-            className="text-appit-gray text-lg max-w-2xl mx-auto"
-            style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-          >
-            Got questions? We&apos;ve got answers. If you can&apos;t find what you&apos;re looking for, feel free to contact us.
-          </p>
         </div>
 
         {/* FAQ List */}
@@ -79,41 +112,77 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-appit-card border border-appit-surface rounded-14 overflow-hidden faq-item"
+              className="overflow-hidden"
+              style={{
+                backgroundColor: 'rgb(9, 9, 10)',
+                borderColor: 'rgb(24, 24, 26)',
+                borderWidth: '1px',
+                borderStyle: 'solid',
+                borderRadius: '14px'
+              }}
             >
-              {/* Question */}
+              {/* Question Button */}
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left"
+                className="w-full flex items-center justify-between text-left"
+                style={{ padding: '16px 30px' }}
               >
-                <span 
-                  className="text-lg font-semibold text-white pr-4"
-                  style={{ fontFamily: 'Inter, sans-serif' }}
+                <span
+                  className="text-white pr-4"
+                  style={{
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '20px',
+                    fontWeight: 600,
+                    lineHeight: '1.5'
+                  }}
                 >
                   {faq.question}
                 </span>
-                <div 
-                  className="flex-shrink-0 w-10 h-10 flex items-center justify-center border border-appit-border rounded-10 bg-transparent"
+                <div
+                  className="flex-shrink-0 w-10 h-10 flex items-center justify-center border"
+                  style={{
+                    borderColor: 'rgb(29, 29, 32)',
+                    borderRadius: '10px',
+                    backgroundColor: 'transparent'
+                  }}
                 >
-                  <Image
-                    src="https://framerusercontent.com/images/mHa1SilBp9GVaW3Ir0GF3IPLVk.svg"
-                    alt="Toggle"
-                    width={24}
-                    height={24}
-                    className={`transition-transform duration-300 ${openIndex === index ? 'rotate-45' : ''}`}
-                  />
+                  {openIndex === index ? (
+                    // Minus icon
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M5 12H19" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                  ) : (
+                    // Plus icon
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 5V19M5 12H19" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                  )}
                 </div>
               </button>
 
-              {/* Answer */}
+              {/* Answer with Divider */}
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
               >
-                <p 
-                  className="px-6 pb-6 text-appit-gray leading-relaxed"
-                  style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+                {/* Divider Line */}
+                <div
+                  style={{
+                    borderTop: '1px solid rgb(29, 29, 32)',
+                    margin: '0 30px'
+                  }}
+                />
+
+                {/* Answer Text */}
+                <p
+                  style={{
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '17px',
+                    fontWeight: 500,
+                    color: 'rgb(148, 150, 157)',
+                    lineHeight: '1.5',
+                    padding: '16px 30px 16px 30px'
+                  }}
                 >
                   {faq.answer}
                 </p>
