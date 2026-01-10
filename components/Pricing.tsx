@@ -23,8 +23,8 @@ const plans = [
   },
   {
     name: 'Premium Plan',
-    priceMonthly: '10',
-    priceYearly: '99',
+    priceMonthly: '6.99',
+    priceYearly: '39.99',
     description: 'Unlimited practice for serious interview preparation.',
     features: [
       'Unlimited interview questions',
@@ -158,7 +158,7 @@ export default function Pricing() {
                   transition: 'none'
                 }}
               >
-                Monthly
+                Weekly
               </button>
               <button
                 onClick={() => setIsYearly(true)}
@@ -212,7 +212,6 @@ export default function Pricing() {
                 }}
               />
 
-              {/* Badge Save 20% - sempre renderizado, mas escondido quando Monthly */}
               <div
                 className="absolute"
                 style={{
@@ -230,7 +229,7 @@ export default function Pricing() {
                   pointerEvents: isYearly && plan.name === 'Premium Plan' ? 'auto' : 'none'
                 }}
               >
-                Save 20% on Yearly
+                Save 90% on Yearly
               </div>
 
               {/* Plan Name */}
@@ -266,7 +265,7 @@ export default function Pricing() {
                     color: 'rgb(121, 123, 133)'
                   }}
                 >
-                  /{isYearly ? 'per year' : 'per month'}
+                  /{isYearly ? 'per year' : 'per week'}
                 </span>
               </div>
 
