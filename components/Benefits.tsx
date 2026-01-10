@@ -3,23 +3,23 @@ import Image from 'next/image';
 const benefits = [
   {
     icon: 'https://framerusercontent.com/images/AjjAxBc5v6SZHOkJzG2bwrSMk.svg',
-    title: 'Clear, structured answers',
-    description: 'Turn your experiences into STAR-based answers that interviewers actually understand.',
+    title: 'Clear answers',
+    description: 'Turn your experience into structured STAR answers.',
   },
   {
     icon: 'https://framerusercontent.com/images/rxSlFR0RyaC3WCayigHX4RPQZs.svg',
-    title: 'Confidence before the interview',
-    description: 'Practice your answers in advance and walk into interviews knowing exactly what to say.',
+    title: 'Interview confidence',
+    description: 'Practice ahead and know exactly what to say.',
   },
   {
     icon: 'https://framerusercontent.com/images/pvxqwt0ZG86WIRPPnHxDCgV7rkQ.svg',
-    title: 'AI-generated improvements',
-    description: 'Get instant feedback and AI-generated answer improvements using your own experience as the base.',
+    title: 'AI improvements',
+    description: 'Get instant feedback and AI-generated answer upgrades.',
   },
   {
     icon: 'https://framerusercontent.com/images/u8fjSIAgWQzhagulXkIoN7PzI.svg',
-    title: 'Practice that actually evolves',
-    description: 'Each practice session helps you refine, improve, and reuse better answers for future interviews.',
+    title: 'Smarter practice',
+    description: 'Improve every answer with each practice session.',
   },
 ];
 
