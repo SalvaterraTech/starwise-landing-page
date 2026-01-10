@@ -5,23 +5,23 @@ import Image from 'next/image';
 const features = [
   {
     icon: 'https://framerusercontent.com/images/0ZuOwnoOjO6aCuZyODXxddhTA.svg',
-    title: 'Instant Messaging',
-    description: 'Chat seamlessly with friends and communities.',
+    title: 'Answer analysis',
+    description: 'AI reviews your answers and finds gaps in clarity and structure.',
   },
   {
-    icon: 'https://framerusercontent.com/images/VkUZshZscEaDkcpWl3Cjwsa2eTk.svg',
-    title: 'Story Sharing',
-    description: 'Share life moments through photos and videos.',
+    icon: 'https://framerusercontent.com/images/kQr6giL6HveRQhi7tiDl3MKDuo.svg',
+    title: 'STAR generation',
+    description: 'AI generates STAR-structured answers using your own experience.',
   },
   {
     icon: 'https://framerusercontent.com/images/cWLTQB9F2r4V1VWFjwhxL7pKw.svg',
-    title: 'Customizable Profiles',
-    description: 'Personalize your profile with themes and layouts.',
+    title: 'Targeted feedback',
+    description: 'Clear suggestions on what to improve in each response.',
   },
   {
     icon: 'https://framerusercontent.com/images/TgZPYI3DkURzht1SO7C0GZKgOdE.svg',
-    title: 'Community Groups',
-    description: 'Join or create groups around shared interests.',
+    title: 'Real interview practice',
+    description: 'Practice with curated or custom interview questions.',
   },
 ];
 
@@ -206,21 +206,21 @@ export default function Features() {
                 bottom: 0,
                 left: 0,
                 right: 0,
-                height: '180px',
+                height: '280px',
                 overflow: 'hidden',
                 flex: 'none',
                 zIndex: 15,
                 pointerEvents: 'none',
               }}
             >
-              <div 
-                style={{ 
-                  position: 'absolute', 
-                  top: 0, 
-                  right: 0, 
-                  bottom: 0, 
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
                   left: 0,
-                  background: 'linear-gradient(to top, rgba(14, 14, 16, 1) 0%, rgba(14, 14, 16, 0.95) 15%, rgba(14, 14, 16, 0.7) 40%, transparent 100%)',
+                  background: 'linear-gradient(to top, rgba(14, 14, 16, 1) 0%, rgba(14, 14, 16, 0.98) 10%, rgba(14, 14, 16, 0.9) 25%, rgba(14, 14, 16, 0.7) 45%, rgba(14, 14, 16, 0.4) 65%, rgba(14, 14, 16, 0.15) 85%, transparent 100%)',
                 }}
               >
                 <Image
@@ -229,13 +229,13 @@ export default function Features() {
                   width={438}
                   height={254}
                   unoptimized
-                  style={{ 
-                    display: 'block', 
-                    width: '100%', 
-                    height: '100%', 
-                    objectPosition: 'center', 
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    height: '100%',
+                    objectPosition: 'center',
                     objectFit: 'cover',
-                    opacity: 1,
+                    opacity: 0.6,
                   }}
                 />
               </div>
@@ -251,7 +251,6 @@ export default function Features() {
               flex: '1 0 0px',
             }}
           >
-            {/* Title */}
             <h2
               style={{
                 fontFamily: '"Inter Tight", sans-serif',
@@ -263,7 +262,7 @@ export default function Features() {
                 margin: 0,
               }}
             >
-              Appit Social&apos;s Advanced Capabilities
+              Starwise&apos;s Advanced Capabilities
             </h2>
 
             {/* Feature Cards Grid - 2x2 */}
