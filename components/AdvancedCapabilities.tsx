@@ -3,11 +3,11 @@
 import Image from 'next/image';
 
 const capabilities = [
-  { name: 'Story Sharing' },
-  { name: 'Custom Profiles' },
-  { name: 'Community Groups' },
-  { name: 'Event Creation' },
-  { name: 'Smart Notifications' },
+  { name: 'STAR answers' },
+  { name: 'AI improvements' },
+  { name: 'Real questions' },
+  { name: 'Progress tracking' },
+  { name: 'Answer library' },
 ];
 
 export default function AdvancedCapabilities() {
@@ -66,7 +66,7 @@ export default function AdvancedCapabilities() {
                   margin: 0,
                 }}
               >
-                Starwise&apos;s Advanced Capabilities
+                Everything you need to prepare for interviews
               </h2>
 
               {/* Subtitle */}
@@ -81,7 +81,7 @@ export default function AdvancedCapabilities() {
                   margin: 0,
                 }}
               >
-                Explore advanced capabilities designed to elevate your social experience and interactions.
+                Practice, improve, and deliver confident answers with Starwise.
               </p>
             </div>
 
