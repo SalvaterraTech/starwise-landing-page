@@ -8,31 +8,31 @@ const plans = [
     name: 'Free Plan',
     priceMonthly: '0',
     priceYearly: '0',
-    description: 'Basic access with essential features.',
+    description: 'Basic interview practice to get started with Starwise.',
     features: [
-      'Create and customize profile',
-      'Connect with other users',
-      'Send and receive messages',
-      'Access to basic features',
-      'View and share content',
-      'Receive notifications and updates',
+      '1 interview question per week',
+      'STAR-based answer structuring',
+      'Basic AI feedback',
+      'AI-generated answer improvements',
+      'Unlimited practice',
+      'Answer history & progress tracking',
     ],
     cta: 'Get Started',
     popular: false,
-    disabledFeatures: ['Send and receive messages', 'View and share content'],
+    disabledFeatures: ['AI-generated answer improvements', 'Unlimited practice', 'Answer history & progress tracking'],
   },
   {
     name: 'Premium Plan',
     priceMonthly: '10',
     priceYearly: '99',
-    description: 'Enhanced features for new experience.',
+    description: 'Unlimited practice for serious interview preparation.',
     features: [
-      'Create and customize profile',
-      'Connect with other users',
-      'Send and receive messages',
-      'Access to basic features',
-      'View and share content',
-      'Receive notifications and updates',
+      'Unlimited interview questions',
+      'STAR-based answer structuring',
+      'Advanced AI feedback',
+      'AI-generated answer improvements',
+      'Answer history & progress tracking',
+      'Priority access to new features',
     ],
     cta: 'Get Started',
     popular: false,
@@ -125,7 +125,7 @@ export default function Pricing() {
                   wordBreak: 'break-word'
                 }}
               >
-                Choose a plan that fits your needs, with flexible options and transparent pricing.
+                Choose the plan that fits your interview preparation needs.
               </p>
             </div>
           </div>
