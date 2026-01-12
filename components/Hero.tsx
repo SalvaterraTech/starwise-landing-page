@@ -140,7 +140,7 @@ export default function Hero() {
           {/* Info icon */}
           <div className="relative" style={{ width: '20px', height: '20px' }}>
             <Image
-              src="https://framerusercontent.com/images/lvuKg4x2aNtdE9KCJ5H0BUAeEo.svg"
+              src="/images/icon-info.svg"
               alt=""
               fill
               className="object-cover"
@@ -171,7 +171,7 @@ export default function Hero() {
           >
             <div className="relative" style={{ width: '28px', height: '28px' }}>
               <Image
-                src="https://framerusercontent.com/images/iubuv2STfmPz5zeKS49tuf1E38.svg"
+                src="/images/icon-playstore.svg"
                 alt="Play Store"
                 fill
                 className="object-cover"
@@ -180,7 +180,7 @@ export default function Hero() {
             <div style={{ backgroundColor: 'rgb(40, 40, 44)', width: '1px', height: '18px' }} />
             <div className="relative" style={{ width: '28px', height: '28px' }}>
               <Image
-                src="https://framerusercontent.com/images/Qh3hInJRKF6WFt1cZiFo08d8aXM.svg"
+                src="/images/icon-appstore.svg"
                 alt="App Store"
                 fill
                 className="object-cover"
