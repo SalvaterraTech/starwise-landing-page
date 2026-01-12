@@ -55,45 +55,38 @@ export default function FAQ() {
         <div className="text-center mb-16">
           {/* Badge with Icon */}
           <div
-            className="inline-flex items-center gap-2 px-3 py-2 mb-6 border border-appit-border rounded-full"
-            style={{ backgroundColor: 'rgb(19, 19, 21)' }}
+            className="inline-flex items-center mb-6 rounded-full"
+            style={{
+              backgroundColor: 'rgb(19, 19, 21)',
+              border: '1px solid rgb(29, 29, 32)',
+              padding: '10px 12px',
+              gap: '4px',
+              height: '44px'
+            }}
           >
-            {/* Question Mark Icon */}
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="10"
-                cy="10"
-                r="9"
-                stroke="rgb(148, 150, 157)"
-                strokeWidth="1"
-                fill="none"
-              />
-              <path
-                d="M10 14.5C10.4142 14.5 10.75 14.1642 10.75 13.75C10.75 13.3358 10.4142 13 10 13C9.58579 13 9.25 13.3358 9.25 13.75C9.25 14.1642 9.58579 14.5 10 14.5Z"
-                fill="rgb(148, 150, 157)"
-              />
-              <path
-                d="M10 11.5V11C10.8284 11 11.5 10.3284 11.5 9.5C11.5 8.67157 10.8284 8 10 8C9.17157 8 8.5 8.67157 8.5 9.5"
-                stroke="rgb(148, 150, 157)"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
+            {/* Question Mark Icon - EXACT from sample */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+              <g clipPath="url(#a)">
+                <path stroke="#fff" strokeLinejoin="round" strokeWidth="2" d="M10 18.333a8.308 8.308 0 0 0 5.893-2.441 8.308 8.308 0 0 0 2.44-5.893 8.308 8.308 0 0 0-2.44-5.892A8.307 8.307 0 0 0 10 1.666a8.307 8.307 0 0 0-5.892 2.44A8.307 8.307 0 0 0 1.667 10c0 2.301.933 4.385 2.44 5.893A8.307 8.307 0 0 0 10 18.332Z" />
+                <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 11.926V10.26a2.5 2.5 0 1 0-2.5-2.5" />
+                <path fill="#fff" fillRule="evenodd" d="M10 15.677a1.042 1.042 0 1 0 0-2.083 1.042 1.042 0 0 0 0 2.083Z" clipRule="evenodd" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h20v20H0z" />
+                </clipPath>
+              </defs>
             </svg>
             <span
-              className="font-medium"
               style={{
                 fontFamily: 'Instrument Sans, sans-serif',
                 fontSize: '16px',
-                color: 'rgb(148, 150, 157)'
+                fontWeight: '500',
+                lineHeight: '24px',
+                color: 'rgb(255, 255, 255)'
               }}
             >
-              FAQ&apos;s
+              FAQ's
             </span>
           </div>
 
