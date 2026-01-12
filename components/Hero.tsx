@@ -169,12 +169,12 @@ export default function Hero() {
               gap: '10px'
             }}
           >
-            <div className="relative" style={{ width: '28px', height: '28px' }}>
+            <div className="relative" style={{ width: '24px', height: '24px' }}>
               <Image
                 src="/images/icon-playstore.svg"
                 alt="Play Store"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div style={{ backgroundColor: 'rgb(40, 40, 44)', width: '1px', height: '18px' }} />
