@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
               className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
             >
               <Image
-                src="https://framerusercontent.com/images/1lnLBvFCOJ2ekMdIHm4QYlonY.svg"
+                src="/assets/privacy/shield-lock.svg"
                 alt="Privacy"
                 width={20}
                 height={20}
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
               className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
             >
               <Image
-                src="https://framerusercontent.com/images/2owNed1N0kOcx3TTvKXCEqP8V8.svg"
+                src="/assets/privacy/file-check.svg"
                 alt="Calendar"
                 width={20}
                 height={20}

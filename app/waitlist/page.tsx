@@ -20,11 +20,11 @@ export default function WaitlistPage() {
   return (
     <main className="min-h-screen bg-appit-bg">
       <Navbar />
-      
+
       {/* Waitlist Section */}
       <section className="relative pt-44 pb-32 min-h-screen flex flex-col items-center">
         {/* Background gradient */}
-        <div 
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background: 'radial-gradient(ellipse 60% 40% at 50% 30%, rgba(50, 191, 93, 0.08) 0%, transparent 60%)'
@@ -35,14 +35,14 @@ export default function WaitlistPage() {
           {/* Main Content */}
           <div className="flex flex-col items-center gap-12 w-full max-w-[527px]">
             {/* Badge */}
-            <div 
+            <div
               className="inline-flex items-center gap-2 px-2 py-2 border border-appit-border rounded-full bg-appit-surface/50"
             >
               {/* Avatar stack */}
               <div className="flex -space-x-2.5">
                 <div className="w-7 h-7 rounded-full border-2 border-appit-surface overflow-hidden">
                   <Image
-                    src="https://framerusercontent.com/images/uuqFhm4gRHWpYWHbCF29kCrDg7c4NMzek.png"
+                    src="/assets/waitlist/avatar-1.png"
                     alt="User"
                     width={28}
                     height={28}
@@ -51,7 +51,7 @@ export default function WaitlistPage() {
                 </div>
                 <div className="w-7 h-7 rounded-full border-2 border-appit-surface overflow-hidden">
                   <Image
-                    src="https://framerusercontent.com/images/eXzXY5SyB3VY4zrk0RKkKc5oOKY.png"
+                    src="/assets/waitlist/avatar-2.png"
                     alt="User"
                     width={28}
                     height={28}
@@ -60,7 +60,7 @@ export default function WaitlistPage() {
                 </div>
                 <div className="w-7 h-7 rounded-full border-2 border-appit-surface overflow-hidden">
                   <Image
-                    src="https://framerusercontent.com/images/OeIH1JDIPLkdRx1U3x1ij9W1O0.png"
+                    src="/assets/waitlist/avatar-3.png"
                     alt="User"
                     width={28}
                     height={28}
@@ -68,7 +68,7 @@ export default function WaitlistPage() {
                   />
                 </div>
               </div>
-              <span 
+              <span
                 className="text-white text-sm font-medium pr-2"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
@@ -78,13 +78,13 @@ export default function WaitlistPage() {
 
             {/* Heading & Description */}
             <div className="text-center space-y-4">
-              <h1 
+              <h1
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
                 style={{ fontFamily: 'Inter Tight, sans-serif' }}
               >
                 Get early access
               </h1>
-              <p 
+              <p
                 className="text-appit-gray text-lg md:text-xl"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
@@ -129,12 +129,12 @@ export default function WaitlistPage() {
               {/* Privacy note */}
               <div className="flex items-center justify-center gap-1 mt-6">
                 <Image
-                  src="https://framerusercontent.com/images/lvuKg4x2aNtdE9KCJ5H0BUAeEo.svg"
+                  src="/assets/waitlist/starwise-logo.svg"
                   alt="Secure"
                   width={20}
                   height={20}
                 />
-                <span 
+                <span
                   className="text-appit-gray text-sm"
                   style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                 >
@@ -148,29 +148,29 @@ export default function WaitlistPage() {
           <div className="w-full max-w-[795px] flex flex-col items-end gap-10 md:gap-16">
             {/* Section Header */}
             <div className="w-full">
-              <div 
+              <div
                 className="inline-flex items-center gap-2 px-4 py-2 mb-6 border border-appit-border rounded-full bg-appit-surface/50"
               >
                 <Image
-                  src="https://framerusercontent.com/images/mHa1SilBp9GVaW3Ir0GF3IPLVk.svg"
+                  src="/assets/waitlist/check-circle.svg"
                   alt="Icon"
                   width={20}
                   height={20}
                 />
-                <span 
+                <span
                   className="text-sm text-white font-medium"
                   style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                 >
                   Connect with Appit Social
                 </span>
               </div>
-              <h2 
+              <h2
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
                 style={{ fontFamily: 'Inter Tight, sans-serif' }}
               >
                 We&apos;d Love to Hear From You
               </h2>
-              <p 
+              <p
                 className="text-appit-gray text-lg"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
@@ -184,12 +184,12 @@ export default function WaitlistPage() {
               className="inline-flex items-center gap-2 px-5 py-4 bg-appit-card border border-appit-border rounded-12 hover:border-appit-gray/40 transition-colors"
             >
               <Image
-                src="https://framerusercontent.com/images/OG6YiL91Vk8kkpvcLHTGADQNTUg.svg"
+                src="/assets/waitlist/arrow-right.svg"
                 alt="Email"
                 width={24}
                 height={24}
               />
-              <span 
+              <span
                 className="text-appit-gray font-medium"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
@@ -199,7 +199,7 @@ export default function WaitlistPage() {
 
             {/* Tagline */}
             <div className="text-center w-full">
-              <p 
+              <p
                 className="text-xl font-semibold text-white"
                 style={{ fontFamily: 'Inter Tight, sans-serif' }}
               >

@@ -37,7 +37,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
                             decoding="async"
                             width="358"
                             height="268"
-                            src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                            src="/assets/testimonials/star-blue.svg"
                             alt="Background Image"
                             style={{
                                 display: "block",

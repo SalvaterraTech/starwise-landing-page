@@ -104,7 +104,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -187,7 +187,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/VvQpIy1y1cSSlomZVLtZ5g6MY.png"
+                            src="/images/avatar-1.png"
                             alt="Profile Image"
                             style={{
                               display: "block",
@@ -288,7 +288,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -371,7 +371,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/w6nhBfckvD3enWdC7MdGroG3zYM.png"
+                            src="/images/avatar-2.png"
                             alt="Profile Image"
                             style={{
                               display: "block",
@@ -472,7 +472,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -555,7 +555,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/DsQBHRyqYMW0j9DEkiDEFfYhI6Q.png"
+                            src="/images/avatar-3.png"
                             alt
                             style={{
                               display: "block",
@@ -656,7 +656,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -739,7 +739,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/yYKQ1tubWkyz2kIXNYCQoAawMQ.png"
+                            src="/images/avatar-1.png"
                             alt="Profile Image"
                             style={{
                               display: "block",
@@ -879,7 +879,7 @@ const Testimonials = () => {
                         loading="lazy"
                         width="20"
                         height="21"
-                        src="https://framerusercontent.com/images/gphhp9cp6GqvUqi2F4LoZe3wGQ.svg"
+                        src="/assets/testimonials/quote.svg"
                         alt
                         style={{
                           display: "block",
@@ -934,7 +934,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -1017,7 +1017,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/VvQpIy1y1cSSlomZVLtZ5g6MY.png"
+                            src="/images/avatar-1.png"
                             alt="Profile Image"
                             style={{
                               display: "block",
@@ -1118,7 +1118,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -1201,7 +1201,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/w6nhBfckvD3enWdC7MdGroG3zYM.png"
+                            src="/images/avatar-2.png"
                             alt="Profile Image"
                             style={{
                               display: "block",
@@ -1302,7 +1302,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -1385,7 +1385,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/DsQBHRyqYMW0j9DEkiDEFfYhI6Q.png"
+                            src="/images/avatar-3.png"
                             alt
                             style={{
                               display: "block",
@@ -1486,7 +1486,7 @@ const Testimonials = () => {
                           decoding="async"
                           width="358"
                           height="268"
-                          src="https://framerusercontent.com/images/G4xxX7meBEZQwfzDvZvv41TMW0.svg"
+                          src="/assets/testimonials/star-blue.svg"
                           alt="Background Image"
                           style={{
                             display: "block",
@@ -1569,7 +1569,7 @@ const Testimonials = () => {
                             width="101"
                             height="100"
                             sizes="50px"
-                            src="https://framerusercontent.com/images/yYKQ1tubWkyz2kIXNYCQoAawMQ.png"
+                            src="/images/avatar-1.png"
                             alt="Profile Image"
                             style={{
                               display: "block",
@@ -1709,7 +1709,7 @@ const Testimonials = () => {
                         loading="lazy"
                         width="20"
                         height="21"
-                        src="https://framerusercontent.com/images/gphhp9cp6GqvUqi2F4LoZe3wGQ.svg"
+                        src="/assets/testimonials/quote.svg"
                         alt
                         style={{
                           display: "block",
@@ -1802,7 +1802,7 @@ const Testimonials = () => {
                             decoding="async"
                             width="388"
                             height="295"
-                            src="https://framerusercontent.com/images/ftLaVloyhCtaUPhQd1Wo4ofYTa4.svg"
+                            src="/assets/testimonials/star-yellow.svg"
                             alt="Background Image"
                             style={{
                               display: "block",
@@ -1885,7 +1885,7 @@ const Testimonials = () => {
                               width="100"
                               height="100"
                               sizes="50px"
-                              src="https://framerusercontent.com/images/VvQpIy1y1cSSlomZVLtZ5g6MY.png"
+                              src="/images/avatar-1.png"
                               alt="Profile Image"
                               style={{
                                 display: "block",
@@ -1990,7 +1990,7 @@ const Testimonials = () => {
                             decoding="async"
                             width="388"
                             height="295"
-                            src="https://framerusercontent.com/images/ftLaVloyhCtaUPhQd1Wo4ofYTa4.svg"
+                            src="/assets/testimonials/star-yellow.svg"
                             alt="Background Image"
                             style={{
                               display: "block",
@@ -2073,7 +2073,7 @@ const Testimonials = () => {
                               width="101"
                               height="100"
                               sizes="50px"
-                              src="https://framerusercontent.com/images/DsQBHRyqYMW0j9DEkiDEFfYhI6Q.png"
+                              src="/images/avatar-3.png"
                               alt
                               style={{
                                 display: "block",
@@ -2178,7 +2178,7 @@ const Testimonials = () => {
                             decoding="async"
                             width="388"
                             height="295"
-                            src="https://framerusercontent.com/images/ftLaVloyhCtaUPhQd1Wo4ofYTa4.svg"
+                            src="/assets/testimonials/star-yellow.svg"
                             alt="Background Image"
                             style={{
                               display: "block",
@@ -2261,7 +2261,7 @@ const Testimonials = () => {
                               width="101"
                               height="100"
                               sizes="50px"
-                              src="https://framerusercontent.com/images/q9EnfT6QkNFrFgqgUjIfmWzoW8.png"
+                              src="/images/avatar-3.png"
                               alt="Profile Image"
                               style={{
                                 display: "block",
@@ -2366,7 +2366,7 @@ const Testimonials = () => {
                             decoding="async"
                             width="388"
                             height="295"
-                            src="https://framerusercontent.com/images/ftLaVloyhCtaUPhQd1Wo4ofYTa4.svg"
+                            src="/assets/testimonials/star-yellow.svg"
                             alt="Background Image"
                             style={{
                               display: "block",
@@ -2449,7 +2449,7 @@ const Testimonials = () => {
                               width="101"
                               height="100"
                               sizes="50px"
-                              src="https://framerusercontent.com/images/btu2FLVJjqlpZhrCc216uNeKhM.png"
+                              src="/images/avatar-2.png"
                               alt="Profile Image"
                               style={{
                                 display: "block",
@@ -2554,7 +2554,7 @@ const Testimonials = () => {
                             decoding="async"
                             width="388"
                             height="295"
-                            src="https://framerusercontent.com/images/ftLaVloyhCtaUPhQd1Wo4ofYTa4.svg"
+                            src="/assets/testimonials/star-yellow.svg"
                             alt="Background Image"
                             style={{
                               display: "block",
@@ -2637,7 +2637,7 @@ const Testimonials = () => {
                               width="101"
                               height="100"
                               sizes="50px"
-                              src="https://framerusercontent.com/images/w6nhBfckvD3enWdC7MdGroG3zYM.png"
+                              src="/images/avatar-2.png"
                               alt="Profile Image"
                               style={{
                                 display: "block",
@@ -2742,7 +2742,7 @@ const Testimonials = () => {
                             decoding="async"
                             width="388"
                             height="295"
-                            src="https://framerusercontent.com/images/ftLaVloyhCtaUPhQd1Wo4ofYTa4.svg"
+                            src="/assets/testimonials/star-yellow.svg"
                             alt="Background Image"
                             style={{
                               display: "block",
@@ -2824,7 +2824,7 @@ const Testimonials = () => {
                               width="100"
                               height="100"
                               sizes="50px"
-                              src="https://framerusercontent.com/images/yYKQ1tubWkyz2kIXNYCQoAawMQ.png"
+                              src="/images/avatar-1.png"
                               alt="Profile Image"
                               style={{
                                 display: "block",
@@ -2929,7 +2929,7 @@ const Testimonials = () => {
                             decoding="async"
                             width="388"
                             height="295"
-                            src="https://framerusercontent.com/images/ftLaVloyhCtaUPhQd1Wo4ofYTa4.svg"
+                            src="/assets/testimonials/star-yellow.svg"
                             alt="Background Image"
                             style={{
                               display: "block",
@@ -3012,7 +3012,7 @@ const Testimonials = () => {
                               width="101"
                               height="100"
                               sizes="50px"
-                              src="https://framerusercontent.com/images/q8tlzXQaCG8gQHuuiRSRgpqUbc.png"
+                              src="/images/avatar-1.png"
                               alt="Profile Image"
                               style={{
                                 display: "block",

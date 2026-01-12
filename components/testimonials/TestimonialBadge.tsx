@@ -41,7 +41,7 @@ const TestimonialBadge = () => {
                         width="20"
                         height="20"
                         sizes="20px"
-                        src="https://framerusercontent.com/images/1CGcD1VdAFHtaEbo8XY5DBOwy5c.svg"
+                        src="/assets/testimonials/badge-check.svg"
                         alt="Icon"
                         style={{
                             display: "block",
