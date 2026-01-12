@@ -5,9 +5,9 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const avatars = [
-  'https://framerusercontent.com/images/zA7hg7OUnSahgBJcsn7HpCAtY.png',
-  'https://framerusercontent.com/images/FW7gdHyIJZUqRX0WLmQwCo53YI4.png',
-  'https://framerusercontent.com/images/Bwgwwe4qJCF29kCrDg7c4NMzek.png',
+  '/images/avatar-1.png',
+  '/images/avatar-2.png',
+  '/images/avatar-3.png',
 ]
 
 export default function Hero() {
