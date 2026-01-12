@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="relative z-10 max-w-[627px] w-full mx-auto px-4">
           {/* Header */}
-          <div className="flex flex-col items-center gap-4 mb-16">
+          <div className="flex flex-col items-center gap-5 mb-[60px]">
             {/* Badge */}
             <div
               className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           {/* Last Updated */}
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-[108px]">
             <div
               className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
             >
@@ -111,37 +111,41 @@ export default function PrivacyPolicyPage() {
           </div>
 
           {/* Policy Content */}
-          <div className="space-y-8">
+          <div className="flex flex-col">
             {policySections.map((section, index) => (
-              <div key={index} className="space-y-6">
-                <div className="space-y-4">
-                  <h3
-                    className="text-[28px] font-semibold text-white"
-                    style={{ fontFamily: 'Inter, sans-serif', lineHeight: '1.1' }}
-                  >
-                    {section.title}
-                  </h3>
-                  <p
-                    className="text-lg text-appit-gray leading-relaxed"
-                    style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-                  >
-                    {section.content}
-                  </p>
-                  {section.list && (
-                    <ol className="list-decimal list-inside space-y-2 text-lg text-appit-gray pl-4">
-                      {section.list.map((item, idx) => (
-                        <li
-                          key={idx}
-                          style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ol>
-                  )}
+              <div key={index}>
+                <div className="space-y-6">
+                  <div className="space-y-4">
+                    <h3
+                      className="text-[28px] font-semibold text-white"
+                      style={{ fontFamily: 'Inter, sans-serif', lineHeight: '1.1' }}
+                    >
+                      {section.title}
+                    </h3>
+                    <p
+                      className="text-lg text-appit-gray leading-relaxed"
+                      style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+                    >
+                      {section.content}
+                    </p>
+                    {section.list && (
+                      <ol className="list-decimal list-inside space-y-2 text-lg text-appit-gray pl-4">
+                        {section.list.map((item, idx) => (
+                          <li
+                            key={idx}
+                            style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ol>
+                    )}
+                  </div>
                 </div>
+
+                {/* Divider */}
                 {index < policySections.length - 1 && (
-                  <div className="w-full h-px bg-appit-border" />
+                  <div className="w-full h-px bg-[#1D1D20] my-10" />
                 )}
               </div>
             ))}
