@@ -4,22 +4,22 @@ import Image from 'next/image';
 
 const features = [
   {
-    icon: 'https://framerusercontent.com/images/0ZuOwnoOjO6aCuZyODXxddhTA.svg',
+    icon: '/images/feature-answer-analysis.svg',
     title: 'Answer analysis',
     description: 'AI reviews your answers and finds gaps in clarity and structure.',
   },
   {
-    icon: 'https://framerusercontent.com/images/kQr6giL6HveRQhi7tiDl3MKDuo.svg',
+    icon: '/images/feature-star-generation.svg',
     title: 'STAR generation',
     description: 'AI generates STAR-structured answers using your own experience.',
   },
   {
-    icon: 'https://framerusercontent.com/images/cWLTQB9F2r4V1VWFjwhxL7pKw.svg',
+    icon: '/images/feature-targeted-feedback.svg',
     title: 'Targeted feedback',
     description: 'Clear suggestions on what to improve in each response.',
   },
   {
-    icon: 'https://framerusercontent.com/images/TgZPYI3DkURzht1SO7C0GZKgOdE.svg',
+    icon: '/images/feature-real-interview.svg',
     title: 'Real interview practice',
     description: 'Practice with curated or custom interview questions.',
   },
@@ -138,7 +138,7 @@ export default function Features() {
               }}
             >
               <Image
-                src="https://framerusercontent.com/images/Fo4i0rVb4DLMSSNWLjFTsmdrxtA.svg"
+                src="/images/features-bg-gradient.svg"
                 alt="Background gradient"
                 fill
                 unoptimized
@@ -160,7 +160,7 @@ export default function Features() {
               <div style={{ position: 'relative' }}>
                 {/* Phone frame */}
                 <Image
-                  src="https://framerusercontent.com/images/Ezv95KhZ472AmRHJdppXjtn7Yg8.png"
+                  src="/images/features-phone-frame.png"
                   alt="Phone frame"
                   width={255}
                   height={486}
@@ -189,7 +189,7 @@ export default function Features() {
                   }}
                 >
                   <Image
-                    src="https://framerusercontent.com/images/6pEqMFLtWo7ymjMRGhPcK4QZ9g.png"
+                    src="/images/features-phone-screenshot.png"
                     alt="App screenshot"
                     fill
                     unoptimized
@@ -224,7 +224,7 @@ export default function Features() {
                 }}
               >
                 <Image
-                  src="https://framerusercontent.com/images/Odm4ynlr2GaNp1uafqRsNfKV358.svg"
+                  src="/images/features-bottom-gradient.svg"
                   alt="Gradient"
                   width={438}
                   height={254}

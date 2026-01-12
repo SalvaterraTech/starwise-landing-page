@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Navbar - Full width bar */}
-      <nav 
+      <nav
         className="fixed top-0 left-0 right-0 z-50 hidden lg:flex items-center justify-center px-[60px] py-6 border-b border-appit-border backdrop-blur-md"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
@@ -26,7 +26,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/#hero" className="relative w-[132px] h-[44px] flex-shrink-0">
             <Image
-              src="https://framerusercontent.com/images/fP8wCzFycI6CRKVhvzU3Aqo1o.svg"
+              src="/images/logo.svg"
               alt="Logo"
               fill
               className="object-contain"
@@ -41,7 +41,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className="px-5 py-4 hover:text-white transition-colors duration-400"
-                style={{ 
+                style={{
                   fontFamily: '"Instrument Sans", sans-serif',
                   fontSize: '17px',
                   fontWeight: 600,
@@ -67,14 +67,14 @@ export default function Navbar() {
       </nav>
 
       {/* Tablet Navbar */}
-      <nav 
+      <nav
         className="fixed top-0 left-0 right-0 z-50 hidden md:flex lg:hidden items-center justify-between px-[30px] py-6 border-b border-appit-border backdrop-blur-md"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
         {/* Logo */}
         <Link href="/#hero" className="relative w-[132px] h-[44px]">
           <Image
-            src="https://framerusercontent.com/images/fP8wCzFycI6CRKVhvzU3Aqo1o.svg"
+            src="/images/logo.svg"
             alt="Logo"
             fill
             className="object-contain"
@@ -89,7 +89,7 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <Image
-            src="https://framerusercontent.com/images/MOWO6f7gfSBUOG7vNHb6YvE.svg"
+            src="/images/menu-icon.svg"
             alt="Menu"
             width={24}
             height={24}
@@ -98,14 +98,14 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav 
+      <nav
         className="fixed top-0 left-0 right-0 z-50 md:hidden flex items-center justify-between px-4 pt-10 pb-3.5 border-b border-appit-border backdrop-blur-md"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
         {/* Logo */}
         <Link href="/#hero" className="relative w-[132px] h-[44px]">
           <Image
-            src="https://framerusercontent.com/images/fP8wCzFycI6CRKVhvzU3Aqo1o.svg"
+            src="/images/logo.svg"
             alt="Logo"
             fill
             className="object-contain"
@@ -120,7 +120,7 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <Image
-            src="https://framerusercontent.com/images/MOWO6f7gfSBUOG7vNHb6YvE.svg"
+            src="/images/menu-icon.svg"
             alt="Menu"
             width={24}
             height={24}
@@ -130,11 +130,11 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-40 lg:hidden bg-black/95 backdrop-blur-md"
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <div 
+          <div
             className="flex flex-col items-center justify-center h-full gap-4 p-5"
             onClick={(e) => e.stopPropagation()}
           >

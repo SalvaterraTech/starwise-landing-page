@@ -129,7 +129,7 @@ export default function Stats() {
           >
             {/* Background image */}
             <Image
-              src="https://framerusercontent.com/images/otHBuAY6On6DCfJTQ2YePpDX5YU.svg"
+              src="/images/stats-icon-1.svg"
               alt="Background"
               fill
               className="object-cover"
@@ -137,7 +137,7 @@ export default function Stats() {
             {/* Inner logo */}
             <div className="relative" style={{ width: '60px', height: '60px', zIndex: 1 }}>
               <Image
-                src="https://framerusercontent.com/images/y6iefUxEqyQODWaJCuoKhPQnEqc.svg"
+                src="/images/stats-icon-2.svg"
                 alt="Logo"
                 fill
                 className="object-cover"

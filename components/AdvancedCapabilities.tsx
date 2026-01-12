@@ -105,7 +105,7 @@ export default function AdvancedCapabilities() {
                 >
                   <div style={{ position: 'relative', width: '22px', height: '22px', flexShrink: 0 }}>
                     <Image
-                      src="https://framerusercontent.com/images/55fmjBtSJ5KITLoOmKA2KYcj64.svg"
+                      src="/images/icon-checkmark.svg"
                       alt=""
                       fill
                       style={{ objectFit: 'contain' }}
@@ -161,12 +161,12 @@ export default function AdvancedCapabilities() {
                   e.currentTarget.style.backgroundColor = 'rgb(255, 255, 255)';
                 }}
               >
-                <div style={{ position: 'relative', width: '32px', height: '32px', flexShrink: 0 }}>
+                <div style={{ position: 'relative', width: '30px', height: '30px', flexShrink: 0 }}>
                   <Image
-                    src="https://framerusercontent.com/images/iubuv2STfmPz5zeKS49tuf1E38.svg"
+                    src="/images/icon-playstore.svg"
                     alt="Google Play"
                     fill
-                    style={{ objectFit: 'contain' }}
+                    className="object-contain"
                   />
                 </div>
                 <div
@@ -228,7 +228,7 @@ export default function AdvancedCapabilities() {
               >
                 <div style={{ position: 'relative', width: '32px', height: '32px', flexShrink: 0 }}>
                   <Image
-                    src="https://framerusercontent.com/images/Qh3hInJRKF6WFt1cZiFo08d8aXM.svg"
+                    src="/images/icon-appstore.svg"
                     alt="App Store"
                     fill
                     style={{ objectFit: 'contain' }}
@@ -290,7 +290,7 @@ export default function AdvancedCapabilities() {
               }}
             >
               <Image
-                src="https://framerusercontent.com/images/Fo4i0rVb4DLMSSNWLjFTsmdrxtA.svg"
+                src="/images/features-bg-gradient.svg"
                 alt=""
                 fill
                 style={{
@@ -340,7 +340,7 @@ export default function AdvancedCapabilities() {
                 }}
               >
                 <Image
-                  src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png"
+                  src="/images/iphone-center-frame.png"
                   alt="Mobile App"
                   width={546}
                   height={1080}
@@ -382,7 +382,7 @@ export default function AdvancedCapabilities() {
                     }}
                   >
                     <Image
-                      src="https://framerusercontent.com/images/8xn8DXbIdPvUwm8vHUmFG9nPM.jpg"
+                      src="/images/iphone-center-content.jpg"
                       alt="Screen UI"
                       width={780}
                       height={1688}

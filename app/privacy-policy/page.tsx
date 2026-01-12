@@ -11,11 +11,10 @@ const policySections = [
     title: 'How We Use Your Information',
     content: `We may use the information we collect from you for various purposes, including:`,
     list: [
-      'Providing and maintaining our services',
-      'Personalizing your experience',
-      'Communicating with you about updates, promotions, and other relevant information',
-      'Analyzing usage patterns to improve our services',
-      'Complying with legal obligations',
+      'Providing and improving our products and services',
+      'Personalizing your experience on our website',
+      'Communicating with you about your account and any updates or promotions',
+      'Analyzing website traffic and user behavior to enhance our offerings',
     ],
   },
   {
@@ -31,16 +30,12 @@ const policySections = [
     content: `Our website may use cookies to enhance your browsing experience and collect information about how you interact with our site. You can adjust your browser settings to refuse cookies or alert you when cookies are being sent, but some features of the site may not function properly without cookies.`,
   },
   {
-    title: 'Your Rights',
-    content: `You have the right to access, update, or delete your personal information at any time. You may also opt out of receiving promotional communications from us by following the instructions provided in those communications. If you have any questions or concerns about your privacy rights, please contact us.`,
-  },
-  {
-    title: 'Changes to This Policy',
-    content: `We reserve the right to update or modify this Privacy Policy at any time without prior notice. We encourage you to review this policy periodically for any changes. Your continued use of our website after any modifications to this policy constitutes your acceptance of the revised terms.`,
+    title: 'Changes to this Privacy Policy',
+    content: `We reserve the right to update or change this Privacy Policy at any time. Any changes will be posted on this page, and the effective date will be updated accordingly. We encourage you to review this Privacy Policy periodically for any updates.`,
   },
   {
     title: 'Contact Us',
-    content: `If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at hello@starwise.com. We are committed to addressing your inquiries promptly and transparently.`,
+    content: `If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at hello@appit.com`,
   },
 ]
 
@@ -59,7 +54,7 @@ export default function PrivacyPolicyPage() {
           }}
         />
 
-        <div className="relative z-10 max-w-[1145px] w-full mx-auto px-4">
+        <div className="relative z-10 max-w-[627px] w-full mx-auto px-4">
           {/* Header */}
           <div className="flex flex-col items-center gap-4 mb-16">
             {/* Badge */}
@@ -67,7 +62,7 @@ export default function PrivacyPolicyPage() {
               className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
             >
               <Image
-                src="https://framerusercontent.com/images/2owNed1N0kOcx3TTvKXCEqP8V8.svg"
+                src="https://framerusercontent.com/images/1lnLBvFCOJ2ekMdIHm4QYlonY.svg"
                 alt="Privacy"
                 width={20}
                 height={20}
@@ -82,10 +77,10 @@ export default function PrivacyPolicyPage() {
 
             {/* Title */}
             <h1
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center"
-              style={{ fontFamily: 'Inter Tight, sans-serif' }}
+              className="text-5xl md:text-[58px] font-bold text-white text-center"
+              style={{ fontFamily: 'Inter Tight, sans-serif', lineHeight: '1.2' }}
             >
-              Your Privacy Matters
+              Our Privacy Policy
             </h1>
             <p
               className="text-appit-gray text-lg text-center max-w-2xl"
@@ -96,21 +91,23 @@ export default function PrivacyPolicyPage() {
           </div>
 
           {/* Last Updated */}
-          <div
-            className="flex items-center gap-3 p-4 border border-appit-border rounded-14 bg-appit-card mb-12"
-          >
-            <Image
-              src="https://framerusercontent.com/images/2owNed1N0kOcx3TTvKXCEqP8V8.svg"
-              alt="Calendar"
-              width={20}
-              height={20}
-            />
-            <span
-              className="text-appit-gray font-medium"
-              style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+          <div className="flex justify-center mb-12">
+            <div
+              className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
             >
-              Last Updated: October 24, 2024
-            </span>
+              <Image
+                src="https://framerusercontent.com/images/2owNed1N0kOcx3TTvKXCEqP8V8.svg"
+                alt="Calendar"
+                width={20}
+                height={20}
+              />
+              <span
+                className="text-appit-gray font-medium text-base"
+                style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+              >
+                Last Updated on October, 24, 2024
+              </span>
+            </div>
           </div>
 
           {/* Policy Content */}
@@ -119,19 +116,19 @@ export default function PrivacyPolicyPage() {
               <div key={index} className="space-y-6">
                 <div className="space-y-4">
                   <h3
-                    className="text-xl md:text-2xl font-semibold text-white"
-                    style={{ fontFamily: 'Inter, sans-serif' }}
+                    className="text-[28px] font-semibold text-white"
+                    style={{ fontFamily: 'Inter, sans-serif', lineHeight: '1.1' }}
                   >
                     {section.title}
                   </h3>
                   <p
-                    className="text-appit-gray leading-relaxed"
+                    className="text-lg text-appit-gray leading-relaxed"
                     style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                   >
                     {section.content}
                   </p>
                   {section.list && (
-                    <ol className="list-decimal list-inside space-y-2 text-appit-gray pl-4">
+                    <ol className="list-decimal list-inside space-y-2 text-lg text-appit-gray pl-4">
                       {section.list.map((item, idx) => (
                         <li
                           key={idx}

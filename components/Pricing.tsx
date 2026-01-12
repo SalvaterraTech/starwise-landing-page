@@ -72,7 +72,7 @@ export default function Pricing() {
           >
             <div style={{ width: '20px', height: '20px' }}>
               <img
-                src="https://framerusercontent.com/images/09WQXTvlhUU67CKWraCKw0Mcj0.svg"
+                src="/images/pricing-checkmark.svg"
                 alt="Icon"
                 style={{ display: 'block', width: '100%', height: '100%' }}
               />

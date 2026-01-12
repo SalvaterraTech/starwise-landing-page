@@ -4,40 +4,40 @@ import Image from 'next/image';
 
 const features = [
   {
-    icon: 'https://framerusercontent.com/images/HjUlVlaeVs5qamaZtWxKr7EoTNY.svg',
+    icon: '/images/discover-icon-1.svg',
     title: 'Custom Practice',
     description: 'Practice interview questions by role, difficulty, or create your own.',
-    image: 'https://framerusercontent.com/images/X0Vl8CpTeSTA8DdhJhhjv4ll8ZQ.png',
+    image: '/images/discover-screenshot-1.png',
   },
   {
-    icon: 'https://framerusercontent.com/images/4d3xrHbTj5Ms5diHGITxfxhNWE.svg',
+    icon: '/images/discover-icon-2.svg',
     title: 'Answer Structuring',
     description: 'Automatically structure answers using the STAR method.',
-    image: 'https://framerusercontent.com/images/SgBTdEbC2kWCbLFQfnCHZpn3Jw.png',
+    image: '/images/discover-screenshot-2.png',
   },
   {
-    icon: 'https://framerusercontent.com/images/kQr6giL6HveRQhi7tiDl3MKDuo.svg',
+    icon: '/images/feature-star-generation.svg',
     title: 'AI Improvements',
     description: 'Get AI-generated improvements based on your own experience.',
-    image: 'https://framerusercontent.com/images/n4njaiteTaVrq1KL1O5iAE2nI8.png',
+    image: '/images/discover-screenshot-3.png',
   },
   {
-    icon: 'https://framerusercontent.com/images/k172RybSC5AgmTnr7g2w13DUXM.svg',
+    icon: '/images/discover-icon-4.svg',
     title: 'Answer Insights',
     description: 'See what\'s missing and how to improve clarity and impact.',
-    image: 'https://framerusercontent.com/images/ccnTzZyQjyrmUv1jY98k7JQNj0.png',
+    image: '/images/discover-screenshot-4.png',
   },
   {
-    icon: 'https://framerusercontent.com/images/rnEb8tJo8lTbNSRlcrJXd3Hp4oY.svg',
+    icon: '/images/discover-icon-5.svg',
     title: 'Practice History',
     description: 'Review past answers and track how your responses evolve.',
-    image: 'https://framerusercontent.com/images/9oeJvwWkztzYPVxzLFz36e0oEc.png',
+    image: '/images/discover-screenshot-5.png',
   },
   {
-    icon: 'https://framerusercontent.com/images/oicYIMrKrcr3XUdyPDOIw5qHg.svg',
+    icon: '/images/discover-icon-6.svg',
     title: 'Interview Readiness',
     description: 'Prepare answers that are clear, structured, and interview-ready.',
-    image: 'https://framerusercontent.com/images/tGoB3F9x6jrFw9OxuiFq40o0HEg.png',
+    image: '/images/discover-screenshot-6.png',
   },
 ];
 
@@ -109,7 +109,7 @@ export default function DiscoverFeatures() {
               }}
             >
               <img
-                src="https://framerusercontent.com/images/kQr6giL6HveRQhi7tiDl3MKDuo.svg"
+                src="/images/feature-star-generation.svg"
                 alt=""
                 style={{
                   width: '100%',
@@ -241,7 +241,7 @@ export default function DiscoverFeatures() {
                   }}
                 >
                   <img
-                    src="https://framerusercontent.com/images/vSXeDeiftCFIZjNVBWtvTj0ibk.svg"
+                    src="/images/discover-badge-icon.svg"
                     alt=""
                     style={{
                       width: '100%',

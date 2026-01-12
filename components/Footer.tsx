@@ -13,17 +13,17 @@ const footerLinks = [
 const socialLinks = [
   {
     href: 'https://in.linkedin.com/',
-    icon: 'https://framerusercontent.com/images/e29n3ck4a9kvBPgl9YhDr9UrVe0.svg',
+    icon: '/images/social-twitter.svg',
     alt: 'LinkedIn'
   },
   {
     href: 'https://x.com',
-    icon: 'https://framerusercontent.com/images/1z5NCIcMnM2ERwz5QuTnWfDS1uc.svg',
+    icon: '/images/social-instagram.svg',
     alt: 'X.com'
   },
   {
     href: 'https://www.instagram.com/',
-    icon: 'https://framerusercontent.com/images/4I0uO5WpISDay2aPXHK8Kb9HAc.svg',
+    icon: '/images/social-youtube.svg',
     alt: 'Instagram'
   },
 ]
@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4">
             <Link href="/" className="relative w-[150px] h-[50px]">
               <Image
-                src="https://framerusercontent.com/images/yFWJIsf9PPgw31HHvEct97FMA3A.svg"
+                src="/images/footer-logo.svg"
                 alt="Logo"
                 fill
                 className="object-contain"
@@ -72,7 +72,7 @@ export default function Footer() {
             className="flex items-center gap-3 px-5 py-3 bg-appit-surface border border-appit-border-light rounded-12 hover:bg-appit-border-light transition-colors"
           >
             <Image
-              src="https://framerusercontent.com/images/dzy2fU5uUTG4Qc1EQfhDcDYbU4.svg"
+              src="/images/email-icon.svg"
               alt="Email"
               width={24}
               height={24}
