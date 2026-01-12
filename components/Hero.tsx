@@ -220,7 +220,7 @@ export default function Hero() {
             >
               {/* Phone frame (bezel) */}
               <Image
-                src="https://framerusercontent.com/images/bbJeLns4NqVr3NOyuD4LsO6Qz6E.png"
+                src="/images/iphone-left-frame.png"
                 alt=""
                 fill
                 className="object-cover"
@@ -241,7 +241,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="https://framerusercontent.com/images/VnwgieSrwPtwTHEEP88vxVrcfBk.jpg"
+                  src="/images/iphone-left-content.jpg"
                   alt="Thread"
                   fill
                   className="object-cover object-top"
@@ -276,7 +276,7 @@ export default function Hero() {
             >
               {/* Phone frame (bezel) */}
               <Image
-                src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png"
+                src="/images/iphone-center-frame.png"
                 alt="Mobile Frame"
                 fill
                 className="object-cover object-top"
@@ -294,7 +294,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="https://framerusercontent.com/images/8xn8DXbIdPvUwm8vHUmFG9nPM.jpg"
+                  src="/images/iphone-center-content.jpg"
                   alt="Appit App"
                   fill
                   className="object-cover object-top"
@@ -338,7 +338,7 @@ export default function Hero() {
             >
               {/* Phone frame (bezel) */}
               <Image
-                src="https://framerusercontent.com/images/DNA4hTd6dhMchnMyWmFAPzRAB7M.png"
+                src="/images/iphone-right-frame.png"
                 alt=""
                 fill
                 className="object-cover"
@@ -359,7 +359,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="https://framerusercontent.com/images/ZIVIj5UHPVrXjpXkxa1NJ73SGM0.jpg"
+                  src="/images/iphone-right-content.jpg"
                   alt="Search"
                   fill
                   className="object-cover object-top"
