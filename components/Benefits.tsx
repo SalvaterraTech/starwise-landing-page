@@ -2,22 +2,22 @@ import Image from 'next/image';
 
 const benefits = [
   {
-    icon: 'https://framerusercontent.com/images/AjjAxBc5v6SZHOkJzG2bwrSMk.svg',
+    icon: '/images/benefit-clear-answers.svg',
     title: 'Clear answers',
     description: 'Turn your experience into structured STAR answers.',
   },
   {
-    icon: 'https://framerusercontent.com/images/rxSlFR0RyaC3WCayigHX4RPQZs.svg',
+    icon: '/images/benefit-interview-confidence.svg',
     title: 'Interview confidence',
     description: 'Practice ahead and know exactly what to say.',
   },
   {
-    icon: 'https://framerusercontent.com/images/pvxqwt0ZG86WIRPPnHxDCgV7rkQ.svg',
+    icon: '/images/benefit-ai-improvements.svg',
     title: 'AI improvements',
     description: 'Get instant feedback and AI-generated answer upgrades.',
   },
   {
-    icon: 'https://framerusercontent.com/images/u8fjSIAgWQzhagulXkIoN7PzI.svg',
+    icon: '/images/benefit-smarter-practice.svg',
     title: 'Smarter practice',
     description: 'Improve every answer with each practice session.',
   },
@@ -45,7 +45,7 @@ export default function Benefits() {
           >
             <div className="w-6 h-6 flex items-center justify-center">
               <img
-                src="https://framerusercontent.com/images/o8k4hpBGZSqpjSgLI7W0kJLJuw4.svg"
+                src="/images/icon-star-badge.svg"
                 alt=""
                 width={24}
                 height={24}
@@ -237,7 +237,7 @@ export default function Benefits() {
                   }}
                 >
                   <Image
-                    src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png"
+                    src="/images/iphone-center-frame.png"
                     alt="Mobile App Preview"
                     width={546}
                     height={1080}
