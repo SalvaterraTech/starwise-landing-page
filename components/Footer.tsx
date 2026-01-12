@@ -108,13 +108,13 @@ export default function Footer() {
         <div className="border-t border-appit-border pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Template Credit */}
           <Link
-            href="https://x.com/Praha37v"
+            href="https://www.salvaterratech.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
             style={{ fontFamily: 'Instrument Sans, sans-serif' }}
           >
-            Template by Praha
+            Salvaterra Tech
           </Link>
 
           {/* Social Links */}
