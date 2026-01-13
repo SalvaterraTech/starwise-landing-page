@@ -237,7 +237,7 @@ export default function Benefits() {
                   }}
                 >
                   <Image
-                    src="/images/iphone-center-frame.png"
+                    src="/images/analysis_benefits.png"
                     alt="Mobile App Preview"
                     width={546}
                     height={1080}
