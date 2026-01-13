@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
           <div className="flex flex-col items-center gap-5 mb-[60px]">
             {/* Badge */}
             <div
-              className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-appit-surface/50"
+              className="inline-flex items-center gap-2 px-3 py-2 border border-appit-border rounded-full bg-[#1A1A1A]"
             >
               <Image
                 src="/assets/privacy/shield-lock.svg"
