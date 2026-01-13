@@ -194,30 +194,12 @@ export default function Download() {
                         width: '252px',
                         height: '498px'
                     }}>
-                        {/* Frame Layer (Background with white borders) */}
                         <Image
-                            src="/images/iphone-frame-sample.png"
-                            alt="iPhone Frame"
+                            src="/images/answer_view_download_section.png"
+                            alt="Answer View"
                             fill
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                         />
-                        {/* Content Layer (Foreground with insets) */}
-                        <div style={{
-                            position: 'absolute',
-                            top: '10px',
-                            left: '14px',
-                            width: '224px',
-                            height: '478px',
-                            borderRadius: '32px',
-                            overflow: 'hidden'
-                        }}>
-                            <Image
-                                src="/images/iphone-thread-complete.jpg"
-                                alt="Thread Screen"
-                                fill
-                                style={{ objectFit: 'cover' }}
-                            />
-                        </div>
                     </div>
 
                     {/* Center iPhone (Login) - 2 layers with insets */}
@@ -229,30 +211,12 @@ export default function Download() {
                         width: '322px',
                         height: '637px'
                     }}>
-                        {/* Frame Layer (Background with white borders) */}
                         <Image
-                            src="/images/iphone-frame-sample.png"
-                            alt="iPhone Frame"
+                            src="/images/improved_answer_download_section.png"
+                            alt="Improved Answer"
                             fill
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                         />
-                        {/* Content Layer (Foreground with insets) */}
-                        <div style={{
-                            position: 'absolute',
-                            top: '10px',
-                            left: '14px',
-                            width: '294px',
-                            height: '617px',
-                            borderRadius: '32px',
-                            overflow: 'hidden'
-                        }}>
-                            <Image
-                                src="/images/iphone-login-complete.jpg"
-                                alt="Login Screen"
-                                fill
-                                style={{ objectFit: 'cover' }}
-                            />
-                        </div>
                     </div>
 
                     {/* Right iPhone (Search) - 2 layers with insets */}
@@ -263,30 +227,12 @@ export default function Download() {
                         width: '252px',
                         height: '498px'
                     }}>
-                        {/* Frame Layer (Background with white borders) */}
                         <Image
-                            src="/images/iphone-frame-sample.png"
-                            alt="iPhone Frame"
+                            src="/images/answer_list_download_section.png"
+                            alt="Answer List"
                             fill
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                         />
-                        {/* Content Layer (Foreground with insets) */}
-                        <div style={{
-                            position: 'absolute',
-                            top: '10px',
-                            left: '14px',
-                            width: '224px',
-                            height: '478px',
-                            borderRadius: '32px',
-                            overflow: 'hidden'
-                        }}>
-                            <Image
-                                src="/images/iphone-search-complete.jpg"
-                                alt="Search Screen"
-                                fill
-                                style={{ objectFit: 'cover' }}
-                            />
-                        </div>
                     </div>
 
                     {/* Gradient Fade Overlay at Bottom */}
