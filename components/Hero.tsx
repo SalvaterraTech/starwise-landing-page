@@ -76,7 +76,7 @@ export default function Hero() {
               whiteSpace: 'pre'
             }}
           >
-            Trusted by 3+ million users
+            Trusted by job seekers worldwide
           </span>
         </motion.div>
 

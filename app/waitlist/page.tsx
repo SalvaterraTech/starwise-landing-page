@@ -69,7 +69,7 @@ export default function WaitlistPage() {
               className="text-white text-[16px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              Join 3 million users on waitlist
+              Trusted by job seekers worldwide
             </span>
           </div>
 
