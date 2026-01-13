@@ -226,27 +226,7 @@ export default function Hero() {
                 className="object-cover"
                 style={{ zIndex: 2 }}
               />
-              {/* Screen content */}
-              <div
-                className="absolute overflow-hidden"
-                style={{
-                  top: '15px',
-                  left: '5px',
-                  right: '23px',
-                  bottom: '0',
-                  borderTopLeftRadius: '38px',
-                  borderTopRightRadius: '41px',
-                  transform: 'rotateY(2deg) skewY(-11deg)',
-                  zIndex: 1
-                }}
-              >
-                <Image
-                  src="/images/iphone-left-content.jpg"
-                  alt="Thread"
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
+
             </div>
             {/* Bottom gradients */}
             <div
@@ -282,24 +262,7 @@ export default function Hero() {
                 className="object-cover object-top"
                 style={{ zIndex: 2 }}
               />
-              {/* Screen content */}
-              <div
-                className="absolute overflow-hidden"
-                style={{
-                  top: '10px',
-                  left: '14px',
-                  right: '14px',
-                  bottom: '10px',
-                  zIndex: 1
-                }}
-              >
-                <Image
-                  src="/images/iphone-center-content.jpg"
-                  alt="Appit App"
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
+
               {/* Bottom gradients */}
               <div
                 className="absolute bottom-0 left-0 right-0"
@@ -344,27 +307,7 @@ export default function Hero() {
                 className="object-cover"
                 style={{ zIndex: 2 }}
               />
-              {/* Screen content */}
-              <div
-                className="absolute overflow-hidden"
-                style={{
-                  top: '8px',
-                  left: '20px',
-                  right: '4px',
-                  bottom: '0',
-                  borderTopLeftRadius: '37px',
-                  borderTopRightRadius: '34px',
-                  transform: 'rotateY(-2deg) skewY(11deg)',
-                  zIndex: 1
-                }}
-              >
-                <Image
-                  src="/images/iphone-right-content.jpg"
-                  alt="Search"
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
+
             </div>
             {/* Bottom gradients */}
             <div
