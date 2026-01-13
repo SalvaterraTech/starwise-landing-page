@@ -19,19 +19,27 @@ export default function Navbar() {
     <>
       {/* Desktop Navbar - Full width bar */}
       <nav
-        className="fixed top-0 left-0 right-0 z-50 hidden lg:flex items-center justify-center px-[60px] py-6 border-b border-appit-border backdrop-blur-md"
+        className="fixed top-0 left-0 right-0 z-50 hidden lg:flex items-center justify-center px-[60px] py-4 border-b border-appit-border backdrop-blur-md"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
         <div className="flex items-center justify-between w-full max-w-[1320px]">
           {/* Logo */}
-          <Link href="/#hero" className="relative w-[132px] h-[44px] flex-shrink-0">
-            <Image
-              src="/images/logo.svg"
-              alt="Logo"
-              fill
-              className="object-contain"
-              priority
-            />
+          <Link href="/#hero" className="flex items-center gap-3 flex-shrink-0">
+            <div className="relative w-[62px] h-[62px]">
+              <Image
+                src="/images/starwise_logo.png"
+                alt="Starwise Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <span
+              className="text-white text-[24px] font-bold"
+              style={{ fontFamily: 'Inter Tight, sans-serif' }}
+            >
+              Starwise
+            </span>
           </Link>
 
           {/* Nav Links - Center */}
@@ -68,18 +76,26 @@ export default function Navbar() {
 
       {/* Tablet Navbar */}
       <nav
-        className="fixed top-0 left-0 right-0 z-50 hidden md:flex lg:hidden items-center justify-between px-[30px] py-6 border-b border-appit-border backdrop-blur-md"
+        className="fixed top-0 left-0 right-0 z-50 hidden md:flex lg:hidden items-center justify-between px-[30px] py-4 border-b border-appit-border backdrop-blur-md"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
         {/* Logo */}
-        <Link href="/#hero" className="relative w-[132px] h-[44px]">
-          <Image
-            src="/images/logo.svg"
-            alt="Logo"
-            fill
-            className="object-contain"
-            priority
-          />
+        <Link href="/#hero" className="flex items-center gap-3">
+          <div className="relative w-[42px] h-[42px]">
+            <Image
+              src="/images/starwise_logo.png"
+              alt="Starwise Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <span
+            className="text-white text-[22px] font-bold"
+            style={{ fontFamily: 'Inter Tight, sans-serif' }}
+          >
+            Starwise
+          </span>
         </Link>
 
         {/* Menu Icon */}
@@ -103,14 +119,22 @@ export default function Navbar() {
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
         {/* Logo */}
-        <Link href="/#hero" className="relative w-[132px] h-[44px]">
-          <Image
-            src="/images/logo.svg"
-            alt="Logo"
-            fill
-            className="object-contain"
-            priority
-          />
+        <Link href="/#hero" className="flex items-center gap-3">
+          <div className="relative w-[42px] h-[42px]">
+            <Image
+              src="/images/starwise_logo.png"
+              alt="Starwise Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <span
+            className="text-white text-[22px] font-bold"
+            style={{ fontFamily: 'Inter Tight, sans-serif' }}
+          >
+            Starwise
+          </span>
         </Link>
 
         {/* Menu Icon */}

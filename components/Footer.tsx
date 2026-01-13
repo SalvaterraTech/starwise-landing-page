@@ -49,13 +49,21 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-[30px] mb-[88px]">
           {/* Logo and Tagline */}
           <div className="flex flex-col items-center gap-4">
-            <Link href="/" className="relative w-[150px] h-[50px]">
-              <Image
-                src="/images/footer-logo.svg"
-                alt="Logo"
-                fill
-                className="object-contain"
-              />
+            <Link href="/" className="flex items-center gap-3">
+              <div className="relative w-[72px] h-[72px]">
+                <Image
+                  src="/images/starwise_logo.png"
+                  alt="Starwise Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span
+                className="text-white text-[28px] font-bold"
+                style={{ fontFamily: 'Inter Tight, sans-serif' }}
+              >
+                Starwise
+              </span>
             </Link>
             <div
               className="text-center text-xl font-semibold"
