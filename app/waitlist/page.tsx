@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import FAQ from '@/components/FAQ'
 
 export default function WaitlistPage() {
   const [email, setEmail] = useState('')
@@ -18,197 +19,148 @@ export default function WaitlistPage() {
   }
 
   return (
-    <main className="min-h-screen bg-appit-bg">
+    <main className="min-h-screen bg-black">
       <Navbar />
 
-      {/* Waitlist Section */}
-      <section className="relative pt-44 pb-32 min-h-screen flex flex-col items-center">
-        {/* Background gradient */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background: 'radial-gradient(ellipse 60% 40% at 50% 30%, rgba(50, 191, 93, 0.08) 0%, transparent 60%)'
-          }}
-        />
+      {/* Hero Section */}
+      <section className="relative pt-[180px] pb-32 flex flex-col items-center">
 
-        <div className="relative z-10 max-w-[1145px] w-full mx-auto px-4 flex flex-col items-center gap-16 md:gap-24 lg:gap-32">
-          {/* Main Content */}
-          <div className="flex flex-col items-center gap-12 w-full max-w-[527px]">
-            {/* Badge */}
-            <div
-              className="inline-flex items-center gap-2 px-2 py-2 border border-appit-border rounded-full bg-appit-surface/50"
-            >
-              {/* Avatar stack */}
-              <div className="flex -space-x-2.5">
-                <div className="w-7 h-7 rounded-full border-2 border-appit-surface overflow-hidden">
-                  <Image
-                    src="/assets/waitlist/avatar-1.png"
-                    alt="User"
-                    width={28}
-                    height={28}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="w-7 h-7 rounded-full border-2 border-appit-surface overflow-hidden">
-                  <Image
-                    src="/assets/waitlist/avatar-2.png"
-                    alt="User"
-                    width={28}
-                    height={28}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="w-7 h-7 rounded-full border-2 border-appit-surface overflow-hidden">
-                  <Image
-                    src="/assets/waitlist/avatar-3.png"
-                    alt="User"
-                    width={28}
-                    height={28}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <span
-                className="text-white text-sm font-medium pr-2"
-                style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-              >
-                Join 3 million users on waitlist
-              </span>
-            </div>
 
-            {/* Heading & Description */}
-            <div className="text-center space-y-4">
-              <h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
-                style={{ fontFamily: 'Inter Tight, sans-serif' }}
-              >
-                Get early access
-              </h1>
-              <p
-                className="text-appit-gray text-lg md:text-xl"
-                style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-              >
-                Be amongst the first to experience Wait and launch a viral waitlist. Sign up to be notified when we launch!
-              </p>
-            </div>
-
-            {/* Form */}
-            <div className="w-full max-w-[527px]">
-              {isSubmitted ? (
-                <div className="text-center py-8">
-                  <div className="text-appit-accent text-xl font-semibold mb-2">
-                    You&apos;re on the list!
-                  </div>
-                  <p className="text-appit-gray">
-                    We&apos;ll notify you when Appit launches.
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-3">
-                  <div className="flex-1">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      required
-                      className="w-full px-6 py-4 bg-appit-card border border-appit-surface rounded-10 text-white placeholder-appit-gray/60 focus:outline-none focus:border-appit-gray/60 transition-colors text-center md:text-left"
-                      style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="btn-primary py-4 px-6 font-semibold"
-                    style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-                  >
-                    Join Waitlist
-                  </button>
-                </form>
-              )}
-
-              {/* Privacy note */}
-              <div className="flex items-center justify-center gap-1 mt-6">
+        <div className="relative z-10 max-w-[1200px] w-full mx-auto px-4 flex flex-col items-center">
+          {/* Badge */}
+          <div
+            className="inline-flex items-center gap-3 mb-[40px] pl-1 pr-4 py-1 rounded-full"
+            style={{
+              backgroundColor: '#1A1A1A',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+            }}
+          >
+            {/* Avatar stack */}
+            <div className="flex -space-x-2">
+              <div className="w-[28px] h-[28px] rounded-full overflow-hidden border-2 border-[#1A1A1A]">
                 <Image
-                  src="/assets/waitlist/starwise-logo.svg"
-                  alt="Secure"
-                  width={20}
-                  height={20}
+                  src="/assets/waitlist/avatar-1.png"
+                  alt="User"
+                  width={28}
+                  height={28}
+                  className="w-full h-full object-cover"
                 />
-                <span
-                  className="text-appit-gray text-sm"
-                  style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-                >
-                  We respect your privacy
-                </span>
+              </div>
+              <div className="w-[28px] h-[28px] rounded-full overflow-hidden border-2 border-[#1A1A1A]">
+                <Image
+                  src="/assets/waitlist/avatar-2.png"
+                  alt="User"
+                  width={28}
+                  height={28}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-[28px] h-[28px] rounded-full overflow-hidden border-2 border-[#1A1A1A]">
+                <Image
+                  src="/assets/waitlist/avatar-3.png"
+                  alt="User"
+                  width={28}
+                  height={28}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
+            <span
+              className="text-white text-[16px] font-medium"
+              style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+            >
+              Join 3 million users on waitlist
+            </span>
           </div>
 
-          {/* FAQ Section */}
-          <div className="w-full max-w-[795px] flex flex-col items-end gap-10 md:gap-16">
-            {/* Section Header */}
-            <div className="w-full">
-              <div
-                className="inline-flex items-center gap-2 px-4 py-2 mb-6 border border-appit-border rounded-full bg-appit-surface/50"
-              >
-                <Image
-                  src="/assets/waitlist/check-circle.svg"
-                  alt="Icon"
-                  width={20}
-                  height={20}
-                />
-                <span
-                  className="text-sm text-white font-medium"
-                  style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-                >
-                  Connect with Appit Social
-                </span>
-              </div>
-              <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
-                style={{ fontFamily: 'Inter Tight, sans-serif' }}
-              >
-                We&apos;d Love to Hear From You
-              </h2>
-              <p
-                className="text-appit-gray text-lg"
-                style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-              >
-                Have a question or want to say hello? Feel free to reach out to us.
-              </p>
-            </div>
+          {/* Heading */}
+          <h1
+            className="text-white text-center font-bold mb-[40px] max-w-[900px]"
+            style={{
+              fontFamily: 'Inter Tight, sans-serif',
+              fontSize: '64px',
+              lineHeight: '1.2'
+            }}
+          >
+            Get early access
+          </h1>
 
-            {/* Email Button */}
-            <Link
-              href="mailto:hello@appit.com"
-              className="inline-flex items-center gap-2 px-5 py-4 bg-appit-card border border-appit-border rounded-12 hover:border-appit-gray/40 transition-colors"
-            >
+          {/* Description */}
+          <p
+            className="text-center text-[20px] font-medium mb-[40px] max-w-[645px]"
+            style={{
+              fontFamily: 'Instrument Sans, sans-serif',
+              color: '#94969D',
+              lineHeight: '1.5'
+            }}
+          >
+            Be amongst the first to experience Wait and launch a viral waitlist. Sign up to be notified when we launch!
+          </p>
+
+          {/* Form */}
+          <div className="w-full max-w-[540px]">
+            {isSubmitted ? (
+              <div className="text-center py-8">
+                <div className="text-[#32BF5D] text-xl font-semibold mb-2">
+                  You&apos;re on the list!
+                </div>
+                <p className="text-[#94969D]">
+                  We&apos;ll notify you when Appit launches.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+                <div className="flex-1">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    required
+                    className="w-full h-[56px] px-6 bg-[#0E0E10] border border-[#1D1D20] rounded-[10px] text-white placeholder-[#62646C] focus:outline-none focus:border-[#62646C] transition-colors"
+                    style={{
+                      fontFamily: 'Instrument Sans, sans-serif',
+                      fontSize: '17px'
+                    }}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="h-[56px] px-8 bg-white text-black font-bold rounded-[10px] hover:bg-gray-100 transition-colors whitespace-nowrap"
+                  style={{
+                    fontFamily: 'Inter Tight, sans-serif',
+                    fontSize: '17px'
+                  }}
+                >
+                  Join Waitlist
+                </button>
+              </form>
+            )}
+
+            {/* Privacy note */}
+            <div className="flex items-center justify-center gap-2 mt-[24px]">
               <Image
-                src="/assets/waitlist/arrow-right.svg"
-                alt="Email"
-                width={24}
-                height={24}
+                src="/assets/waitlist/info-icon.svg"
+                alt="Privacy"
+                width={20}
+                height={20}
               />
               <span
-                className="text-appit-gray font-medium"
-                style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+                className="text-[18px] font-medium"
+                style={{
+                  fontFamily: 'Instrument Sans, sans-serif',
+                  color: '#797B85'
+                }}
               >
-                hello@appit.com
+                No Spam, Only Genuine Updates
               </span>
-            </Link>
-
-            {/* Tagline */}
-            <div className="text-center w-full">
-              <p
-                className="text-xl font-semibold text-white"
-                style={{ fontFamily: 'Inter Tight, sans-serif' }}
-              >
-                with Appit Social
-              </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
 
       <Footer />
     </main>
