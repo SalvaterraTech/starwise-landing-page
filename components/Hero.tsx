@@ -256,7 +256,7 @@ export default function Hero() {
             >
               {/* Phone frame (bezel) */}
               <Image
-                src="/images/iphone-center-frame.png"
+                src="/images/home_page_hero.png"
                 alt="Mobile Frame"
                 fill
                 className="object-cover object-top"
