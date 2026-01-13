@@ -340,7 +340,7 @@ export default function AdvancedCapabilities() {
                 }}
               >
                 <Image
-                  src="/images/iphone-center-frame.png"
+                  src="/images/answer_detail_prepare.png"
                   alt="Mobile App"
                   width={546}
                   height={1080}
@@ -355,49 +355,7 @@ export default function AdvancedCapabilities() {
                 />
               </div>
 
-              {/* Inner phone container for screen content */}
-              <div
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                }}
-              >
-                <div
-                  style={{
-                    position: 'relative',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                >
-                  {/* Screen content with border radius and inset */}
-                  <div
-                    style={{
-                      position: 'absolute',
-                      top: '10px',
-                      right: '14px',
-                      bottom: '10px',
-                      left: '14px',
-                      borderRadius: '32px',
-                      overflow: 'hidden',
-                    }}
-                  >
-                    <Image
-                      src="/images/iphone-center-content.jpg"
-                      alt="Screen UI"
-                      width={780}
-                      height={1688}
-                      style={{
-                        display: 'block',
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        objectPosition: 'center top',
-                      }}
-                      unoptimized
-                    />
-                  </div>
-                </div>
-              </div>
+
 
               {/* Bottom gradient overlay 1 */}
               <div
