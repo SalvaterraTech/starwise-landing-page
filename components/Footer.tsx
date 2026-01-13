@@ -105,20 +105,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-appit-border pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="border-t border-appit-border pt-8 flex flex-col md:grid md:grid-cols-3 items-center gap-6">
           {/* Template Credit */}
           <Link
             href="https://www.salvaterratech.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
+            className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium justify-self-start"
             style={{ fontFamily: 'Instrument Sans, sans-serif' }}
           >
             Salvaterra Tech
           </Link>
 
           {/* Social Links */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 justify-self-center">
             {socialLinks.map((social) => (
               <Link
                 key={social.href}
@@ -137,14 +137,24 @@ export default function Footer() {
             ))}
           </div>
 
-          {/* Privacy Policy */}
-          <Link
-            href="/privacy-policy"
-            className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
-            style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-          >
-            Privacy Policy
-          </Link>
+          {/* Privacy Policy & Terms */}
+          <div className="flex items-center gap-2 justify-self-end">
+            <Link
+              href="/privacy-policy"
+              className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
+              style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+            >
+              Privacy Policy
+            </Link>
+            <div className="w-1 h-1 rounded-full bg-appit-gray-dark" />
+            <Link
+              href="/terms-of-use"
+              className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
+              style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+            >
+              Terms of Use
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
