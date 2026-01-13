@@ -4,38 +4,94 @@ import Footer from '@/components/Footer'
 
 const policySections = [
   {
-    title: 'Information We Collect',
-    content: `We may collect personal information from you when you visit our website, register for an account, or interact with our services. This information may include your name, email address, contact details, and any other information you voluntarily provide to us.`,
+    title: 'Information We Do Not Collect or Retain',
+    content: `Starwise does not collect, store, or retain personal user data beyond the transient processing strictly necessary to deliver the requested service.
+
+This includes, but is not limited to:`,
+    list: [
+      'Names, email addresses, or persistent identifiers',
+      'Interview answers written by users',
+      'Audio recordings created within the App',
+      'Custom interview questions',
+      'Career, employment, or résumé-related information',
+    ],
+    footer: `User-generated content is processed only momentarily to fulfill the App’s functionality and is not retained after processing is completed.`
   },
   {
-    title: 'How We Use Your Information',
-    content: `We may use the information we collect from you for various purposes, including:`,
+    title: 'Temporary and Non-Identifiable Processing',
+    content: `When you submit text or audio responses in the App:`,
     list: [
-      'Providing and improving our products and services',
-      'Personalizing your experience on our website',
-      'Communicating with you about your account and any updates or promotions',
-      'Analyzing website traffic and user behavior to enhance our offerings',
+      'The content is processed transiently and without being associated with user identities or persistent identifiers',
+      'No user accounts or profiles are created',
+      'The data is used exclusively in real time to:',
+      'Structure responses using the STAR method',
+      'Generate interview feedback and suggested improvements',
+      'Simulate interview-style answers',
     ],
+    footer: `Once the requested processing is completed, the data is discarded and not stored by Starwise.`
+  },
+  {
+    title: 'Use of Artificial Intelligence Models',
+    content: `Starwise relies on third-party, cloud-based artificial intelligence services to provide its core features.
+
+We explicitly state that:`,
+    list: [
+      'User inputs are transmitted without personal identifiers',
+      'Submitted content is not used to train, fine-tune, or improve any AI models',
+      'Data is processed solely to generate the requested output',
+      'AI service providers act exclusively as data processors under contractual obligations and may not use the data for independent purposes',
+    ]
+  },
+  {
+    title: 'Data Sharing',
+    content: `Starwise does not sell, rent, or share personal data.
+
+Temporary, non-identifiable inputs may be processed by trusted infrastructure, cloud, and AI service providers strictly to enable App functionality and for no other purpose.`
+  },
+  {
+    title: 'Analytics and Diagnostics',
+    content: `To ensure app stability and performance, Starwise may collect limited, non-personal, aggregated technical information, such as:`,
+    list: [
+      'Crash reports',
+      'Performance and reliability metrics'
+    ],
+    footer: `This information does not identify users and is used solely to improve the quality and reliability of the App.`
   },
   {
     title: 'Data Security',
-    content: `We take data security seriously and employ industry-standard measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.`,
+    content: `Although Starwise does not retain personal user data, we apply industry-standard security practices to protect all processing activities, including:`,
+    list: [
+      'Encrypted communication channels',
+      'Secure transmission of data',
+      'Restricted access to processing systems'
+    ]
   },
   {
-    title: 'Third-Party Disclosure',
-    content: `We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as required by law or as necessary to provide our services. We may share your information with trusted third-party service providers who assist us in operating our website, conducting our business, or servicing you, provided that they agree to keep your information confidential.`,
+    title: 'Legal Basis and User Rights (GDPR & LGPD)',
+    content: `The legal basis for any transient data processing under applicable data protection laws, including GDPR and LGPD, is the performance of a service explicitly requested by the user.
+
+Because Starwise does not store personal data, most data subject rights—such as access, correction, or deletion—are inherently satisfied.
+
+Users may still:`,
+    list: [
+      'Request clarification about how data is handled',
+      'Withdraw consent at any time by discontinuing use of the App',
+      'Contact us with privacy-related questions or concerns'
+    ]
   },
   {
-    title: 'Cookies',
-    content: `Our website may use cookies to enhance your browsing experience and collect information about how you interact with our site. You can adjust your browser settings to refuse cookies or alert you when cookies are being sent, but some features of the site may not function properly without cookies.`,
+    title: 'Children’s Privacy',
+    content: `Starwise is not intended for use by individuals under the age of 13, or the minimum age required by applicable local law. We do not knowingly process data from children.`
   },
   {
-    title: 'Changes to this Privacy Policy',
-    content: `We reserve the right to update or change this Privacy Policy at any time. Any changes will be posted on this page, and the effective date will be updated accordingly. We encourage you to review this Privacy Policy periodically for any updates.`,
+    title: 'Changes to This Privacy Policy',
+    content: `We may update this Privacy Policy from time to time. Any changes will be reflected by updating the “Last updated” date above. Continued use of the App after changes become effective constitutes acceptance of the revised policy.`
   },
   {
-    title: 'Contact Us',
-    content: `If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at hello@appit.com`,
+    title: 'Contact Information',
+    content: `If you have any questions or concerns about this Privacy Policy, please contact us at:
+
+Email: privacy@starwise.app`
   },
 ]
 
@@ -86,7 +142,7 @@ export default function PrivacyPolicyPage() {
               className="text-appit-gray text-lg text-center max-w-2xl"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              Our Privacy Policy outlines how we collect, use, and protect your personal information. Your privacy and security are our priorities.
+              Starwise is designed with privacy at its core. We do not store personal data, and all processing is done anonymously and securely.
             </p>
           </div>
 
@@ -105,7 +161,7 @@ export default function PrivacyPolicyPage() {
                 className="text-appit-gray font-medium text-base"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
-                Last Updated on October, 24, 2024
+                Last Updated on January 12, 2026
               </span>
             </div>
           </div>
@@ -123,13 +179,13 @@ export default function PrivacyPolicyPage() {
                       {section.title}
                     </h3>
                     <p
-                      className="text-lg text-appit-gray leading-relaxed"
+                      className="text-lg text-appit-gray leading-relaxed whitespace-pre-wrap"
                       style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                     >
                       {section.content}
                     </p>
                     {section.list && (
-                      <ol className="list-decimal list-inside space-y-2 text-lg text-appit-gray pl-4">
+                      <ul className="list-disc list-outside space-y-2 text-lg text-appit-gray pl-5">
                         {section.list.map((item, idx) => (
                           <li
                             key={idx}
@@ -138,7 +194,15 @@ export default function PrivacyPolicyPage() {
                             {item}
                           </li>
                         ))}
-                      </ol>
+                      </ul>
+                    )}
+                    {section.footer && (
+                      <p
+                        className="text-lg text-appit-gray leading-relaxed mt-4"
+                        style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+                      >
+                        {section.footer}
+                      </p>
                     )}
                   </div>
                 </div>
