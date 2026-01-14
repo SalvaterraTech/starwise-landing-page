@@ -135,12 +135,12 @@ export default function Stats() {
               className="object-cover"
             />
             {/* Inner logo */}
-            <div className="relative" style={{ width: '60px', height: '60px', zIndex: 1 }}>
+            <div className="relative" style={{ width: '75px', height: '75px', zIndex: 1 }}>
               <Image
-                src="/images/stats-icon-2.svg"
-                alt="Logo"
+                src="/images/starwise_logo.png"
+                alt="Starwise Logo"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
