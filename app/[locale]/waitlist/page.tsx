@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
@@ -8,6 +9,7 @@ import Footer from '@/components/Footer'
 import FAQ from '@/components/FAQ'
 
 export default function WaitlistPage() {
+  const t = useTranslations('Waitlist')
   const [email, setEmail] = useState('')
   const [isSubmitted, setIsSubmitted] = useState(false)
 
@@ -69,7 +71,7 @@ export default function WaitlistPage() {
               className="text-white text-[16px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              Trusted by job seekers worldwide
+              {t('badge')}
             </span>
           </div>
 
@@ -82,7 +84,7 @@ export default function WaitlistPage() {
               lineHeight: '1.2'
             }}
           >
-            Get early access
+            {t('title')}
           </h1>
 
           {/* Description */}
@@ -94,7 +96,7 @@ export default function WaitlistPage() {
               lineHeight: '1.5'
             }}
           >
-            Be amongst the first to experience Wait and launch a viral waitlist. Sign up to be notified when we launch!
+            {t('subtitle')}
           </p>
 
           {/* Form */}
@@ -102,10 +104,10 @@ export default function WaitlistPage() {
             {isSubmitted ? (
               <div className="text-center py-8">
                 <div className="text-[#32BF5D] text-xl font-semibold mb-2">
-                  You&apos;re on the list!
+                  {t('successTitle')}
                 </div>
                 <p className="text-[#94969D]">
-                  We&apos;ll notify you when Appit launches.
+                  {t('successSubtitle')}
                 </p>
               </div>
             ) : (
@@ -115,7 +117,7 @@ export default function WaitlistPage() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
+                    placeholder={t('emailPlaceholder')}
                     required
                     className="w-full h-[56px] px-6 bg-[#0E0E10] border border-[#1D1D20] rounded-[10px] text-white placeholder-[#62646C] focus:outline-none focus:border-[#62646C] transition-colors"
                     style={{
@@ -132,7 +134,7 @@ export default function WaitlistPage() {
                     fontSize: '17px'
                   }}
                 >
-                  Join Waitlist
+                  {t('cta')}
                 </button>
               </form>
             )}
@@ -152,7 +154,7 @@ export default function WaitlistPage() {
                   color: '#797B85'
                 }}
               >
-                No Spam, Only Genuine Updates
+                {t('privacy')}
               </span>
             </div>
           </div>

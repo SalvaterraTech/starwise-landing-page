@@ -1,19 +1,21 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
+import { Link } from '@/navigation'
 import Image from 'next/image'
-
-const navLinks = [
-  { href: '/#benefits', label: 'Benefits' },
-  { href: '/#features', label: 'Features' },
-  { href: '/#pricing', label: 'Pricing' },
-  { href: '/#testimonial', label: 'Testimonials' },
-  { href: '/#faq', label: "FAQ's" },
-]
+import { useTranslations } from 'next-intl'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const t = useTranslations('Navbar')
+
+  const navLinks = [
+    { href: '/#benefits', label: t('benefits') },
+    { href: '/#features', label: t('features') },
+    { href: '/#pricing', label: t('pricing') },
+    { href: '/#testimonial', label: t('testimonials') },
+    { href: '/#faq', label: t('faqs') },
+  ]
 
   return (
     <>
@@ -69,7 +71,7 @@ export default function Navbar() {
             className="px-5 py-4 bg-white text-black font-semibold rounded-12 text-[17px] hover:opacity-90 transition-opacity flex-shrink-0"
             style={{ fontFamily: 'Instrument Sans, sans-serif' }}
           >
-            Join Waitlist
+            {t('joinWaitlist')}
           </Link>
         </div>
       </nav>
@@ -179,7 +181,7 @@ export default function Navbar() {
               className="w-full text-center mt-4 py-4 bg-white text-black font-semibold rounded-12 text-lg"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              Join Waitlist
+              {t('joinWaitlist')}
             </Link>
           </div>
         </div>

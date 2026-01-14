@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 // Animated counter hook
 function useCounter(end: number, duration: number = 2000, inView: boolean) {
@@ -87,6 +88,7 @@ const stats = [
 ]
 
 export default function Stats() {
+  const t = useTranslations('Stats')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
@@ -156,7 +158,7 @@ export default function Stats() {
               color: 'rgb(255, 255, 255)'
             }}
           >
-            Empowering candidates to answer interviews with clarity and confidence — and land the job they want.
+            {t('heading')}
           </h2>
         </div>
 
@@ -170,7 +172,7 @@ export default function Stats() {
               <StatItem
                 value={stat.value}
                 suffix={stat.suffix}
-                label={stat.label}
+                label={t(`stat${index + 1}Label`)}
                 inView={isInView}
               />
               {index < stats.length - 1 && (

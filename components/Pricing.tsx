@@ -1,47 +1,49 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/navigation'
 import { useState } from 'react'
-
-const plans = [
-  {
-    name: 'Free Plan',
-    priceMonthly: '0',
-    priceYearly: '0',
-    description: 'Basic interview practice to get started with Starwise.',
-    features: [
-      '1 interview question per week',
-      'STAR-based answer structuring',
-      'Basic AI feedback',
-      'AI-generated answer improvements',
-      'Unlimited practice',
-      'Answer history & progress tracking',
-    ],
-    cta: 'Get Started',
-    popular: false,
-    disabledFeatures: ['AI-generated answer improvements', 'Unlimited practice', 'Answer history & progress tracking'],
-  },
-  {
-    name: 'Premium Plan',
-    priceMonthly: '6.99',
-    priceYearly: '39.99',
-    description: 'Unlimited practice for serious interview preparation.',
-    features: [
-      'Unlimited interview questions',
-      'STAR-based answer structuring',
-      'Advanced AI feedback',
-      'AI-generated answer improvements',
-      'Answer history & progress tracking',
-      'Priority access to new features',
-    ],
-    cta: 'Get Started',
-    popular: false,
-    disabledFeatures: [],
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export default function Pricing() {
+  const t = useTranslations('Pricing')
   const [isYearly, setIsYearly] = useState(false)
+
+  const plans = [
+    {
+      name: t('freePlanName'),
+      priceMonthly: '0',
+      priceYearly: '0',
+      description: t('freePlanDesc'),
+      features: [
+        t('feature1'),
+        t('feature2'),
+        t('feature3'),
+        t('feature4'),
+        t('feature5'),
+        t('feature6'),
+      ],
+      cta: t('freePlanCta'),
+      popular: false,
+      disabledFeatures: [t('feature4'), t('feature5'), t('feature6')],
+    },
+    {
+      name: t('premiumPlanName'),
+      priceMonthly: '6.99',
+      priceYearly: '39.99',
+      description: t('premiumPlanDesc'),
+      features: [
+        t('featureUnlimitedQuestions'),
+        t('feature2'),
+        t('featureAdvancedFeedback'),
+        t('feature4'),
+        t('feature6'),
+        t('featurePriorityAccess'),
+      ],
+      cta: t('premiumPlanCta'),
+      popular: false,
+      disabledFeatures: [],
+    },
+  ]
 
   return (
     <section id="pricing" className="relative pb-12 overflow-hidden">
@@ -86,7 +88,7 @@ export default function Pricing() {
                 whiteSpace: 'pre'
               }}
             >
-              Our Pricing
+              {t('badge')}
             </span>
           </div>
 
@@ -109,7 +111,7 @@ export default function Pricing() {
                 wordBreak: 'break-word'
               }}
             >
-              Flexible Pricing Plans
+              {t('title')}
             </h2>
 
             {/* Paragraph Container */}
@@ -125,7 +127,7 @@ export default function Pricing() {
                   wordBreak: 'break-word'
                 }}
               >
-                Choose the plan that fits your interview preparation needs.
+                {t('description')}
               </p>
             </div>
           </div>
@@ -158,7 +160,7 @@ export default function Pricing() {
                   transition: 'none'
                 }}
               >
-                Weekly
+                {t('weekly')}
               </button>
               <button
                 onClick={() => setIsYearly(true)}
@@ -175,7 +177,7 @@ export default function Pricing() {
                   transition: 'none'
                 }}
               >
-                Yearly
+                {t('yearly')}
               </button>
             </div>
           </div>
@@ -225,11 +227,11 @@ export default function Pricing() {
                   fontWeight: 500,
                   color: 'rgb(201, 202, 206)',
                   zIndex: 1,
-                  opacity: isYearly && plan.name === 'Premium Plan' ? 1 : 0,
-                  pointerEvents: isYearly && plan.name === 'Premium Plan' ? 'auto' : 'none'
+                  opacity: isYearly && plan.name === t('premiumPlanName') ? 1 : 0,
+                  pointerEvents: isYearly && plan.name === t('premiumPlanName') ? 'auto' : 'none'
                 }}
               >
-                Save 90% on Yearly
+                {t('saveLabel')}
               </div>
 
               {/* Plan Name */}
@@ -265,7 +267,7 @@ export default function Pricing() {
                     color: 'rgb(121, 123, 133)'
                   }}
                 >
-                  /{isYearly ? 'per year' : 'per week'}
+                  /{isYearly ? t('perYear').replace('/', '') : t('perWeek').replace('/', '')}
                 </span>
               </div>
 
@@ -316,7 +318,7 @@ export default function Pricing() {
                     marginBottom: '12px'
                   }}
                 >
-                  What&apos;s Included
+                  {t('whatsIncluded')}
                 </h4>
                 <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   {plan.features.map((feature, featureIndex) => {

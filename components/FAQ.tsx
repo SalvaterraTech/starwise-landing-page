@@ -1,44 +1,46 @@
 'use client'
 
 import { useState } from 'react'
-
-const faqs = [
-  {
-    question: 'What is Starwise and who is it for?',
-    answer: 'Starwise is an AI-powered interview preparation app for candidates who want clearer, more structured answers. Beyond feedback, Starwise also generates improved STAR-based answers using your own experiences, so you can refine and adapt them for different interviews.',
-  },
-  {
-    question: 'How does Starwise help me prepare for interviews?',
-    answer: 'You answer real interview questions using your own experience. Starwise analyzes your response, highlights improvements, and generates a clearer, STAR-structured version using AI - giving you a strong base that you can customize before the interview.',
-  },
-  {
-    question: 'What is the STAR method?',
-    answer: 'The STAR method stands for Situation, Task, Action, and Result. Starwise not only evaluates whether your answer follows STAR, but also rewrites your response using this structure, keeping your original experience while improving clarity and impact.',
-  },
-  {
-    question: 'Is Starwise useful even if I already have experience?',
-    answer: 'Yes. Experienced professionals often have strong backgrounds but struggle to communicate impact clearly. Starwise uses your input to generate more concise, result-driven answers, helping you highlight what really matters in senior-level interviews.',
-  },
-  {
-    question: 'Do I need to know the STAR method beforehand?',
-    answer: 'No. You can answer naturally. Starwise takes your raw response and automatically generates a STAR-structured version using AI, while also explaining what was improved and why.',
-  },
-  {
-    question: 'How is AI used in Starwise?',
-    answer: 'AI analyzes your answers, identifies gaps, and generates improved versions based on your information. The goal is not to replace your voice, but to give you a high-quality baseline that you can edit, personalize, and reuse.',
-  },
-  {
-    question: 'Can I practice for different roles and seniority levels?',
-    answer: 'Yes. Starwise offers questions by role, difficulty, and competency. For each answer, the AI adapts the generated improvement to the context of the role and level you are practicing for.',
-  },
-  {
-    question: 'Is my data and interview content private?',
-    answer: 'Yes. Your answers are private and used only to generate feedback and improved responses for you. Starwise does not share your content with recruiters or third parties.',
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export default function FAQ() {
+  const t = useTranslations('FAQ')
   const [openIndex, setOpenIndex] = useState<number | null>(null)
+
+  const faqs = [
+    {
+      question: t('q1'),
+      answer: t('a1'),
+    },
+    {
+      question: t('q2'),
+      answer: t('a2'),
+    },
+    {
+      question: t('q3'),
+      answer: t('a3'),
+    },
+    {
+      question: t('q4'),
+      answer: t('a4'),
+    },
+    {
+      question: t('q5'),
+      answer: t('a5'),
+    },
+    {
+      question: t('q6'),
+      answer: t('a6'),
+    },
+    {
+      question: t('q7'),
+      answer: t('a7'),
+    },
+    {
+      question: t('q8'),
+      answer: t('a8'),
+    },
+  ]
 
   return (
     <section id="faq" className="relative pb-24 overflow-hidden">
@@ -86,7 +88,7 @@ export default function FAQ() {
                 color: 'rgb(255, 255, 255)'
               }}
             >
-              FAQ's
+              {t('badge')}
             </span>
           </div>
 
@@ -100,7 +102,7 @@ export default function FAQ() {
               lineHeight: '1.2'
             }}
           >
-            Frequently Asked Questions
+            {t('title')}
           </h2>
         </div>
 

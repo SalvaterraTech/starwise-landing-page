@@ -1,8 +1,9 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/navigation'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const avatars = [
   '/images/avatar-1.png',
@@ -11,6 +12,7 @@ const avatars = [
 ]
 
 export default function Hero() {
+  const t = useTranslations('Hero')
   return (
     <section
       id="hero"
@@ -76,7 +78,7 @@ export default function Hero() {
               whiteSpace: 'pre'
             }}
           >
-            Trusted by job seekers worldwide
+            {t('trustedBy')}
           </span>
         </motion.div>
 
@@ -88,7 +90,7 @@ export default function Hero() {
           className="text-center text-[34px] md:text-[60px] lg:text-[64px] font-bold leading-[1.2] mb-5 max-w-[800px] text-white"
           style={{ fontFamily: 'Inter Tight, sans-serif' }}
         >
-          Struggling to explain your experience in interviews?
+          {t('title')}
         </motion.h1>
 
         {/* Subheadline */}
@@ -109,7 +111,7 @@ export default function Hero() {
               color: 'rgb(148, 150, 157)'
             }}
           >
-            Practice real answers, get instant AI-powered feedback, and improve every response before the interview.
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -125,7 +127,7 @@ export default function Hero() {
             className="bg-white text-black font-semibold rounded-12 text-[17px] hover:opacity-90 transition-opacity"
             style={{ fontFamily: 'Instrument Sans, sans-serif', padding: '20px 28px' }}
           >
-            Join Waitlist
+            {t('joinWaitlist')}
           </Link>
         </motion.div>
 
@@ -156,7 +158,7 @@ export default function Hero() {
               whiteSpace: 'pre'
             }}
           >
-            App Available For
+            {t('appAvailableFor')}
           </span>
           {/* Store icons container */}
           <div

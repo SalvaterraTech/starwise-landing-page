@@ -1,8 +1,7 @@
-"use client";
-
-import React from "react";
+import { useTranslations } from 'next-intl';
 
 const TestimonialHeader = () => {
+    const t = useTranslations('Testimonials');
     return (
         <div className="framer-1ewmzx7" data-framer-name="Text Container">
             <div
@@ -23,7 +22,7 @@ const TestimonialHeader = () => {
                     className="framer-text framer-styles-preset-6snecm"
                     data-styles-preset="rVRByc2xi"
                 >
-                    Our Testimonials
+                    {t('headerTitle')}
                 </h2>
             </div>
             <div className="framer-dlymwt" data-framer-name="Paragraph Container">
@@ -51,8 +50,7 @@ const TestimonialHeader = () => {
                                 "var(--extracted-r6o4lv, var(--token-1fe402aa-6f19-4409-814b-53c8bdf92f81, rgb(121, 123, 133)))",
                         }}
                     >
-                        See how Starwise helps candidates prepare better and perform with
-                        confidence.
+                        {t('headerSubtitle')}
                     </p>
                 </div>
             </div>

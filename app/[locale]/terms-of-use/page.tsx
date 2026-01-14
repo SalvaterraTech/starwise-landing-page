@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -95,6 +96,7 @@ Email: support@starwise.app`
 ]
 
 export default function TermsOfUsePage() {
+    const t = useTranslations('TermsOfUse')
     return (
         <main className="min-h-screen bg-appit-bg">
             <Navbar />
@@ -126,7 +128,7 @@ export default function TermsOfUsePage() {
                                 className="text-sm text-white font-medium"
                                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                             >
-                                Terms of Use
+                                {t('badge')}
                             </span>
                         </div>
 
@@ -135,13 +137,13 @@ export default function TermsOfUsePage() {
                             className="text-5xl md:text-[58px] font-bold text-white text-center"
                             style={{ fontFamily: 'Inter Tight, sans-serif', lineHeight: '1.2' }}
                         >
-                            Our Terms of Use
+                            {t('title')}
                         </h1>
                         <p
                             className="text-appit-gray text-lg text-center max-w-2xl"
                             style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                         >
-                            These Terms explain how Starwise works, your rights as a user, and the conditions for using our AI-powered interview preparation tools.
+                            {t('description')}
                         </p>
                     </div>
 
@@ -160,7 +162,7 @@ export default function TermsOfUsePage() {
                                 className="text-appit-gray font-medium text-base"
                                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
                             >
-                                Last Updated on January 12, 2026
+                                {t('lastUpdated')}
                             </span>
                         </div>
                     </div>

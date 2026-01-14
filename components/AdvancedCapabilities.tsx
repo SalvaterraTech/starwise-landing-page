@@ -1,16 +1,19 @@
 'use client';
 
 import Image from 'next/image';
-
-const capabilities = [
-  { name: 'STAR answers' },
-  { name: 'AI improvements' },
-  { name: 'Real questions' },
-  { name: 'Progress tracking' },
-  { name: 'Answer library' },
-];
+import { useTranslations } from 'next-intl';
 
 export default function AdvancedCapabilities() {
+  const t = useTranslations('AdvancedCapabilities');
+
+  const capabilities = [
+    { name: t('cap1') },
+    { name: t('cap2') },
+    { name: t('cap3') },
+    { name: t('cap4') },
+    { name: t('cap5') },
+  ];
+
   return (
     <section
       style={{
@@ -66,7 +69,7 @@ export default function AdvancedCapabilities() {
                   margin: 0,
                 }}
               >
-                Everything you need to prepare for interviews
+                {t('title')}
               </h2>
 
               {/* Subtitle */}
@@ -81,7 +84,7 @@ export default function AdvancedCapabilities() {
                   margin: 0,
                 }}
               >
-                Practice, improve, and deliver confident answers with Starwise.
+                {t('subtitle')}
               </p>
             </div>
 

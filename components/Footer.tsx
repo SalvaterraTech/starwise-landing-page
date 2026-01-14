@@ -1,14 +1,8 @@
-import Link from 'next/link'
+import { Link } from '@/navigation'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
-const footerLinks = [
-  { href: '/#benefits', label: 'Benefits' },
-  { href: '/#features', label: 'Features' },
-  { href: '/#pricing', label: 'Pricing' },
-  { href: '/#testimonial', label: 'Testimonials' },
-  { href: '/#faq', label: "FAQ's" },
-  { href: '/waitlist', label: 'Waitlist' },
-]
+
 
 const socialLinks = [
   {
@@ -29,6 +23,18 @@ const socialLinks = [
 ]
 
 export default function Footer() {
+  const t = useTranslations('Footer')
+  const tNav = useTranslations('Navbar')
+
+  const footerLinks = [
+    { href: '/#benefits', label: tNav('benefits') },
+    { href: '/#features', label: tNav('features') },
+    { href: '/#pricing', label: tNav('pricing') },
+    { href: '/#testimonial', label: tNav('testimonials') },
+    { href: '/#faq', label: tNav('faqs') },
+    { href: '/waitlist', label: tNav('joinWaitlist') },
+  ]
+
   return (
     <footer
       className="relative w-full pt-20 pb-8"
@@ -69,8 +75,8 @@ export default function Footer() {
               className="text-center text-xl font-semibold"
               style={{ fontFamily: 'Inter Tight, sans-serif' }}
             >
-              <p>Empower Your Interview Preparation</p>
-              <p>with Starwise</p>
+              <p>{t('tagline1')}</p>
+              <p>{t('tagline2')}</p>
             </div>
           </div>
 
@@ -89,7 +95,7 @@ export default function Footer() {
               className="text-white text-[17px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              hello@starwise.com
+              {t('contact')}
             </span>
           </Link>
         </div>
@@ -122,7 +128,7 @@ export default function Footer() {
             className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium justify-self-start"
             style={{ fontFamily: 'Instrument Sans, sans-serif' }}
           >
-            Salvaterra Tech
+            {t('templateCredit')}
           </Link>
 
           {/* Social Links */}
@@ -152,7 +158,7 @@ export default function Footer() {
               className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              Privacy Policy
+              {t('privacy')}
             </Link>
             <div className="w-1 h-1 rounded-full bg-appit-gray-dark" />
             <Link
@@ -160,7 +166,7 @@ export default function Footer() {
               className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              Terms of Use
+              {t('terms')}
             </Link>
           </div>
         </div>

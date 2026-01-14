@@ -1,47 +1,50 @@
 'use client';
 
 import Image from 'next/image';
-
-const features = [
-  {
-    icon: '/images/discover-icon-1.svg',
-    title: 'Custom Practice',
-    description: 'Practice interview questions by role, difficulty, or create your own.',
-    image: '/images/discover-screenshot-1.png',
-  },
-  {
-    icon: '/images/discover-icon-2.svg',
-    title: 'Answer Structuring',
-    description: 'Automatically structure answers using the STAR method.',
-    image: '/images/discover-screenshot-2.png',
-  },
-  {
-    icon: '/images/feature-star-generation.svg',
-    title: 'AI Improvements',
-    description: 'Get AI-generated improvements based on your own experience.',
-    image: '/images/discover-screenshot-3.png',
-  },
-  {
-    icon: '/images/discover-icon-4.svg',
-    title: 'Answer Insights',
-    description: 'See what\'s missing and how to improve clarity and impact.',
-    image: '/images/discover-screenshot-4.png',
-  },
-  {
-    icon: '/images/discover-icon-5.svg',
-    title: 'Practice History',
-    description: 'Review past answers and track how your responses evolve.',
-    image: '/images/discover-screenshot-5.png',
-  },
-  {
-    icon: '/images/discover-icon-6.svg',
-    title: 'Interview Readiness',
-    description: 'Prepare answers that are clear, structured, and interview-ready.',
-    image: '/images/discover-screenshot-6.png',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function DiscoverFeatures() {
+  const t = useTranslations('DiscoverFeatures');
+
+  const features = [
+    {
+      icon: '/images/discover-icon-1.svg',
+      title: t('feature1Title'),
+      description: t('feature1Description'),
+      image: '/images/discover-screenshot-1.png',
+    },
+    {
+      icon: '/images/discover-icon-2.svg',
+      title: t('feature2Title'),
+      description: t('feature2Description'),
+      image: '/images/discover-screenshot-2.png',
+    },
+    {
+      icon: '/images/feature-star-generation.svg',
+      title: t('feature3Title'),
+      description: t('feature3Description'),
+      image: '/images/discover-screenshot-3.png',
+    },
+    {
+      icon: '/images/discover-icon-4.svg',
+      title: t('feature4Title'),
+      description: t('feature4Description'),
+      image: '/images/discover-screenshot-4.png',
+    },
+    {
+      icon: '/images/discover-icon-5.svg',
+      title: t('feature5Title'),
+      description: t('feature5Description'),
+      image: '/images/discover-screenshot-5.png',
+    },
+    {
+      icon: '/images/discover-icon-6.svg',
+      title: t('feature6Title'),
+      description: t('feature6Description'),
+      image: '/images/discover-screenshot-6.png',
+    },
+  ];
+
   return (
     <section
       style={{
@@ -129,7 +132,7 @@ export default function DiscoverFeatures() {
                 margin: 0,
               }}
             >
-              Features
+              {t('badge')}
             </p>
           </div>
 
@@ -156,7 +159,7 @@ export default function DiscoverFeatures() {
                 margin: 0,
               }}
             >
-              Discover Starwise Features
+              {t('title')}
             </h2>
 
             {/* Paragraph Container */}
@@ -181,7 +184,7 @@ export default function DiscoverFeatures() {
                   margin: 0,
                 }}
               >
-                Explore Starwise&apos;s powerful features designed to help you prepare for interviews, practice answers, and improve your performance effortlessly.
+                {t('subtitle')}
               </p>
             </div>
           </div>

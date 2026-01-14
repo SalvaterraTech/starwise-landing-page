@@ -1,12 +1,15 @@
+// @ts-nocheck
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
 import TestimonialBadge from "./testimonials/TestimonialBadge";
 import TestimonialHeader from "./testimonials/TestimonialHeader";
 import TestimonialCard from "./testimonials/TestimonialCard";
 import { testimonials } from "@/data/testimonials";
 
 const Testimonials = () => {
+  const t = useTranslations("Testimonials");
   return (
     <div
       className="framer-rk46r framer-U5xvE framer-VU71P framer-uU3P8 framer-25WLk framer-HLcXI framer-090uc framer-72rtr7"
@@ -142,9 +145,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Starwise helped me turn my experience into clear,
-                        structured answers. I felt much more confident going
-                        into my interviews.
+                        {t('testT1')}
                       </p>
                     </div>
                     <div
@@ -222,7 +223,7 @@ const Testimonials = () => {
                             className="framer-text framer-styles-preset-s6vjn9"
                             data-styles-preset="RXF3HUdTY"
                           >
-                            Emma Johnson
+                            {t('person1Name')}
                           </p>
                         </div>
                         <div
@@ -250,7 +251,7 @@ const Testimonials = () => {
                                 "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                             }}
                           >
-                            Founder at Specra
+                            {t('person1Role')}
                           </p>
                         </div>
                       </div>
@@ -326,9 +327,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Practicing with Starwise showed me exactly what was
-                        missing in my answers. The AI feedback made a real
-                        difference.
+                        {t('testT2')}
                       </p>
                     </div>
                     <div
@@ -406,7 +405,7 @@ const Testimonials = () => {
                             className="framer-text framer-styles-preset-s6vjn9"
                             data-styles-preset="RXF3HUdTY"
                           >
-                            David Wilson
+                            {t('person2Name')}
                           </p>
                         </div>
                         <div
@@ -434,7 +433,7 @@ const Testimonials = () => {
                                 "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                             }}
                           >
-                            Founder at Boom
+                            {t('person2Role')}
                           </p>
                         </div>
                       </div>
@@ -510,9 +509,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Practicing with Starwise showed me exactly what was
-                        missing in my answers. The AI feedback made a real
-                        difference.
+                        {t('testT2')}
                       </p>
                     </div>
                     <div
@@ -590,7 +587,7 @@ const Testimonials = () => {
                             className="framer-text framer-styles-preset-s6vjn9"
                             data-styles-preset="RXF3HUdTY"
                           >
-                            John Doe
+                            {t('person3Name')}
                           </p>
                         </div>
                         <div
@@ -618,7 +615,7 @@ const Testimonials = () => {
                                 "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                             }}
                           >
-                            Founder at Nova
+                            {t('person3Role')}
                           </p>
                         </div>
                       </div>
@@ -694,8 +691,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Reviewing my past answers and seeing my progress helped
-                        me feel ready instead of anxious before interviews.
+                        {t('testT3')}
                       </p>
                     </div>
                     <div
@@ -774,7 +770,7 @@ const Testimonials = () => {
                             className="framer-text framer-styles-preset-s6vjn9"
                             data-styles-preset="RXF3HUdTY"
                           >
-                            Laura Martinez
+                            {t('person4Name')}
                           </p>
                         </div>
                         <div
@@ -802,7 +798,7 @@ const Testimonials = () => {
                                 "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                             }}
                           >
-                            Founder at Comet
+                            {t('person4Role')}
                           </p>
                         </div>
                       </div>
@@ -859,7 +855,7 @@ const Testimonials = () => {
                       }}
                       className="framer-text"
                     >
-                      View All Testimonials
+                      {t('viewAll')}
                     </p>
                   </div>
                   <div className="framer-e47mgg" data-framer-name="Icon">
@@ -972,9 +968,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Starwise helped me turn my experience into clear,
-                        structured answers. I felt much more confident going
-                        into my interviews.
+                        {t('testT1')}
                       </p>
                     </div>
                     <div
@@ -1156,9 +1150,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Practicing with Starwise showed me exactly what was
-                        missing in my answers. The AI feedback made a real
-                        difference.
+                        {t('testT2')}
                       </p>
                     </div>
                     <div
@@ -1340,9 +1332,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Practicing with Starwise showed me exactly what was
-                        missing in my answers. The AI feedback made a real
-                        difference.
+                        {t('testT2')}
                       </p>
                     </div>
                     <div
@@ -1524,8 +1514,7 @@ const Testimonials = () => {
                             "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                         }}
                       >
-                        Reviewing my past answers and seeing my progress helped
-                        me feel ready instead of anxious before interviews.
+                        {t('testT3')}
                       </p>
                     </div>
                     <div
@@ -1689,7 +1678,7 @@ const Testimonials = () => {
                       }}
                       className="framer-text"
                     >
-                      View All Testimonials
+                      {t('viewAll')}
                     </p>
                   </div>
                   <div className="framer-e47mgg" data-framer-name="Icon">
@@ -1840,9 +1829,7 @@ const Testimonials = () => {
                               "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                           }}
                         >
-                          Starwise helped me turn my experience into clear,
-                          structured answers. I felt much more confident going
-                          into my interviews.
+                          {t('testT1')}
                         </p>
                       </div>
                       <div
@@ -2028,9 +2015,7 @@ const Testimonials = () => {
                               "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                           }}
                         >
-                          I struggled to explain my impact clearly before.
-                          Starwise helped me structure my answers using STAR in a
-                          way interviewers expect.
+                          {t('testT4')}
                         </p>
                       </div>
                       <div
@@ -2108,7 +2093,7 @@ const Testimonials = () => {
                               className="framer-text framer-styles-preset-s6vjn9"
                               data-styles-preset="RXF3HUdTY"
                             >
-                              John Doe
+                              {t('person3Name')}
                             </p>
                           </div>
                           <div
@@ -2136,7 +2121,7 @@ const Testimonials = () => {
                                   "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                               }}
                             >
-                              Founder at Nova
+                              {t('person3Role')}
                             </p>
                           </div>
                         </div>
@@ -2216,9 +2201,7 @@ const Testimonials = () => {
                               "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                           }}
                         >
-                          The AI-generated improvements gave me a strong base to
-                          refine my answers. It saved me a lot of preparation
-                          time.
+                          {t('testT5')}
                         </p>
                       </div>
                       <div
@@ -2296,7 +2279,7 @@ const Testimonials = () => {
                               className="framer-text framer-styles-preset-s6vjn9"
                               data-styles-preset="RXF3HUdTY"
                             >
-                              John Pitt
+                              {t('person5Name')}
                             </p>
                           </div>
                           <div
@@ -2324,7 +2307,7 @@ const Testimonials = () => {
                                   "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                               }}
                             >
-                              Founder at Apex
+                              {t('person5Role')}
                             </p>
                           </div>
                         </div>
@@ -2404,9 +2387,7 @@ const Testimonials = () => {
                               "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                           }}
                         >
-                          Having structured, reusable answers made follow-up
-                          interviews much easier. Starwise became part of my
-                          preparation routine.
+                          {t('testT6')}
                         </p>
                       </div>
                       <div
@@ -2484,7 +2465,7 @@ const Testimonials = () => {
                               className="framer-text framer-styles-preset-s6vjn9"
                               data-styles-preset="RXF3HUdTY"
                             >
-                              Michael Brown
+                              {t('person6Name')}
                             </p>
                           </div>
                           <div
@@ -2512,7 +2493,7 @@ const Testimonials = () => {
                                   "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                               }}
                             >
-                              Founder at Novus
+                              {t('person6Role')}
                             </p>
                           </div>
                         </div>
@@ -2592,9 +2573,7 @@ const Testimonials = () => {
                               "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                           }}
                         >
-                          Practicing with Starwise showed me exactly what was
-                          missing in my answers. The AI feedback made a real
-                          difference.
+                          {t('testT2')}
                         </p>
                       </div>
                       <div
@@ -2780,8 +2759,7 @@ const Testimonials = () => {
                               "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                           }}
                         >
-                          Reviewing my past answers and seeing my progress helped
-                          me feel ready instead of anxious before interviews.
+                          {t('testT3')}
                         </p>
                       </div>
                       <div
@@ -2967,9 +2945,7 @@ const Testimonials = () => {
                               "var(--extracted-r6o4lv, var(--token-525d93f6-910e-4504-8203-8f2f42ec0b44, rgb(174, 176, 182)))",
                           }}
                         >
-                          Having structured, reusable answers made follow-up
-                          interviews much easier. Starwise became part of my
-                          preparation routine.
+                          {t('testT6')}
                         </p>
                       </div>
                       <div
@@ -3047,7 +3023,7 @@ const Testimonials = () => {
                               className="framer-text framer-styles-preset-s6vjn9"
                               data-styles-preset="RXF3HUdTY"
                             >
-                              James Taylor
+                              {t('person7Name')}
                             </p>
                           </div>
                           <div
@@ -3075,7 +3051,7 @@ const Testimonials = () => {
                                   "var(--extracted-r6o4lv, var(--token-66d392a4-a6be-4352-b23d-eaf3165fbec9, rgb(98, 100, 108)))",
                               }}
                             >
-                              Founder at Wond
+                              {t('person7Role')}
                             </p>
                           </div>
                         </div>

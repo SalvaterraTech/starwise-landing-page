@@ -1,8 +1,7 @@
-"use client";
-
-import React from "react";
+import { useTranslations } from 'next-intl';
 
 const TestimonialBadge = () => {
+    const t = useTranslations('Testimonials');
     return (
         <div
             className="framer-6jqrb1"
@@ -72,7 +71,7 @@ const TestimonialBadge = () => {
                     className="framer-text framer-styles-preset-brsdai"
                     data-styles-preset="o9ZJ7wliQ"
                 >
-                    Testimonials
+                    {t('badge')}
                 </p>
             </div>
         </div>

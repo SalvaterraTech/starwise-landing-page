@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -96,6 +97,7 @@ Email: privacy@starwise.app`
 ]
 
 export default function PrivacyPolicyPage() {
+  const t = useTranslations('PrivacyPolicy')
   return (
     <main className="min-h-screen bg-appit-bg">
       <Navbar />
@@ -127,7 +129,7 @@ export default function PrivacyPolicyPage() {
                 className="text-sm text-white font-medium"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
-                Privacy Policy
+                {t('badge')}
               </span>
             </div>
 
@@ -136,13 +138,13 @@ export default function PrivacyPolicyPage() {
               className="text-5xl md:text-[58px] font-bold text-white text-center"
               style={{ fontFamily: 'Inter Tight, sans-serif', lineHeight: '1.2' }}
             >
-              Our Privacy Policy
+              {t('title')}
             </h1>
             <p
               className="text-appit-gray text-lg text-center max-w-2xl"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              Starwise is designed with privacy at its core. We do not store personal data, and all processing is done anonymously and securely.
+              {t('description')}
             </p>
           </div>
 
@@ -161,7 +163,7 @@ export default function PrivacyPolicyPage() {
                 className="text-appit-gray font-medium text-base"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >
-                Last Updated on January 12, 2026
+                {t('lastUpdated')}
               </span>
             </div>
           </div>

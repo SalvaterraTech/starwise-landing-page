@@ -1,31 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
-const features = [
-  {
-    icon: '/images/feature-answer-analysis.svg',
-    title: 'Answer analysis',
-    description: 'AI reviews your answers and finds gaps in clarity and structure.',
-  },
-  {
-    icon: '/images/feature-star-generation.svg',
-    title: 'STAR generation',
-    description: 'AI generates STAR-structured answers using your own experience.',
-  },
-  {
-    icon: '/images/feature-targeted-feedback.svg',
-    title: 'Targeted feedback',
-    description: 'Clear suggestions on what to improve in each response.',
-  },
-  {
-    icon: '/images/feature-real-interview.svg',
-    title: 'Real interview practice',
-    description: 'Practice with curated or custom interview questions.',
-  },
-];
 
-function FeatureCard({ feature }: { feature: typeof features[0] }) {
+
+function FeatureCard({ feature }: { feature: { icon: string; title: string; description: string } }) {
   return (
     <div
       style={{
@@ -79,6 +59,31 @@ function FeatureCard({ feature }: { feature: typeof features[0] }) {
 }
 
 export default function Features() {
+  const t = useTranslations('Features');
+
+  const features = [
+    {
+      icon: '/images/feature-answer-analysis.svg',
+      title: t('card1Title'),
+      description: t('card1Description'),
+    },
+    {
+      icon: '/images/feature-star-generation.svg',
+      title: t('card2Title'),
+      description: t('card2Description'),
+    },
+    {
+      icon: '/images/feature-targeted-feedback.svg',
+      title: t('card3Title'),
+      description: t('card3Description'),
+    },
+    {
+      icon: '/images/feature-real-interview.svg',
+      title: t('card4Title'),
+      description: t('card4Description'),
+    },
+  ];
+
   return (
     <section
       id="features"
@@ -262,7 +267,7 @@ export default function Features() {
                 margin: 0,
               }}
             >
-              Starwise&apos;s Advanced Capabilities
+              {t('title')}
             </h2>
 
             {/* Feature Cards Grid - 2x2 */}

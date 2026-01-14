@@ -2,7 +2,10 @@
 
 import Image from 'next/image'
 
+import { useTranslations } from 'next-intl'
+
 export default function Download() {
+    const t = useTranslations('Download')
     return (
         <section className="relative overflow-hidden" style={{ backgroundColor: '#000000', paddingTop: '120px', paddingBottom: '0px' }}>
             {/* Top Divider */}
@@ -36,7 +39,7 @@ export default function Download() {
                         maxWidth: '620px'
                     }}
                 >
-                    Download Starwise and Start Preparing Today
+                    {t('title')}
                 </h2>
 
                 {/* Subtitle */}
@@ -52,7 +55,8 @@ export default function Download() {
                         marginBottom: '48px'
                     }}
                 >
-                    Download Starwise now to start practicing interview questions and get AI-powered feedback for a seamless preparation experience!
+
+                    {t('subtitle')}
                 </p>
 
                 {/* Buttons Container */}
@@ -98,7 +102,7 @@ export default function Download() {
                                     lineHeight: '1'
                                 }}
                             >
-                                Get It On
+                                {t('getItOn')}
                             </span>
                             <span
                                 style={{
@@ -109,7 +113,7 @@ export default function Download() {
                                     lineHeight: '1.2'
                                 }}
                             >
-                                Google Play
+                                {t('googlePlay')}
                             </span>
                         </div>
                     </a>
@@ -158,7 +162,7 @@ export default function Download() {
                                     lineHeight: '1'
                                 }}
                             >
-                                Download on the
+                                {t('downloadOn')}
                             </span>
                             <span
                                 style={{
@@ -169,7 +173,7 @@ export default function Download() {
                                     lineHeight: '1.2'
                                 }}
                             >
-                                App Store
+                                {t('appStore')}
                             </span>
                         </div>
                     </a>

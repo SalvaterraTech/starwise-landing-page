@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Stats from '@/components/Stats'
@@ -11,7 +12,9 @@ import FAQ from '@/components/FAQ'
 import Download from '@/components/Download'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function Home({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
+
   return (
     <main className="min-h-screen bg-appit-bg">
       <Navbar />

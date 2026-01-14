@@ -1,29 +1,32 @@
 import Image from 'next/image';
-
-const benefits = [
-  {
-    icon: '/images/benefit-clear-answers.svg',
-    title: 'Clear answers',
-    description: 'Turn your experience into structured STAR answers.',
-  },
-  {
-    icon: '/images/benefit-interview-confidence.svg',
-    title: 'Interview confidence',
-    description: 'Practice ahead and know exactly what to say.',
-  },
-  {
-    icon: '/images/benefit-ai-improvements.svg',
-    title: 'AI improvements',
-    description: 'Get instant feedback and AI-generated answer upgrades.',
-  },
-  {
-    icon: '/images/benefit-smarter-practice.svg',
-    title: 'Smarter practice',
-    description: 'Improve every answer with each practice session.',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Benefits() {
+  const t = useTranslations('Benefits');
+
+  const benefits = [
+    {
+      icon: '/images/benefit-clear-answers.svg',
+      title: t('card1Title'),
+      description: t('card1Description'),
+    },
+    {
+      icon: '/images/benefit-interview-confidence.svg',
+      title: t('card2Title'),
+      description: t('card2Description'),
+    },
+    {
+      icon: '/images/benefit-ai-improvements.svg',
+      title: t('card3Title'),
+      description: t('card3Description'),
+    },
+    {
+      icon: '/images/benefit-smarter-practice.svg',
+      title: t('card4Title'),
+      description: t('card4Description'),
+    },
+  ];
+
   return (
     <section
       id="benefits"
@@ -73,7 +76,7 @@ export default function Benefits() {
               maxWidth: '800px',
             }}
           >
-            Discover Starwise&apos;s Benefits
+            {t('title')}
           </h2>
 
           {/* Description */}
@@ -88,7 +91,7 @@ export default function Benefits() {
               textAlign: 'center',
             }}
           >
-            Everything you need to prepare better answers and perform with confidence in interviews.
+            {t('subtitle')}
           </p>
         </div>
 
