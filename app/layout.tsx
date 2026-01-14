@@ -7,7 +7,14 @@ export const metadata: Metadata = {
   title: 'Starwise',
   description: 'Starwise empowers candidates to answer interviews with clarity and confidence — and land the job they want.',
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon-32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    shortcut: ['/favicon.ico'],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
   openGraph: {
     type: 'website',
