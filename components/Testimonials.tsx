@@ -553,7 +553,7 @@ const Testimonials = () => {
                             height="100"
                             sizes="50px"
                             src="/images/avatar-3.png"
-                            alt
+                            alt="Profile Image"
                             style={{
                               display: "block",
                               width: "100%",
@@ -876,7 +876,7 @@ const Testimonials = () => {
                         width="20"
                         height="21"
                         src="/assets/testimonials/quote.svg"
-                        alt
+                        alt="Quote"
                         style={{
                           display: "block",
                           width: "100%",
@@ -1376,7 +1376,7 @@ const Testimonials = () => {
                             height="100"
                             sizes="50px"
                             src="/images/avatar-3.png"
-                            alt
+                            alt="Profile Image"
                             style={{
                               display: "block",
                               width: "100%",
@@ -1699,7 +1699,7 @@ const Testimonials = () => {
                         width="20"
                         height="21"
                         src="/assets/testimonials/quote.svg"
-                        alt
+                        alt="Quote"
                         style={{
                           display: "block",
                           width: "100%",
@@ -2059,7 +2059,7 @@ const Testimonials = () => {
                               height="100"
                               sizes="50px"
                               src="/images/avatar-3.png"
-                              alt
+                              alt="Profile Image"
                               style={{
                                 display: "block",
                                 width: "100%",
