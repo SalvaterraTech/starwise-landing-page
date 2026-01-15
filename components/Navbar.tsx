@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Link } from '@/navigation'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import LanguageSelector from './LanguageSelector'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -66,13 +67,8 @@ export default function Navbar() {
           </div>
 
           {/* Join Waitlist Button */}
-          <Link
-            href="/waitlist"
-            className="px-5 py-4 bg-white text-black font-semibold rounded-12 text-[17px] hover:opacity-90 transition-opacity flex-shrink-0"
-            style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-          >
-            {t('joinWaitlist')}
-          </Link>
+          {/* Language Selector */}
+          <LanguageSelector />
         </div>
       </nav>
 
@@ -175,14 +171,9 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/waitlist"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full text-center mt-4 py-4 bg-white text-black font-semibold rounded-12 text-lg"
-              style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-            >
-              {t('joinWaitlist')}
-            </Link>
+            <div className="mt-4">
+              <LanguageSelector />
+            </div>
           </div>
         </div>
       )}
