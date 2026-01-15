@@ -3,101 +3,90 @@ import { useTranslations } from 'next-intl'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const policySections = [
-  {
-    title: 'Information We Do Not Collect or Retain',
-    content: `Starwise does not collect, store, or retain personal user data beyond the transient processing strictly necessary to deliver the requested service.
-
-This includes, but is not limited to:`,
-    list: [
-      'Names, email addresses, or persistent identifiers',
-      'Interview answers written by users',
-      'Audio recordings created within the App',
-      'Custom interview questions',
-      'Career, employment, or résumé-related information',
-    ],
-    footer: `User-generated content is processed only momentarily to fulfill the App’s functionality and is not retained after processing is completed.`
-  },
-  {
-    title: 'Temporary and Non-Identifiable Processing',
-    content: `When you submit text or audio responses in the App:`,
-    list: [
-      'The content is processed transiently and without being associated with user identities or persistent identifiers',
-      'No user accounts or profiles are created',
-      'The data is used exclusively in real time to:',
-      'Structure responses using the STAR method',
-      'Generate interview feedback and suggested improvements',
-      'Simulate interview-style answers',
-    ],
-    footer: `Once the requested processing is completed, the data is discarded and not stored by Starwise.`
-  },
-  {
-    title: 'Use of Artificial Intelligence Models',
-    content: `Starwise relies on third-party, cloud-based artificial intelligence services to provide its core features.
-
-We explicitly state that:`,
-    list: [
-      'User inputs are transmitted without personal identifiers',
-      'Submitted content is not used to train, fine-tune, or improve any AI models',
-      'Data is processed solely to generate the requested output',
-      'AI service providers act exclusively as data processors under contractual obligations and may not use the data for independent purposes',
-    ]
-  },
-  {
-    title: 'Data Sharing',
-    content: `Starwise does not sell, rent, or share personal data.
-
-Temporary, non-identifiable inputs may be processed by trusted infrastructure, cloud, and AI service providers strictly to enable App functionality and for no other purpose.`
-  },
-  {
-    title: 'Analytics and Diagnostics',
-    content: `To ensure app stability and performance, Starwise may collect limited, non-personal, aggregated technical information, such as:`,
-    list: [
-      'Crash reports',
-      'Performance and reliability metrics'
-    ],
-    footer: `This information does not identify users and is used solely to improve the quality and reliability of the App.`
-  },
-  {
-    title: 'Data Security',
-    content: `Although Starwise does not retain personal user data, we apply industry-standard security practices to protect all processing activities, including:`,
-    list: [
-      'Encrypted communication channels',
-      'Secure transmission of data',
-      'Restricted access to processing systems'
-    ]
-  },
-  {
-    title: 'Legal Basis and User Rights (GDPR & LGPD)',
-    content: `The legal basis for any transient data processing under applicable data protection laws, including GDPR and LGPD, is the performance of a service explicitly requested by the user.
-
-Because Starwise does not store personal data, most data subject rights—such as access, correction, or deletion—are inherently satisfied.
-
-Users may still:`,
-    list: [
-      'Request clarification about how data is handled',
-      'Withdraw consent at any time by discontinuing use of the App',
-      'Contact us with privacy-related questions or concerns'
-    ]
-  },
-  {
-    title: 'Children’s Privacy',
-    content: `Starwise is not intended for use by individuals under the age of 13, or the minimum age required by applicable local law. We do not knowingly process data from children.`
-  },
-  {
-    title: 'Changes to This Privacy Policy',
-    content: `We may update this Privacy Policy from time to time. Any changes will be reflected by updating the “Last updated” date above. Continued use of the App after changes become effective constitutes acceptance of the revised policy.`
-  },
-  {
-    title: 'Contact Information',
-    content: `If you have any questions or concerns about this Privacy Policy, please contact us at:
-
-Email: privacy@starwise.app`
-  },
-]
-
 export default function PrivacyPolicyPage() {
   const t = useTranslations('PrivacyPolicy')
+
+  const policySections = [
+    {
+      title: t('sections.s1.title'),
+      content: t('sections.s1.content'),
+      list: [
+        t('sections.s1.list.l1'),
+        t('sections.s1.list.l2'),
+        t('sections.s1.list.l3'),
+        t('sections.s1.list.l4'),
+        t('sections.s1.list.l5'),
+      ],
+      footer: t('sections.s1.footer')
+    },
+    {
+      title: t('sections.s2.title'),
+      content: t('sections.s2.content'),
+      list: [
+        t('sections.s2.list.l1'),
+        t('sections.s2.list.l2'),
+        t('sections.s2.list.l3'),
+        t('sections.s2.list.l4'),
+        t('sections.s2.list.l5'),
+        t('sections.s2.list.l6'),
+      ],
+      footer: t('sections.s2.footer')
+    },
+    {
+      title: t('sections.s3.title'),
+      content: t('sections.s3.content'),
+      list: [
+        t('sections.s3.list.l1'),
+        t('sections.s3.list.l2'),
+        t('sections.s3.list.l3'),
+        t('sections.s3.list.l4'),
+      ]
+    },
+    {
+      title: t('sections.s4.title'),
+      content: t('sections.s4.content'),
+    },
+    {
+      title: t('sections.s5.title'),
+      content: t('sections.s5.content'),
+      list: [
+        t('sections.s5.list.l1'),
+        t('sections.s5.list.l2'),
+      ],
+      footer: t('sections.s5.footer')
+    },
+    {
+      title: t('sections.s6.title'),
+      content: t('sections.s6.content'),
+      list: [
+        t('sections.s6.list.l1'),
+        t('sections.s6.list.l2'),
+        t('sections.s6.list.l3'),
+      ]
+    },
+    {
+      title: t('sections.s7.title'),
+      content: t('sections.s7.content'),
+      list: [
+        t('sections.s7.list.l1'),
+        t('sections.s7.list.l2'),
+        t('sections.s7.list.l3'),
+      ]
+    },
+    {
+      title: t('sections.s8.title'),
+      content: t('sections.s8.content'),
+    },
+    {
+      title: t('sections.s9.title'),
+      content: t('sections.s9.content'),
+    },
+    {
+      title: t('sections.s10.title'),
+      content: t('sections.s10.content'),
+    },
+  ]
+
   return (
     <main className="min-h-screen bg-appit-bg">
       <Navbar />

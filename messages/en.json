@@ -172,12 +172,169 @@
         "badge": "Privacy Policy",
         "title": "Our Privacy Policy",
         "description": "Starwise is designed with privacy at its core. We do not store personal data, and all processing is done anonymously and securely.",
-        "lastUpdated": "Last Updated on January 12, 2026"
+        "lastUpdated": "Last Updated on January 12, 2026",
+        "sections": {
+            "s1": {
+                "title": "Information We Do Not Collect or Retain",
+                "content": "Starwise does not collect, store, or retain personal user data beyond the transient processing strictly necessary to deliver the requested service.\n\nThis includes, but is not limited to:",
+                "list": {
+                    "l1": "Names, email addresses, or persistent identifiers",
+                    "l2": "Interview answers written by users",
+                    "l3": "Audio recordings created within the App",
+                    "l4": "Custom interview questions",
+                    "l5": "Career, employment, or résumé-related information"
+                },
+                "footer": "User-generated content is processed only momentarily to fulfill the App’s functionality and is not retained after processing is completed."
+            },
+            "s2": {
+                "title": "Temporary and Non-Identifiable Processing",
+                "content": "When you submit text or audio responses in the App:",
+                "list": {
+                    "l1": "The content is processed transiently and without being associated with user identities or persistent identifiers",
+                    "l2": "No user accounts or profiles are created",
+                    "l3": "The data is used exclusively in real time to:",
+                    "l4": "Structure responses using the STAR method",
+                    "l5": "Generate interview feedback and suggested improvements",
+                    "l6": "Simulate interview-style answers"
+                },
+                "footer": "Once the requested processing is completed, the data is discarded and not stored by Starwise."
+            },
+            "s3": {
+                "title": "Use of Artificial Intelligence Models",
+                "content": "Starwise relies on third-party, cloud-based artificial intelligence services to provide its core features.\n\nWe explicitly state that:",
+                "list": {
+                    "l1": "User inputs are transmitted without personal identifiers",
+                    "l2": "Submitted content is not used to train, fine-tune, or improve any AI models",
+                    "l3": "Data is processed solely to generate the requested output",
+                    "l4": "AI service providers act exclusively as data processors under contractual obligations and may not use the data for independent purposes"
+                }
+            },
+            "s4": {
+                "title": "Data Sharing",
+                "content": "Starwise does not sell, rent, or share personal data.\n\nTemporary, non-identifiable inputs may be processed by trusted infrastructure, cloud, and AI service providers strictly to enable App functionality and for no other purpose."
+            },
+            "s5": {
+                "title": "Analytics and Diagnostics",
+                "content": "To ensure app stability and performance, Starwise may collect limited, non-personal, aggregated technical information, such as:",
+                "list": {
+                    "l1": "Crash reports",
+                    "l2": "Performance and reliability metrics"
+                },
+                "footer": "This information does not identify users and is used solely to improve the quality and reliability of the App."
+            },
+            "s6": {
+                "title": "Data Security",
+                "content": "Although Starwise does not retain personal user data, we apply industry-standard security practices to protect all processing activities, including:",
+                "list": {
+                    "l1": "Encrypted communication channels",
+                    "l2": "Secure transmission of data",
+                    "l3": "Restricted access to processing systems"
+                }
+            },
+            "s7": {
+                "title": "Legal Basis and User Rights (GDPR & LGPD)",
+                "content": "The legal basis for any transient data processing under applicable data protection laws, including GDPR and LGPD, is the performance of a service explicitly requested by the user.\n\nBecause Starwise does not store personal data, most data subject rights—such as access, correction, or deletion—are inherently satisfied.\n\nUsers may still:",
+                "list": {
+                    "l1": "Request clarification about how data is handled",
+                    "l2": "Withdraw consent at any time by discontinuing use of the App",
+                    "l3": "Contact us with privacy-related questions or concerns"
+                }
+            },
+            "s8": {
+                "title": "Children’s Privacy",
+                "content": "Starwise is not intended for use by individuals under the age of 13, or the minimum age required by applicable local law. We do not knowingly process data from children."
+            },
+            "s9": {
+                "title": "Changes to This Privacy Policy",
+                "content": "We may update this Privacy Policy from time to time. Any changes will be reflected by updating the “Last updated” date above. Continued use of the App after changes become effective constitutes acceptance of the revised policy."
+            },
+            "s10": {
+                "title": "Contact Information",
+                "content": "If you have any questions or concerns about this Privacy Policy, please contact us at:\n\nEmail: privacy@starwise.app"
+            }
+        }
     },
     "TermsOfUse": {
         "badge": "Terms of Use",
         "title": "Our Terms of Use",
         "description": "These Terms explain how Starwise works, your rights as a user, and the conditions for using our AI-powered interview preparation tools.",
-        "lastUpdated": "Last Updated on January 12, 2026"
+        "lastUpdated": "Last Updated on January 12, 2026",
+        "sections": {
+            "s1": {
+                "title": "Welcome to Starwise",
+                "content": "These Terms of Use (“Terms”) govern your access to and use of the Starwise mobile application (“App”). By accessing or using the App, you agree to be bound by these Terms.\n\nIf you do not agree to these Terms, please do not use the App."
+            },
+            "s2": {
+                "title": "Description of the Service",
+                "content": "Starwise is an interview preparation tool designed to help users practice and improve interview answers using structured frameworks such as the STAR method, AI-generated feedback, and simulated interview questions.\n\nStarwise provides guidance and feedback for educational and informational purposes only and does not guarantee job offers, interview success, or employment outcomes."
+            },
+            "s3": {
+                "title": "Eligibility",
+                "content": "You must be at least 13 years old to use the App. By using Starwise, you represent that you meet this requirement."
+            },
+            "s4": {
+                "title": "User Content",
+                "content": "Users may submit text or audio content when using the App (“User Content”).",
+                "list": {
+                    "l1": "You retain full ownership of your User Content.",
+                    "l2": "Starwise does not store User Content.",
+                    "l3": "You grant Starwise a limited, non-exclusive license to process your User Content solely for the purpose of delivering the requested features."
+                },
+                "footer": "This license terminates immediately after processing is completed."
+            },
+            "s5": {
+                "title": "Use of Artificial Intelligence",
+                "content": "Starwise uses cloud-based artificial intelligence models to generate feedback and suggestions.\n\nYou acknowledge and agree that:",
+                "list": {
+                    "l1": "AI-generated outputs are automated and may not always be accurate or complete",
+                    "l2": "Outputs should be reviewed and used at your discretion",
+                    "l3": "Starwise is not responsible for decisions made based on AI-generated feedback"
+                }
+            },
+            "s6": {
+                "title": "Acceptable Use",
+                "content": "You agree not to:",
+                "list": {
+                    "l1": "Use the App for any unlawful or harmful purpose",
+                    "l2": "Submit content that is abusive, discriminatory, or violates the rights of others",
+                    "l3": "Attempt to reverse engineer, exploit, or interfere with the App or its AI systems",
+                    "l4": "Circumvent usage limits or access paid features without authorization"
+                }
+            },
+            "s7": {
+                "title": "Subscriptions and Payments",
+                "content": "Starwise may offer free and paid subscription plans.",
+                "list": {
+                    "l1": "Payments and renewals are handled through the Apple App Store",
+                    "l2": "Subscriptions renew automatically unless canceled",
+                    "l3": "You may manage or cancel subscriptions through your Apple account",
+                    "l4": "Refunds are subject to Apple’s refund policies"
+                }
+            },
+            "s8": {
+                "title": "Availability and Changes",
+                "content": "Starwise may modify, suspend, or discontinue any part of the App at any time without liability.\n\nWe may also update these Terms periodically. Continued use of the App after changes constitutes acceptance of the updated Terms."
+            },
+            "s9": {
+                "title": "Disclaimer of Warranties",
+                "content": "Starwise is provided “as is” and “as available”, without warranties of any kind, express or implied.\n\nWe do not warrant that the App will be error-free, uninterrupted, or meet your specific expectations."
+            },
+            "s10": {
+                "title": "Limitation of Liability",
+                "content": "To the maximum extent permitted by law, Starwise shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App."
+            },
+            "s11": {
+                "title": "Termination",
+                "content": "You may stop using the App at any time.\n\nStarwise reserves the right to suspend or terminate access to the App if these Terms are violated."
+            },
+            "s12": {
+                "title": "Governing Law",
+                "content": "These Terms shall be governed by and construed in accordance with the laws of the State of Florida, United States, without regard to conflict of law principles."
+            },
+            "s13": {
+                "title": "Contact Information",
+                "content": "If you have any questions about these Terms, please contact us at:\n\nEmail: support@starwise.app"
+            }
+        }
     }
 }
