@@ -2,10 +2,11 @@
 
 import Image from 'next/image'
 
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 
 export default function Download() {
     const t = useTranslations('Download')
+    const locale = useLocale()
     return (
         <section className="relative overflow-hidden" style={{ backgroundColor: '#000000', paddingTop: '120px', paddingBottom: '0px' }}>
             {/* Top Divider */}
@@ -199,7 +200,7 @@ export default function Download() {
                         height: '498px'
                     }}>
                         <Image
-                            src="/images/answer_view_download_section.png"
+                            src={`/images/${locale}/answer_view_download_section_${locale}.png`}
                             alt="Answer View"
                             fill
                             style={{ objectFit: 'contain' }}
@@ -216,7 +217,7 @@ export default function Download() {
                         height: '637px'
                     }}>
                         <Image
-                            src="/images/improved_answer_download_section.png"
+                            src={`/images/${locale}/improved_answer_download_section_${locale}.png`}
                             alt="Improved Answer"
                             fill
                             style={{ objectFit: 'contain' }}
@@ -232,7 +233,7 @@ export default function Download() {
                         height: '498px'
                     }}>
                         <Image
-                            src="/images/answer_list_download_section.png"
+                            src={`/images/${locale}/answer_list_download_section_${locale}.png`}
                             alt="Answer List"
                             fill
                             style={{ objectFit: 'contain' }}

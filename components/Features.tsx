@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 
 
@@ -60,6 +60,7 @@ function FeatureCard({ feature }: { feature: { icon: string; title: string; desc
 
 export default function Features() {
   const t = useTranslations('Features');
+  const locale = useLocale();
 
   const features = [
     {
@@ -194,7 +195,7 @@ export default function Features() {
                   }}
                 >
                   <Image
-                    src="/images/features-phone-screenshot.png"
+                    src={`/images/${locale}/features-phone-screenshot_${locale}.png`}
                     alt="App screenshot"
                     fill
                     unoptimized

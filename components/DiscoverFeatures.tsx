@@ -1,47 +1,48 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function DiscoverFeatures() {
   const t = useTranslations('DiscoverFeatures');
+  const locale = useLocale();
 
   const features = [
     {
       icon: '/images/discover-icon-1.svg',
       title: t('feature1Title'),
       description: t('feature1Description'),
-      image: '/images/discover-screenshot-1.png',
+      image: `/images/${locale}/discover-screenshot-1_${locale}.png`,
     },
     {
       icon: '/images/discover-icon-2.svg',
       title: t('feature2Title'),
       description: t('feature2Description'),
-      image: '/images/discover-screenshot-2.png',
+      image: `/images/${locale}/discover-screenshot-2_${locale}.png`,
     },
     {
       icon: '/images/feature-star-generation.svg',
       title: t('feature3Title'),
       description: t('feature3Description'),
-      image: '/images/discover-screenshot-3.png',
+      image: `/images/${locale}/discover-screenshot-3_${locale}.png`,
     },
     {
       icon: '/images/discover-icon-4.svg',
       title: t('feature4Title'),
       description: t('feature4Description'),
-      image: '/images/discover-screenshot-4.png',
+      image: `/images/${locale}/discover-screenshot-4_${locale}.png`,
     },
     {
       icon: '/images/discover-icon-5.svg',
       title: t('feature5Title'),
       description: t('feature5Description'),
-      image: '/images/discover-screenshot-5.png',
+      image: `/images/${locale}/discover-screenshot-5_${locale}.png`,
     },
     {
       icon: '/images/discover-icon-6.svg',
       title: t('feature6Title'),
       description: t('feature6Description'),
-      image: '/images/discover-screenshot-6.png',
+      image: `/images/${locale}/discover-screenshot-6_${locale}.png`,
     },
   ];
 

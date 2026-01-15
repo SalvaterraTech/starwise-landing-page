@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Benefits() {
   const t = useTranslations('Benefits');
+  const locale = useLocale();
 
   const benefits = [
     {
@@ -240,7 +241,7 @@ export default function Benefits() {
                   }}
                 >
                   <Image
-                    src="/images/analysis_benefits.png"
+                    src={`/images/${locale}/analysis_benefits_${locale}.png`}
                     alt="Mobile App Preview"
                     width={546}
                     height={1080}

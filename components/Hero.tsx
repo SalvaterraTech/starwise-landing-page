@@ -3,7 +3,7 @@
 import { Link } from '@/navigation'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 
 const avatars = [
   '/images/avatar-1.png',
@@ -13,6 +13,7 @@ const avatars = [
 
 export default function Hero() {
   const t = useTranslations('Hero')
+  const locale = useLocale()
   return (
     <section
       id="hero"
@@ -258,7 +259,7 @@ export default function Hero() {
             >
               {/* Phone frame (bezel) */}
               <Image
-                src="/images/home_page_hero.png"
+                src={`/images/${locale}/home_page_hero_${locale}.png`}
                 alt="Mobile Frame"
                 fill
                 className="object-cover object-top"

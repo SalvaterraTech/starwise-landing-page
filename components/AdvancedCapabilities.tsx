@@ -1,10 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function AdvancedCapabilities() {
-  const t = useTranslations('AdvancedCapabilities');
+  const rt = useTranslations('AdvancedCapabilities');
+  const locale = useLocale();
+  // Safe wrapper for t to handle potential missing keys or just alias it if needed
+  const t = (key: string) => rt(key);
   const tDownload = useTranslations('Download');
 
   const capabilities = [
@@ -344,7 +347,7 @@ export default function AdvancedCapabilities() {
                 }}
               >
                 <Image
-                  src="/images/answer_detail_prepare.png"
+                  src={`/images/${locale}/answer_detail_prepare_${locale}.png`}
                   alt="Mobile App"
                   width={546}
                   height={1080}
