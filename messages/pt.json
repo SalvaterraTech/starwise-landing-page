@@ -4,28 +4,28 @@
         "features": "Funcionalidades",
         "pricing": "Preços",
         "testimonials": "Depoimentos",
-        "faqs": "Perguntas Frequentes",
-        "joinWaitlist": "Entrar na Lista de Espera"
+        "faqs": "FAQ's",
+        "joinWaitlist": "Entre na Waitlist"
     },
     "Hero": {
         "trustedBy": "Confiado por candidatos no mundo todo",
         "title": "Dificuldade em explicar sua experiência em entrevistas?",
         "subtitle": "Pratique respostas reais, receba feedback instantâneo de IA e melhore cada resposta antes da entrevista.",
-        "joinWaitlist": "Entrar na Lista de Espera",
+        "joinWaitlist": "Entre na Waitlist",
         "appAvailableFor": "App Disponível Para"
     },
     "Stats": {
         "stat1Label": "Respostas STAR estruturadas por IA",
         "stat2Label": "Mais clareza em suas respostas",
         "stat3Label": "Países onde o Starwise está disponível",
-        "heading": "Empoderando candidatos para responder entrevistas com clareza e confiança — e conquistar o emprego desejado."
+        "heading": "Tenha clareza e confiança em suas respostas e conquiste a vaga que você merece."
     },
     "Benefits": {
         "title": "Descubra os Benefícios do Starwise",
-        "subtitle": "Domine suas habilidades de entrevista com ferramentas projetadas para ajudá-lo a se preparar de forma eficaz.",
-        "card1Title": "Estruture seus pensamentos",
+        "subtitle": "Domine suas entrevistas com ferramentas projetadas para ajudá-lo a se preparar de forma eficaz.",
+        "card1Title": "Organize suas ideias",
         "card1Description": "Aprenda a organizar sua experiência em histórias claras e envolventes usando o método STAR.",
-        "card2Title": "Pratique a qualquer momento",
+        "card2Title": "Pratique Sempre",
         "card2Description": "Grave suas respostas e receba feedback imediato sobre clareza, tom e conteúdo.",
         "card3Title": "Acompanhe seu progresso",
         "card3Description": "Veja como suas respostas melhoram ao longo do tempo com análises detalhadas e insights.",
@@ -123,7 +123,7 @@
         "testT6": "Ter respostas estruturadas e reutilizáveis tornou as entrevistas de acompanhamento muito mais fáceis. O Starwise se tornou parte da minha rotina de preparação."
     },
     "FAQ": {
-        "title": "Perguntas Frequentes",
+        "title": "FAQ's",
         "badge": "FAQ's",
         "q1": "O que é o Starwise e para quem é?",
         "a1": "O Starwise é um aplicativo de preparação para entrevistas com IA para candidatos que desejam respostas mais claras e estruturadas. Além do feedback, o Starwise também gera respostas melhoradas baseadas no método STAR usando suas próprias experiências, para que você possa refiná-las e adaptá-las para diferentes entrevistas.",
@@ -151,7 +151,7 @@
         "appStore": "App Store"
     },
     "Footer": {
-        "tagline1": "Empodere Sua Preparação para Entrevistas",
+        "tagline1": "Domine Sua Preparação para Entrevistas",
         "tagline2": "com o Starwise",
         "privacy": "Política de Privacidade",
         "terms": "Termos de Uso",
@@ -165,7 +165,7 @@
         "successTitle": "Você está na lista!",
         "successSubtitle": "Iremos notificá-lo quando o Starwise for lançado.",
         "emailPlaceholder": "Digite seu e-mail",
-        "cta": "Entrar na Lista de Espera",
+        "cta": "Entre na Waitlist",
         "privacy": "Sem Spam, Apenas Atualizações Reais"
     },
     "PrivacyPolicy": {

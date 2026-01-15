@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 
 export default function AdvancedCapabilities() {
   const t = useTranslations('AdvancedCapabilities');
+  const tDownload = useTranslations('Download');
 
   const capabilities = [
     { name: t('cap1') },
@@ -188,7 +189,7 @@ export default function AdvancedCapabilities() {
                       color: 'rgb(19, 19, 21)',
                     }}
                   >
-                    Get It On
+                    {tDownload('getItOn')}
                   </span>
                   <span
                     style={{
@@ -199,7 +200,7 @@ export default function AdvancedCapabilities() {
                       color: 'rgb(14, 14, 16)',
                     }}
                   >
-                    Google Play
+                    {tDownload('googlePlay')}
                   </span>
                 </div>
               </a>
@@ -253,7 +254,7 @@ export default function AdvancedCapabilities() {
                       color: 'rgb(19, 19, 21)',
                     }}
                   >
-                    Download on the
+                    {tDownload('downloadOn')}
                   </span>
                   <span
                     style={{
@@ -264,7 +265,7 @@ export default function AdvancedCapabilities() {
                       color: 'rgb(14, 14, 16)',
                     }}
                   >
-                    App Store
+                    {tDownload('appStore')}
                   </span>
                 </div>
               </a>
