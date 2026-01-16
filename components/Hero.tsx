@@ -302,9 +302,9 @@ export default function Hero() {
                 height: '446px'
               }}
             >
-              {/* Phone frame (bezel) */}
+              {/* Phone mockup with localized content */}
               <Image
-                src="/images/iphone-right-frame.png"
+                src={`/images/${locale}/hero_left_${locale}.png`}
                 alt=""
                 fill
                 className="object-cover"
