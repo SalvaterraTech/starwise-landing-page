@@ -166,7 +166,11 @@
         "successSubtitle": "Iremos notificá-lo quando o Starwise for lançado.",
         "emailPlaceholder": "Digite seu e-mail",
         "cta": "Entre na Waitlist",
-        "privacy": "Sem Spam, Apenas Atualizações Reais"
+        "privacy": "Sem Spam, Apenas Atualizações Reais",
+        "errorInvalidEmail": "Digite um e-mail válido",
+        "errorConfig": "Configuração do formulário não encontrada",
+        "errorSubmit": "Erro ao enviar. Tente novamente.",
+        "loading": "Enviando..."
     },
     "PrivacyPolicy": {
         "badge": "Política de Privacidade",

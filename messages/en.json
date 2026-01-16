@@ -166,7 +166,11 @@
         "successSubtitle": "We'll notify you when Starwise launches.",
         "emailPlaceholder": "Enter your email",
         "cta": "Join Waitlist",
-        "privacy": "No Spam, Only Genuine Updates"
+        "privacy": "No Spam, Only Genuine Updates",
+        "errorInvalidEmail": "Please enter a valid email",
+        "errorConfig": "Form configuration not found",
+        "errorSubmit": "Error submitting. Please try again.",
+        "loading": "Submitting..."
     },
     "PrivacyPolicy": {
         "badge": "Privacy Policy",
