@@ -152,7 +152,7 @@ export default function Features() {
               />
             </div>
 
-            {/* Phone mockup - positioned with top 80px */}
+            {/* Phone mockup - celebration image (already includes frame) */}
             <div
               style={{
                 position: 'absolute',
@@ -163,46 +163,19 @@ export default function Features() {
                 zIndex: 10,
               }}
             >
-              <div style={{ position: 'relative' }}>
-                {/* Phone frame */}
-                <Image
-                  src="/images/features-phone-frame.png"
-                  alt="Phone frame"
-                  width={255}
-                  height={486}
-                  unoptimized
-                  priority
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    display: 'block',
-                    position: 'relative',
-                    zIndex: 2,
-                  }}
-                />
-                {/* Screen content */}
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '2.5%',
-                    left: '5.5%',
-                    right: '5.5%',
-                    bottom: '2.5%',
-                    borderRadius: '32px',
-                    overflow: 'hidden',
-                    zIndex: 1,
-                    transform: 'rotateX(-12deg) skewY(3deg)',
-                  }}
-                >
-                  <Image
-                    src={`/images/${locale}/features-phone-screenshot_${locale}.png`}
-                    alt="App screenshot"
-                    fill
-                    unoptimized
-                    style={{ objectFit: 'cover', objectPosition: 'center top' }}
-                  />
-                </div>
-              </div>
+              <Image
+                src={`/images/${locale}/features-phone-screenshot_${locale}.png`}
+                alt="App celebration"
+                width={255}
+                height={486}
+                unoptimized
+                priority
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                }}
+              />
             </div>
 
             {/* Bottom gradient overlay - comes after phone and sits on top */}
