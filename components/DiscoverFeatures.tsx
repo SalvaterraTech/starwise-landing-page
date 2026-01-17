@@ -221,6 +221,7 @@ export default function DiscoverFeatures() {
                   width: '100%',
                   height: '294px',
                   overflow: 'hidden',
+                  paddingTop: index === 2 ? '5px' : '0px',
                 }}
               >
                 <img
@@ -228,7 +229,7 @@ export default function DiscoverFeatures() {
                   alt={feature.title}
                   style={{
                     width: '100%',
-                    height: '100%',
+                    height: index === 2 ? 'calc(100% - 5px)' : '100%',
                     objectFit: 'cover',
                     objectPosition: 'center',
                   }}
