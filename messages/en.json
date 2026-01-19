@@ -8,7 +8,8 @@
         "joinWaitlist": "Join Waitlist"
     },
     "Hero": {
-        "trustedBy": "Trusted by job seekers worldwide",
+        "trustedBy": "Trusted by job seekers",
+        "trustedByFull": "Trusted by job seekers worldwide",
         "title": "Struggling to explain your experience in interviews?",
         "subtitle": "Practice real answers, get instant AI-powered feedback, and improve every response before the interview.",
         "joinWaitlist": "Join Waitlist",

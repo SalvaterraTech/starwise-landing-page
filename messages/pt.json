@@ -8,7 +8,8 @@
         "joinWaitlist": "Entre na Waitlist"
     },
     "Hero": {
-        "trustedBy": "Confiado por candidatos no mundo todo",
+        "trustedBy": "Confiado por candidatos",
+        "trustedByFull": "Confiado por candidatos no mundo todo",
         "title": "Dificuldade em explicar sua experiência em entrevistas?",
         "subtitle": "Pratique respostas reais, receba feedback instantâneo de IA e melhore cada resposta antes da entrevista.",
         "joinWaitlist": "Entre na Waitlist",

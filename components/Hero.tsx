@@ -79,7 +79,10 @@ export default function Hero() {
               whiteSpace: 'pre'
             }}
           >
-            {t('trustedBy')}
+            {/* Mobile version - short text */}
+            <span className="md:hidden">{t('trustedBy')}</span>
+            {/* Desktop/Tablet version - full text */}
+            <span className="hidden md:inline">{t('trustedByFull')}</span>
           </span>
         </motion.div>
 

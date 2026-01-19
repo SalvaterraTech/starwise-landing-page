@@ -118,7 +118,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link href="/#hero" className="flex items-center gap-3">
-          <div className="relative w-[42px] h-[42px]">
+          <div className="relative w-[52px] h-[52px]">
             <Image
               src="/images/starwise_logo.png"
               alt="Starwise Logo"
@@ -128,7 +128,7 @@ export default function Navbar() {
             />
           </div>
           <span
-            className="text-white text-[22px] font-bold"
+            className="text-white text-[26px] font-bold"
             style={{ fontFamily: 'Inter Tight, sans-serif' }}
           >
             Starwise
@@ -138,7 +138,7 @@ export default function Navbar() {
         {/* Menu Icon */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="w-10 h-10 flex items-center justify-center bg-white rounded-10 p-3"
+          className="w-[60px] h-[52px] flex items-center justify-center bg-white rounded-[12px]"
           aria-label="Toggle menu"
         >
           <Image

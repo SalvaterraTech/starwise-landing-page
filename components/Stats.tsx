@@ -164,11 +164,11 @@ export default function Stats() {
 
         {/* Stats row */}
         <div
-          className="flex items-start justify-start w-full"
+          className="flex flex-col md:flex-row items-start justify-start w-full"
           style={{ gap: '32px' }}
         >
           {stats.map((stat, index) => (
-            <div key={index} className="contents">
+            <div key={index} className="contents md:contents">
               <StatItem
                 value={stat.value}
                 suffix={stat.suffix}
@@ -177,7 +177,7 @@ export default function Stats() {
               />
               {index < stats.length - 1 && (
                 <div
-                  className="self-stretch"
+                  className="hidden md:block self-stretch"
                   style={{
                     width: '1px',
                     backgroundColor: 'rgb(29, 29, 32)'
