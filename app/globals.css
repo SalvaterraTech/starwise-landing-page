@@ -399,10 +399,13 @@ body {
     display: none !important;
   }
 
-  /* Stats items full width */
-  section div[style*="gap: 32px"] div[style*="flex: 1 0 0"] {
-    flex: none !important;
-    width: 100% !important;
+  /* Stats Section - FORCE mobile sizes */
+  section#stats h2 {
+    font-size: 24px !important;
+  }
+
+  section#stats p {
+    font-size: 18px !important;
   }
 
   /* Benefits Section - Force single column */

@@ -45,19 +45,12 @@ function StatItem({ value, suffix, label, inView }: StatItemProps) {
   const count = useCounter(value, 2000, inView)
 
   return (
-    <div
-      className="flex flex-col items-center"
-      style={{ gap: '12px', flex: '1 0 0', width: '1px' }}
-    >
+    <div className="flex flex-col items-center gap-3 md:gap-4 w-full md:flex-1 md:w-auto">
       {/* Number */}
       <div
-        className="flex items-center justify-center"
+        className="flex items-center justify-center text-[40px] md:text-[50px] font-bold leading-[120%] text-white"
         style={{
           fontFamily: '"Inter Tight", sans-serif',
-          fontSize: '50px',
-          fontWeight: 700,
-          lineHeight: '120%',
-          color: 'rgb(255, 255, 255)',
           letterSpacing: '0em'
         }}
       >
@@ -66,13 +59,9 @@ function StatItem({ value, suffix, label, inView }: StatItemProps) {
       </div>
       {/* Label */}
       <p
-        className="text-center"
+        className="text-center text-[16px] md:text-[18px] font-medium leading-[150%] text-[#797B85]"
         style={{
-          fontFamily: '"Instrument Sans", sans-serif',
-          fontSize: '18px',
-          fontWeight: 500,
-          lineHeight: '150%',
-          color: 'rgb(121, 123, 133)'
+          fontFamily: '"Instrument Sans", sans-serif'
         }}
       >
         {label}
@@ -94,6 +83,7 @@ export default function Stats() {
 
   return (
     <section
+      id="stats"
       className="relative flex flex-col items-center w-full"
       style={{
         background: 'radial-gradient(29.06% 100% at 50% 0%, #131315 0%, #000 100%)',
@@ -116,19 +106,12 @@ export default function Stats() {
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="flex flex-col items-center w-full"
-        style={{ gap: '80px', maxWidth: '1040px' }}
+        className="flex flex-col items-center w-full gap-[50px] md:gap-[80px] max-w-[1040px]"
       >
         {/* Heading section */}
-        <div
-          className="flex flex-col items-center"
-          style={{ gap: '8px' }}
-        >
+        <div className="flex flex-col items-center gap-2">
           {/* Logo container */}
-          <div
-            className="relative flex items-center justify-center"
-            style={{ width: '108px', height: '108px' }}
-          >
+          <div className="relative flex items-center justify-center w-[84px] h-[84px] md:w-[108px] md:h-[108px]">
             {/* Background image */}
             <Image
               src="/images/stats-icon-1.svg"
@@ -137,7 +120,7 @@ export default function Stats() {
               className="object-cover"
             />
             {/* Inner logo */}
-            <div className="relative" style={{ width: '75px', height: '75px', zIndex: 1 }}>
+            <div className="relative w-[60px] h-[60px] md:w-[75px] md:h-[75px] z-[1]">
               <Image
                 src="/images/starwise_logo.png"
                 alt="Starwise Logo"
@@ -149,13 +132,9 @@ export default function Stats() {
 
           {/* Heading text */}
           <h2
-            className="text-center"
+            className="text-center text-[24px] md:text-[48px] font-bold leading-[120%] text-white"
             style={{
-              fontFamily: '"Inter Tight", sans-serif',
-              fontSize: '48px',
-              fontWeight: 700,
-              lineHeight: '120%',
-              color: 'rgb(255, 255, 255)'
+              fontFamily: '"Inter Tight", sans-serif'
             }}
           >
             {t('heading')}
@@ -163,10 +142,7 @@ export default function Stats() {
         </div>
 
         {/* Stats row */}
-        <div
-          className="flex flex-col md:flex-row items-start justify-start w-full"
-          style={{ gap: '32px' }}
-        >
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center w-full gap-10 md:gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="contents md:contents">
               <StatItem
@@ -176,13 +152,7 @@ export default function Stats() {
                 inView={isInView}
               />
               {index < stats.length - 1 && (
-                <div
-                  className="hidden md:block self-stretch"
-                  style={{
-                    width: '1px',
-                    backgroundColor: 'rgb(29, 29, 32)'
-                  }}
-                />
+                <div className="hidden md:block self-stretch w-px bg-[#1d1d20]" />
               )}
             </div>
           ))}
