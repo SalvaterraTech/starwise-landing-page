@@ -1,9 +1,11 @@
 'use client'
 
+import React from 'react'
 import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
+
 
 // Animated counter hook
 function useCounter(end: number, duration: number = 2000, inView: boolean) {
@@ -144,7 +146,7 @@ export default function Stats() {
         {/* Stats row */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center w-full gap-10 md:gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="contents md:contents">
+            <React.Fragment key={index}>
               <StatItem
                 value={stat.value}
                 suffix={stat.suffix}
@@ -152,9 +154,14 @@ export default function Stats() {
                 inView={isInView}
               />
               {index < stats.length - 1 && (
-                <div className="hidden md:block self-stretch w-px bg-[#1d1d20]" />
+                <>
+                  {/* Horizontal divider for mobile */}
+                  <div className="md:hidden w-full h-px bg-[#1d1d20]" />
+                  {/* Vertical divider for desktop */}
+                  <div className="hidden md:block self-stretch w-px bg-[#1d1d20]" />
+                </>
               )}
-            </div>
+            </React.Fragment>
           ))}
         </div>
       </motion.div>
