@@ -93,7 +93,7 @@ export default function Pricing() {
           </div>
 
           {/* Text Container */}
-          <div style={{
+          <div className="px-5 md:px-0" style={{
             maxWidth: '1200px',
             margin: '0 auto',
             display: 'flex',
@@ -101,9 +101,9 @@ export default function Pricing() {
             gap: '20px'
           }}>
             <h2
+              className="text-[32px] md:text-[58px] text-center"
               style={{
                 fontFamily: 'Inter Tight, sans-serif',
-                fontSize: '58px',
                 fontWeight: 700,
                 lineHeight: '120%',
                 color: 'rgb(255, 255, 255)',
@@ -115,8 +115,9 @@ export default function Pricing() {
             </h2>
 
             {/* Paragraph Container */}
-            <div style={{ padding: '0 320px' }}>
+            <div className="md:px-80">
               <p
+                className="text-center"
                 style={{
                   fontFamily: 'Instrument Sans, sans-serif',
                   fontSize: '18px',
@@ -185,7 +186,7 @@ export default function Pricing() {
 
         {/* Pricing Cards */}
         <div
-          className="flex mx-auto"
+          className="flex flex-col md:flex-row mx-auto px-5 md:px-0"
           style={{
             maxWidth: '810px',
             gap: '20px',
@@ -195,13 +196,11 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="relative p-8 rounded-20 border"
+              className="relative p-8 rounded-20 border w-full md:flex-1"
               style={{
                 backgroundColor: 'rgb(9, 9, 10)',
                 borderColor: 'rgb(29, 29, 32)',
                 borderWidth: '1px',
-                flex: '1 0 0px',
-                width: '1px',
                 overflow: 'hidden'
               }}
             >

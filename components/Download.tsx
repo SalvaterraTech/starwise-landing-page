@@ -29,11 +29,11 @@ export default function Download() {
             <div className="relative max-w-7xl mx-auto px-6 flex flex-col items-center">
                 {/* Title */}
                 <h2
+                    className="text-[32px] md:text-[58px] px-5 md:px-0"
                     style={{
                         fontFamily: 'Inter Tight, sans-serif',
-                        fontSize: '58px',
                         fontWeight: 700,
-                        lineHeight: '69.6px',
+                        lineHeight: '1.2',
                         color: '#FFFFFF',
                         textAlign: 'center',
                         marginBottom: '20px',
@@ -45,6 +45,7 @@ export default function Download() {
 
                 {/* Subtitle */}
                 <p
+                    className="px-5 md:px-0"
                     style={{
                         fontFamily: 'Instrument Sans, sans-serif',
                         fontSize: '18px',
@@ -61,12 +62,13 @@ export default function Download() {
                 </p>
 
                 {/* Buttons Container */}
-                <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '80px' }}>
+                <div className="flex flex-col md:flex-row gap-5 items-center mb-20 w-full md:w-auto px-5 md:px-0" style={{ marginBottom: '80px' }}>
                     {/* Google Play Button */}
                     <a
                         href="https://play.google.com"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="w-full md:w-auto"
                         style={{
                             display: 'flex',
                             alignItems: 'center',
@@ -124,6 +126,7 @@ export default function Download() {
                         href="https://www.apple.com/app-store/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="w-full md:w-auto"
                         style={{
                             display: 'flex',
                             alignItems: 'center',
@@ -181,11 +184,10 @@ export default function Download() {
                 </div>
 
                 {/* iPhone Mockups - Front-Facing with Exact Sample Measurements */}
-                <div style={{
+                <div className="h-[400px] md:h-[494px]" style={{
                     position: 'relative',
                     width: '886px',  // Exact width from sample (252 + 30 + 322 + 30 + 252)
                     maxWidth: '100%',
-                    height: '494px',  // EXACT height from reference site (was 480px)
                     marginTop: '0px',
                     marginLeft: 'auto',
                     marginRight: 'auto',

@@ -149,9 +149,9 @@ export default function DiscoverFeatures() {
           >
             {/* Heading */}
             <h2
+              className="text-[32px] md:text-[58px]"
               style={{
                 fontFamily: '"Inter Tight", sans-serif',
-                fontSize: '58px',
                 fontWeight: 700,
                 lineHeight: '120%',
                 letterSpacing: '0em',
@@ -165,12 +165,11 @@ export default function DiscoverFeatures() {
 
             {/* Paragraph Container */}
             <div
+              className="px-5 md:px-80"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '10px',
-                paddingLeft: '320px',
-                paddingRight: '320px',
               }}
             >
               <p
@@ -193,10 +192,9 @@ export default function DiscoverFeatures() {
 
         {/* Features Grid */}
         <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full"
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '20px',
             width: '100%',
           }}
         >

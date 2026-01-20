@@ -94,10 +94,9 @@ export default function FAQ() {
 
           {/* Title - 58px Inter Tight */}
           <h2
-            className="font-bold text-white"
+            className="font-bold text-white text-[32px] md:text-[58px]"
             style={{
               fontFamily: 'Inter Tight, sans-serif',
-              fontSize: '58px',
               fontWeight: 700,
               lineHeight: '1.2'
             }}
@@ -123,14 +122,13 @@ export default function FAQ() {
               {/* Question Button */}
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between text-left"
+                className="w-full flex items-center justify-between text-left px-5 md:px-[30px] py-3 md:py-4"
                 style={{ padding: '16px 30px' }}
               >
                 <span
-                  className="text-white pr-4"
+                  className="text-white pr-4 text-[18px] md:text-[20px]"
                   style={{
                     fontFamily: 'Inter, sans-serif',
-                    fontSize: '20px',
                     fontWeight: 600,
                     lineHeight: '1.5'
                   }}
@@ -174,13 +172,13 @@ export default function FAQ() {
 
                 {/* Answer Text */}
                 <p
+                  className="px-5 md:px-[30px] py-3 md:py-4"
                   style={{
                     fontFamily: 'Inter, sans-serif',
                     fontSize: '17px',
                     fontWeight: 500,
                     color: 'rgb(148, 150, 157)',
                     lineHeight: '1.5',
-                    padding: '16px 30px 16px 30px'
                   }}
                 >
                   {faq.answer}

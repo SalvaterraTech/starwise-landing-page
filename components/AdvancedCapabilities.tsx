@@ -20,13 +20,13 @@ export default function AdvancedCapabilities() {
 
   return (
     <section
-      style={{
-        width: '100%',
-        backgroundColor: 'rgb(0, 0, 0)',
-        paddingTop: '120px',
-        paddingBottom: '120px',
-      }}
-    >
+        style={{
+          width: '100%',
+          backgroundColor: 'rgb(0, 0, 0)',
+          paddingTop: '120px',
+          paddingBottom: '120px',
+        }}
+      >
       <div
         style={{
           maxWidth: '1134px',
@@ -37,10 +37,9 @@ export default function AdvancedCapabilities() {
         }}
       >
         <div
+          className="flex flex-col md:flex-row gap-12 md:gap-[50px] items-center"
           style={{
             display: 'flex',
-            flexDirection: 'row',
-            gap: '50px',
             alignItems: 'center',
           }}
         >
@@ -63,9 +62,9 @@ export default function AdvancedCapabilities() {
             >
               {/* Title */}
               <h2
+                className="text-[32px] md:text-[58px]"
                 style={{
                   fontFamily: '"Inter Tight", sans-serif',
-                  fontSize: '58px',
                   fontWeight: 700,
                   lineHeight: '120%',
                   letterSpacing: '0em',
@@ -137,15 +136,16 @@ export default function AdvancedCapabilities() {
 
             {/* Download buttons */}
             <div
+              className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto"
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '20px',
               }}
             >
               {/* Google Play button */}
               <a
                 href="#"
+                className="w-full md:w-auto"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -211,6 +211,7 @@ export default function AdvancedCapabilities() {
               {/* App Store button */}
               <a
                 href="#"
+                className="w-full md:w-auto"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -277,6 +278,7 @@ export default function AdvancedCapabilities() {
 
           {/* Right mockup */}
           <div
+            className="w-full md:w-auto max-w-[300px] md:max-w-none mx-auto md:mx-0"
             style={{
               position: 'relative',
               flex: '1 0 0px',

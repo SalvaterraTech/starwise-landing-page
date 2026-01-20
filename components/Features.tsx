@@ -87,15 +87,15 @@ export default function Features() {
 
   return (
     <section
-      id="features"
-      style={{
-        backgroundColor: '#000000',
-        position: 'relative',
-        overflow: 'visible',
-        paddingTop: '100px',
-        paddingBottom: '100px',
-      }}
-    >
+        id="features"
+        style={{
+          backgroundColor: '#000000',
+          position: 'relative',
+          overflow: 'visible',
+          paddingTop: '100px',
+          paddingBottom: '100px',
+        }}
+      >
       {/* Top border line with gradient */}
       <div
         style={{
@@ -111,24 +111,22 @@ export default function Features() {
       <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '0 20px', width: '100%' }}>
         {/* Main flex container - iPhone on left, content on right */}
         <div
+          className="flex flex-col md:flex-row gap-12 md:gap-[42px] items-center w-full"
           style={{
             display: 'flex',
-            flexDirection: 'row',
-            gap: '42px',
             alignItems: 'center',
             width: '100%',
           }}
         >
           {/* Left side - Phone mockup inside dark card */}
           <div
+            className="w-full md:w-auto md:h-[548px] md:max-w-[438px]"
             style={{
               backgroundColor: 'rgb(14, 14, 16)',
               borderRadius: '24px',
               position: 'relative',
               overflow: 'hidden',
               aspectRatio: '0.7992700729927007',
-              height: '548px',
-              maxWidth: '438px',
               flex: 'none',
             }}
           >
@@ -223,17 +221,15 @@ export default function Features() {
 
           {/* Right side - Title and Feature Cards */}
           <div
+            className="flex flex-col gap-8 md:gap-12"
             style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '48px',
               flex: '1 0 0px',
             }}
           >
             <h2
+              className="text-[32px] md:text-[48px]"
               style={{
                 fontFamily: '"Inter Tight", sans-serif',
-                fontSize: '48px',
                 fontWeight: 700,
                 lineHeight: '120%',
                 letterSpacing: '0em',
@@ -246,10 +242,9 @@ export default function Features() {
 
             {/* Feature Cards Grid - 2x2 */}
             <div
+              className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full"
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                gap: '20px',
                 width: '100%',
               }}
             >
