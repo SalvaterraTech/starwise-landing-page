@@ -408,6 +408,12 @@ body {
     font-size: 18px !important;
   }
 
+  /* Reduce spacing between Hero and Stats on mobile */
+  section#stats {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
   /* Benefits Section - Force single column */
   .grid.lg\:grid-cols-\[1fr_auto_1fr\],
   .grid.md\:grid-cols-3,

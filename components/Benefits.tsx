@@ -316,6 +316,44 @@ export default function Benefits() {
           </div>
         </div>
 
+        {/* Mobile iPhone Mockup - ONLY visible on mobile */}
+        <div className="md:hidden flex justify-center mb-12">
+          <div
+            className="relative w-full max-w-[280px]"
+            style={{
+              height: '500px',
+              overflow: 'hidden',
+              position: 'relative'
+            }}
+          >
+            {/* Gradient fade overlay at bottom */}
+            <div
+              style={{
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: '150px',
+                background: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
+                zIndex: 2,
+                pointerEvents: 'none'
+              }}
+            />
+
+            {/* iPhone image */}
+            <div style={{ position: 'relative', zIndex: 1 }}>
+              <Image
+                src={`/images/${locale}/analysis_benefits_${locale}.png`}
+                alt="Mobile App Preview"
+                width={546}
+                height={1080}
+                className="w-full h-auto"
+                unoptimized
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Mobile Layout: Stack all cards */}
         <div className="grid lg:hidden grid-cols-1 gap-6">
           {benefits.map((benefit, index) => (

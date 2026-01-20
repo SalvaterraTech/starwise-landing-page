@@ -269,14 +269,14 @@ export default function Hero() {
                 style={{ zIndex: 2 }}
               />
 
-              {/* Bottom gradients */}
+              {/* Bottom gradients - Higher and very strong */}
               <div
                 className="absolute bottom-0 left-0 right-0"
-                style={{ height: '423px', background: 'linear-gradient(180deg, transparent, #000)', zIndex: 3 }}
-              />
-              <div
-                className="absolute bottom-0 left-0 right-0"
-                style={{ height: '216px', background: 'linear-gradient(180deg, transparent, #000)', zIndex: 3 }}
+                style={{
+                  height: '330px',
+                  background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.95) 60%, #000 75%)',
+                  zIndex: 3
+                }}
               />
             </motion.div>
           </div>
