@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* Email Button */}
           <Link
-            href="mailto:hello@starwise.com"
+            href="mailto:starwise@salvaterratech.com"
             className="flex items-center gap-3 px-5 py-3 bg-appit-surface border border-appit-border-light rounded-12 hover:bg-appit-border-light transition-colors"
           >
             <Image
