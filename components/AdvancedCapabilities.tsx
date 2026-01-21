@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { Link } from '@/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 
 export default function AdvancedCapabilities() {
@@ -20,13 +21,13 @@ export default function AdvancedCapabilities() {
 
   return (
     <section
-        style={{
-          width: '100%',
-          backgroundColor: 'rgb(0, 0, 0)',
-          paddingTop: '120px',
-          paddingBottom: '120px',
-        }}
-      >
+      style={{
+        width: '100%',
+        backgroundColor: 'rgb(0, 0, 0)',
+        paddingTop: '120px',
+        paddingBottom: '120px',
+      }}
+    >
       <div
         style={{
           maxWidth: '1134px',
@@ -143,8 +144,8 @@ export default function AdvancedCapabilities() {
               }}
             >
               {/* Google Play button */}
-              <a
-                href="#"
+              <Link
+                href="/waitlist"
                 className="w-full md:w-auto"
                 style={{
                   display: 'flex',
@@ -206,11 +207,11 @@ export default function AdvancedCapabilities() {
                     {tDownload('googlePlay')}
                   </span>
                 </div>
-              </a>
+              </Link>
 
               {/* App Store button */}
-              <a
-                href="#"
+              <Link
+                href="/waitlist"
                 className="w-full md:w-auto"
                 style={{
                   display: 'flex',
@@ -272,7 +273,7 @@ export default function AdvancedCapabilities() {
                     {tDownload('appStore')}
                   </span>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 

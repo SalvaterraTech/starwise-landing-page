@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-
+import { Link } from '@/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 
 export default function Download() {
@@ -64,10 +64,8 @@ export default function Download() {
                 {/* Buttons Container */}
                 <div className="flex flex-col md:flex-row gap-5 items-center mb-20 w-full md:w-auto px-5 md:px-0" style={{ marginBottom: '80px' }}>
                     {/* Google Play Button */}
-                    <a
-                        href="https://play.google.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Link
+                        href="/waitlist"
                         className="w-full md:w-auto"
                         style={{
                             display: 'flex',
@@ -119,13 +117,11 @@ export default function Download() {
                                 {t('googlePlay')}
                             </span>
                         </div>
-                    </a>
+                    </Link>
 
                     {/* App Store Button */}
-                    <a
-                        href="https://www.apple.com/app-store/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Link
+                        href="/waitlist"
                         className="w-full md:w-auto"
                         style={{
                             display: 'flex',
@@ -180,7 +176,7 @@ export default function Download() {
                                 {t('appStore')}
                             </span>
                         </div>
-                    </a>
+                    </Link>
                 </div>
 
                 {/* iPhone Mockups - Front-Facing with Exact Sample Measurements */}

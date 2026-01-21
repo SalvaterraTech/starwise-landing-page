@@ -165,8 +165,9 @@ export default function Hero() {
             {t('appAvailableFor')}
           </span>
           {/* Store icons container */}
-          <div
-            className="flex items-center overflow-hidden"
+          <Link
+            href="/waitlist"
+            className="flex items-center overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
             style={{
               backgroundColor: 'rgb(14, 14, 16)',
               border: '1px solid rgb(29, 29, 32)',
@@ -192,7 +193,7 @@ export default function Hero() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </Link>
         </motion.div>
 
         {/* Phone Mockups Container */}
