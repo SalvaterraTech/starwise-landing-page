@@ -11,12 +11,14 @@ import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import Download from '@/components/Download'
 import Footer from '@/components/Footer'
+import MixpanelPageView from '@/components/MixpanelPageView'
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
 
   return (
     <main className="min-h-screen bg-appit-bg">
+      <MixpanelPageView />
       <Navbar />
       <Hero />
       <Stats />
