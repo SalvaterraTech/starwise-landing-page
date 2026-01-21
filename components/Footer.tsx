@@ -16,7 +16,7 @@ const socialLinks = [
     alt: 'X.com'
   },
   {
-    href: 'https://www.instagram.com/',
+    href: 'https://www.instagram.com/starwiseapp/',
     icon: '/images/social-youtube.svg',
     alt: 'Instagram'
   },
