@@ -6,12 +6,12 @@ import { useTranslations } from 'next-intl'
 
 const socialLinks = [
   {
-    href: 'https://in.linkedin.com/',
+    href: 'https://www.linkedin.com/company/starwiseapp/',
     icon: '/images/social-twitter.svg',
     alt: 'LinkedIn'
   },
   {
-    href: 'https://x.com',
+    href: 'https://x.com/StarwiseApp',
     icon: '/images/social-instagram.svg',
     alt: 'X.com'
   },
