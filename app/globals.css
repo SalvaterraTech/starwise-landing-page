@@ -580,6 +580,54 @@ body {
     flex-direction: column !important;
     gap: 16px !important;
   }
+
+  /* ============================================
+     FEATURES SECTION - MOBILE FIXES
+     Reduce bottom padding to fix double spacing with next section
+     ============================================ */
+  #features {
+    padding-bottom: 40px !important;
+  }
+
+  /* ============================================
+     ADVANCED CAPABILITIES SECTION - MOBILE FIXES
+     Centers title, subtitle, capabilities list, and download buttons
+     ============================================ */
+
+  /* Reduce top padding to fix double spacing between Features and this section */
+  #advanced-capabilities {
+    padding-top: 40px !important;
+  }
+
+  /* Center the left content column */
+  #advanced-capabilities > div > div > div:first-child {
+    align-items: center !important;
+  }
+
+  /* Center the title */
+  #advanced-capabilities h2 {
+    text-align: center !important;
+  }
+
+  /* Center the main subtitle (direct child of title container) */
+  #advanced-capabilities > div > div > div:first-child > div:first-child > p {
+    text-align: center !important;
+  }
+
+  /* Center the capabilities list (tags) */
+  #advanced-capabilities > div > div > div:first-child > div:nth-child(2) {
+    justify-content: center !important;
+  }
+
+  /* Center the download buttons container */
+  #advanced-capabilities .flex.flex-col.md\:flex-row {
+    align-items: center !important;
+  }
+
+  /* Make download buttons full width and center their content */
+  #advanced-capabilities .flex.flex-col.md\:flex-row > a {
+    justify-content: center !important;
+  }
 }
 
 /* ============================================

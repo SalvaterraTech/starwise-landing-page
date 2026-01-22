@@ -22,6 +22,7 @@ export default function AdvancedCapabilities() {
 
   return (
     <section
+      id="advanced-capabilities"
       style={{
         width: '100%',
         backgroundColor: 'rgb(0, 0, 0)',
