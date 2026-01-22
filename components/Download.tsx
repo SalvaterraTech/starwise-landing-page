@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { Link } from '@/navigation'
 import { useTranslations, useLocale } from 'next-intl'
+import Mixpanel from '@/lib/mixpanel'
 
 export default function Download() {
     const t = useTranslations('Download')
@@ -81,6 +82,7 @@ export default function Download() {
                         }}
                         onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                         onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        onClick={() => Mixpanel.trackDownloadClick('Google Play', 'Download Section')}
                     >
                         {/* Google Play Icon */}
                         <div style={{ position: 'relative', width: '30px', height: '30px', flexShrink: 0 }}>
@@ -137,6 +139,7 @@ export default function Download() {
                         }}
                         onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                         onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        onClick={() => Mixpanel.trackDownloadClick('App Store', 'Download Section')}
                     >
                         {/* App Store Icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">

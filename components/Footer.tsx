@@ -1,6 +1,9 @@
+'use client'
+
 import { Link } from '@/navigation'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Mixpanel from '@/lib/mixpanel'
 
 
 
@@ -84,6 +87,7 @@ export default function Footer() {
           <Link
             href="mailto:starwise@salvaterratech.com"
             className="flex items-center gap-3 px-5 py-3 bg-appit-surface border border-appit-border-light rounded-12 hover:bg-appit-border-light transition-colors"
+            onClick={() => Mixpanel.track('email_contact_click', { location: 'Footer' })}
           >
             <Image
               src="/images/email-icon.svg"
@@ -108,6 +112,7 @@ export default function Footer() {
                 href={link.href}
                 className="text-appit-gray hover:text-white transition-colors text-[17px] font-medium"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+                onClick={() => Mixpanel.trackNavigation(link.label, link.href)}
               >
                 {link.label}
               </Link>
@@ -140,6 +145,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center bg-appit-surface rounded-12 hover:bg-appit-border-light transition-colors"
+                onClick={() => Mixpanel.trackSocialClick(social.alt, 'Footer')}
               >
                 <Image
                   src={social.icon}

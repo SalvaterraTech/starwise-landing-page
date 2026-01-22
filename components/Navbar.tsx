@@ -5,6 +5,7 @@ import { Link } from '@/navigation'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import LanguageSelector from './LanguageSelector'
+import Mixpanel from '@/lib/mixpanel'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -60,6 +61,7 @@ export default function Navbar() {
                   letterSpacing: '0em',
                   color: 'rgb(148, 150, 157)'
                 }}
+                onClick={() => Mixpanel.trackNavigation(link.label, link.href)}
               >
                 {link.label}
               </Link>
@@ -164,7 +166,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  Mixpanel.trackNavigation(link.label, link.href);
+                }}
                 className="w-full text-center py-4 text-white hover:text-appit-gray transition-colors text-lg font-semibold"
                 style={{ fontFamily: 'Instrument Sans, sans-serif' }}
               >

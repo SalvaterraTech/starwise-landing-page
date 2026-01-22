@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Link } from '@/navigation';
 import { useTranslations, useLocale } from 'next-intl';
+import Mixpanel from '@/lib/mixpanel';
 
 export default function AdvancedCapabilities() {
   const rt = useTranslations('AdvancedCapabilities');
@@ -168,6 +169,7 @@ export default function AdvancedCapabilities() {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = 'rgb(255, 255, 255)';
                 }}
+                onClick={() => Mixpanel.trackDownloadClick('Google Play', 'Advanced Capabilities Section')}
               >
                 <div style={{ position: 'relative', width: '30px', height: '30px', flexShrink: 0 }}>
                   <Image
@@ -234,6 +236,7 @@ export default function AdvancedCapabilities() {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = 'rgb(255, 255, 255)';
                 }}
+                onClick={() => Mixpanel.trackDownloadClick('App Store', 'Advanced Capabilities Section')}
               >
                 <div style={{ position: 'relative', width: '32px', height: '32px', flexShrink: 0 }}>
                   <Image

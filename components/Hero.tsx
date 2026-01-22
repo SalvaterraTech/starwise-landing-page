@@ -4,6 +4,7 @@ import { Link } from '@/navigation'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations, useLocale } from 'next-intl'
+import Mixpanel from '@/lib/mixpanel'
 
 const avatars = [
   '/images/avatar-1.png',
@@ -130,6 +131,7 @@ export default function Hero() {
             href="/waitlist"
             className="bg-white text-black font-semibold rounded-12 text-[17px] hover:opacity-90 transition-opacity"
             style={{ fontFamily: 'Instrument Sans, sans-serif', padding: '20px 28px' }}
+            onClick={() => Mixpanel.trackCTAClick('Join Waitlist', 'Hero Section')}
           >
             {t('joinWaitlist')}
           </Link>
@@ -175,6 +177,7 @@ export default function Hero() {
               padding: '8px 12px',
               gap: '10px'
             }}
+            onClick={() => Mixpanel.trackCTAClick('Store Icons', 'Hero Section')}
           >
             <div className="relative" style={{ width: '24px', height: '24px' }}>
               <Image
