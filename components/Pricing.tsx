@@ -136,16 +136,14 @@ export default function Pricing() {
           </div>
 
           {/* Toggle Monthly/Yearly */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-10 mb-8 md:mt-[68px] md:mb-12">
             <div
               className="inline-flex items-center rounded-full"
               style={{
                 backgroundColor: 'transparent',
                 border: '1px solid rgb(24, 24, 26)',
                 padding: '8px',
-                gap: '4px',
-                marginTop: '68px',
-                marginBottom: '48px'
+                gap: '4px'
               }}
             >
               <button
