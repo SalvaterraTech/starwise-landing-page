@@ -6,10 +6,14 @@
   padding-bottom: 200px !important;
 }
 
-/* Mobile: reduce padding-bottom */
+/* Mobile adjustments */
 @media (max-width: 767px) {
   .framer-be8kg4 {
+    padding-top: 60px !important;
     padding-bottom: 80px !important;
+  }
+  .framer-1wapm98 {
+    padding-top: 40px !important;
   }
 }
 
