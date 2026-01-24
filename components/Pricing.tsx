@@ -188,7 +188,7 @@ export default function Pricing() {
 
         {/* Pricing Cards */}
         <div
-          className="flex flex-col md:flex-row mx-auto px-5 md:px-0"
+          className="flex flex-col md:flex-row mx-auto px-0"
           style={{
             maxWidth: '810px',
             gap: '20px',
