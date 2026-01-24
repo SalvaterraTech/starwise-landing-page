@@ -164,6 +164,7 @@
         "templateCredit": "Salvaterra Tech"
     },
     "Waitlist": {
+        "trustedBy": "Confiado por candidatos",
         "badge": "Confiado por candidatos em todo o mundo",
         "title": "Tenha acesso antecipado",
         "subtitle": "Seja um dos primeiros a experimentar o Starwise. Inscreva-se para ser notificado quando lançarmos!",

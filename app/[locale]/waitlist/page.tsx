@@ -76,7 +76,7 @@ export default function WaitlistPage() {
         <div className="relative z-10 max-w-[1200px] w-full mx-auto px-4 flex flex-col items-center">
           {/* Badge */}
           <div
-            className="inline-flex items-center gap-3 mb-[40px] pl-1 pr-4 py-1 rounded-full"
+            className="inline-flex items-center gap-3 mb-[20px] sm:mb-[40px] pl-1 pr-4 py-1 rounded-full"
             style={{
               backgroundColor: '#1A1A1A',
               border: '1px solid rgba(255, 255, 255, 0.08)',
@@ -116,13 +116,14 @@ export default function WaitlistPage() {
               className="text-white text-[16px] font-medium"
               style={{ fontFamily: 'Instrument Sans, sans-serif' }}
             >
-              {t('badge')}
+              <span className="hidden sm:inline">{t('badge')}</span>
+              <span className="inline sm:hidden">{t('trustedBy')}</span>
             </span>
           </div>
 
           {/* Heading */}
           <h1
-            className="text-white text-center font-bold mb-[40px] max-w-[900px]"
+            className="text-white text-center font-bold mb-[20px] sm:mb-[40px] max-w-[900px]"
             style={{
               fontFamily: 'Inter Tight, sans-serif',
               fontSize: '64px',
@@ -134,7 +135,7 @@ export default function WaitlistPage() {
 
           {/* Description */}
           <p
-            className="text-center text-[20px] font-medium mb-[40px] max-w-[645px]"
+            className="text-center text-[18px] sm:text-[20px] font-medium mb-[20px] sm:mb-[40px] max-w-[645px]"
             style={{
               fontFamily: 'Instrument Sans, sans-serif',
               color: '#94969D',

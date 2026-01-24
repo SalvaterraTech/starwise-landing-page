@@ -164,6 +164,7 @@
         "templateCredit": "Salvaterra Tech"
     },
     "Waitlist": {
+        "trustedBy": "Trusted by job seekers",
         "badge": "Trusted by job seekers worldwide",
         "title": "Get early access",
         "subtitle": "Be amongst the first to experience Starwise. Sign up to be notified when we launch!",
