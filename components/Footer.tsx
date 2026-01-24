@@ -35,7 +35,7 @@ export default function Footer() {
     { href: '/#pricing', label: tNav('pricing') },
     { href: '/#testimonial', label: tNav('testimonials') },
     { href: '/#faq', label: tNav('faqs') },
-    { href: '/waitlist', label: tNav('joinWaitlist') },
+    { href: '/waitlist', label: tNav('waitlist') },
   ]
 
   return (

@@ -5,7 +5,8 @@
         "pricing": "Pricing",
         "testimonials": "Testimonials",
         "faqs": "FAQ's",
-        "joinWaitlist": "Join Waitlist"
+        "joinWaitlist": "Join Waitlist",
+        "waitlist": "Waitlist"
     },
     "Hero": {
         "trustedBy": "Trusted by job seekers",
