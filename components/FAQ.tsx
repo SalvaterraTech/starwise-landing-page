@@ -43,7 +43,7 @@ export default function FAQ() {
   ]
 
   return (
-    <section id="faq" className="relative pb-24 overflow-hidden">
+    <section id="faq" className="relative pb-0 md:pb-24 overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 pointer-events-none"

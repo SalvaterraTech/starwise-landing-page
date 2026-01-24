@@ -9,7 +9,7 @@ export default function Download() {
     const t = useTranslations('Download')
     const locale = useLocale()
     return (
-        <section className="relative overflow-hidden" style={{ backgroundColor: '#000000', paddingTop: '120px', paddingBottom: '0px' }}>
+        <section className="relative overflow-hidden pt-20 md:pt-[120px]" style={{ backgroundColor: '#000000', paddingBottom: '0px' }}>
             {/* Top Divider */}
             <div
                 className="absolute left-0 right-0 top-0 pointer-events-none"

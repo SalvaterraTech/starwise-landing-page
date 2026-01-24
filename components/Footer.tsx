@@ -40,7 +40,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="relative w-full pt-20 pb-8"
+      className="relative w-full pt-[60px] md:pt-20 pb-8"
       style={{
         background: 'radial-gradient(27.27% 35.9% at 50% 0%, rgba(19, 19, 21, 1) 0%, rgba(0, 0, 0, 1) 100%)'
       }}
@@ -125,19 +125,8 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-appit-border pt-8 flex flex-col md:grid md:grid-cols-3 items-center gap-6">
-          {/* Template Credit */}
-          <Link
-            href="https://www.salvaterratech.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium justify-self-start"
-            style={{ fontFamily: 'Instrument Sans, sans-serif' }}
-          >
-            {t('templateCredit')}
-          </Link>
-
-          {/* Social Links */}
-          <div className="flex items-center gap-3 justify-self-center">
+          {/* Social Links - First on mobile, center on desktop */}
+          <div className="flex items-center gap-3 order-1 md:order-2 md:justify-self-center">
             {socialLinks.map((social) => (
               <Link
                 key={social.href}
@@ -157,8 +146,19 @@ export default function Footer() {
             ))}
           </div>
 
-          {/* Privacy Policy & Terms */}
-          <div className="flex items-center gap-2 justify-self-end">
+          {/* Company Credit - Second on mobile, first on desktop */}
+          <Link
+            href="https://www.salvaterratech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium order-2 md:order-1 md:justify-self-start"
+            style={{ fontFamily: 'Instrument Sans, sans-serif' }}
+          >
+            {t('templateCredit')}
+          </Link>
+
+          {/* Privacy Policy & Terms - Third on both */}
+          <div className="flex items-center gap-2 order-3 justify-self-end">
             <Link
               href="/privacy-policy"
               className="text-appit-gray-dark hover:text-appit-gray transition-colors text-[17px] font-medium"
