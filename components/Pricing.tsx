@@ -8,6 +8,8 @@ export default function Pricing() {
   const t = useTranslations('Pricing')
   const [isYearly, setIsYearly] = useState(false)
 
+  const currencySymbol = t('currencySymbol')
+
   const plans = [
     {
       name: t('freePlanName'),
@@ -28,8 +30,8 @@ export default function Pricing() {
     },
     {
       name: t('premiumPlanName'),
-      priceMonthly: '6.99',
-      priceYearly: '39.99',
+      priceMonthly: t('premiumPriceWeekly'),
+      priceYearly: t('premiumPriceYearly'),
       description: t('premiumPlanDesc'),
       features: [
         t('featureUnlimitedQuestions'),
@@ -255,7 +257,7 @@ export default function Pricing() {
                     lineHeight: '100%'
                   }}
                 >
-                  ${isYearly ? plan.priceYearly : plan.priceMonthly}
+                  {currencySymbol}{isYearly ? plan.priceYearly : plan.priceMonthly}
                 </span>
                 <span
                   style={{
