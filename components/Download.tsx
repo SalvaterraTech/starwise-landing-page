@@ -71,6 +71,7 @@ export default function Download() {
                         style={{
                             display: 'flex',
                             alignItems: 'center',
+                            justifyContent: 'center',
                             gap: '12px',
                             backgroundColor: '#FFFFFF',
                             border: '1px solid rgb(221, 229, 237)',
@@ -128,6 +129,7 @@ export default function Download() {
                         style={{
                             display: 'flex',
                             alignItems: 'center',
+                            justifyContent: 'center',
                             gap: '12px',
                             backgroundColor: '#FFFFFF',
                             border: '1px solid rgb(221, 229, 237)',
