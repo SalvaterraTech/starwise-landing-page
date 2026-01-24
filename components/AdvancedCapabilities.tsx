@@ -283,7 +283,7 @@ export default function AdvancedCapabilities() {
 
           {/* Right mockup */}
           <div
-            className="w-full md:w-auto max-w-[300px] md:max-w-none mx-auto md:mx-0"
+            className="advanced-capabilities-mockup w-full md:w-auto max-w-[300px] md:max-w-none mx-auto md:mx-0"
             style={{
               position: 'relative',
               flex: '1 0 0px',
