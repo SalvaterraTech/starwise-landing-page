@@ -227,7 +227,7 @@ export default function Features() {
             }}
           >
             <h2
-              className="text-[32px] md:text-[48px]"
+              className="text-[32px] md:text-[48px] text-center md:text-left"
               style={{
                 fontFamily: '"Inter Tight", sans-serif',
                 fontWeight: 700,
