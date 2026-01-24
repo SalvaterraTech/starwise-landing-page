@@ -182,24 +182,10 @@ export default function Download() {
                     </Link>
                 </div>
 
-                {/* iPhone Mockups - Front-Facing with Exact Sample Measurements */}
-                <div className="h-[400px] md:h-[494px]" style={{
-                    position: 'relative',
-                    width: '886px',  // Exact width from sample (252 + 30 + 322 + 30 + 252)
-                    maxWidth: '100%',
-                    marginTop: '0px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    overflow: 'hidden'  // Hide overflow to cut iPhones
-                }}>
-                    {/* Left iPhone (Thread) - 2 layers with insets */}
-                    <div style={{
-                        position: 'absolute',
-                        left: '0',
-                        top: '101px',
-                        width: '252px',
-                        height: '498px'
-                    }}>
+                {/* iPhone Mockups - Side by Side Layout - Full width, no margins on mobile */}
+                <div className="h-[281px] md:h-[494px] relative overflow-hidden w-screen md:w-full md:max-w-[886px] -mx-6 md:mx-auto">
+                    {/* Left iPhone - Bleeding off left edge */}
+                    <div className="absolute -left-[70px] md:left-0 top-[43px] md:top-[101px] w-[152px] h-[300px] md:w-[252px] md:h-[498px]">
                         <Image
                             src={`/images/${locale}/answer_view_download_section_${locale}.png`}
                             alt="Answer View"
@@ -208,15 +194,8 @@ export default function Download() {
                         />
                     </div>
 
-                    {/* Center iPhone (Login) - 2 layers with insets */}
-                    <div style={{
-                        position: 'absolute',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        top: '0',
-                        width: '322px',
-                        height: '637px'
-                    }}>
+                    {/* Center iPhone - Larger, centered */}
+                    <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[195px] h-[385px] md:w-[322px] md:h-[637px] z-[1]">
                         <Image
                             src={`/images/${locale}/improved_answer_download_section_${locale}.png`}
                             alt="Improved Answer"
@@ -225,14 +204,8 @@ export default function Download() {
                         />
                     </div>
 
-                    {/* Right iPhone (Search) - 2 layers with insets */}
-                    <div style={{
-                        position: 'absolute',
-                        right: '0',
-                        top: '101px',
-                        width: '252px',
-                        height: '498px'
-                    }}>
+                    {/* Right iPhone - Bleeding off right edge */}
+                    <div className="absolute -right-[70px] md:right-0 top-[43px] md:top-[101px] w-[152px] h-[300px] md:w-[252px] md:h-[498px]">
                         <Image
                             src={`/images/${locale}/answer_list_download_section_${locale}.png`}
                             alt="Answer List"
@@ -242,15 +215,8 @@ export default function Download() {
                     </div>
 
                     {/* Gradient Fade Overlay at Bottom */}
-                    <div style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        left: 0,
-                        right: 0,
-                        height: '350px',  // Increased to cover more area (was 300px)
-                        background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 60%, rgb(0,0,0) 100%)',
-                        zIndex: 3,
-                        pointerEvents: 'none'
+                    <div className="absolute bottom-0 left-0 right-0 h-[150px] md:h-[350px] pointer-events-none z-[2]" style={{
+                        background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 60%, rgb(0,0,0) 100%)'
                     }} />
                 </div>
             </div>
