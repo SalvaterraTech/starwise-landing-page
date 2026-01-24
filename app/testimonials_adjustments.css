@@ -6,6 +6,13 @@
   padding-bottom: 200px !important;
 }
 
+/* Mobile: reduce padding-bottom */
+@media (max-width: 767px) {
+  .framer-be8kg4 {
+    padding-bottom: 80px !important;
+  }
+}
+
 /* Add carousel animation */
 @keyframes scroll-carousel {
   0% {
