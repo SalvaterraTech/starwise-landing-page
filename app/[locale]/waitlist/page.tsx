@@ -70,7 +70,7 @@ export default function WaitlistPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-[180px] pb-32 flex flex-col items-center">
+      <section className="relative pt-[180px] pb-[80px] sm:pb-32 flex flex-col items-center">
 
 
         <div className="relative z-10 max-w-[1200px] w-full mx-auto px-4 flex flex-col items-center">
@@ -210,7 +210,7 @@ export default function WaitlistPage() {
                         placeholder={t('emailPlaceholder')}
                         required
                         disabled={isLoading}
-                        className={`w-full h-[56px] px-6 bg-[#0E0E10] border rounded-[10px] text-white placeholder-[#62646C] focus:outline-none transition-colors ${error
+                        className={`w-full h-[56px] px-6 bg-[#0E0E10] border rounded-[10px] text-white placeholder-[#62646C] focus:outline-none transition-colors text-center sm:text-left ${error
                           ? 'border-red-500 focus:border-red-400'
                           : 'border-[#1D1D20] focus:border-[#62646C]'
                           } ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
