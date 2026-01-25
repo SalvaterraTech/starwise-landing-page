@@ -27,7 +27,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       <AdvancedCapabilities />
       <DiscoverFeatures />
       <Pricing />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FAQ />
       <Download />
       <Footer />
