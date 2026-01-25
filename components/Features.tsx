@@ -88,11 +88,11 @@ export default function Features() {
   return (
     <section
         id="features"
+        className="pt-[40px] md:pt-[100px]"
         style={{
           backgroundColor: '#000000',
           position: 'relative',
           overflow: 'visible',
-          paddingTop: '100px',
           paddingBottom: '100px',
         }}
       >
@@ -120,13 +120,12 @@ export default function Features() {
         >
           {/* Left side - Phone mockup inside dark card */}
           <div
-            className="w-full md:w-auto md:h-[548px] md:max-w-[438px]"
+            className="w-full md:w-auto h-[380px] md:h-[548px] md:max-w-[438px]"
             style={{
               backgroundColor: 'rgb(14, 14, 16)',
               borderRadius: '24px',
               position: 'relative',
               overflow: 'hidden',
-              aspectRatio: '0.7992700729927007',
               flex: 'none',
             }}
           >
@@ -152,12 +151,11 @@ export default function Features() {
 
             {/* Phone mockup - celebration image (already includes frame) */}
             <div
+              className="w-[200px] md:w-[255px] top-[30px] md:top-[80px]"
               style={{
                 position: 'absolute',
                 left: '50%',
-                top: '80px',
                 transform: 'translateX(-50%)',
-                width: '255px',
                 zIndex: 10,
               }}
             >
@@ -184,39 +182,11 @@ export default function Features() {
                 left: 0,
                 right: 0,
                 height: '280px',
-                overflow: 'hidden',
-                flex: 'none',
                 zIndex: 15,
                 pointerEvents: 'none',
+                background: 'linear-gradient(to top, rgb(14, 14, 16) 0%, rgba(14, 14, 16, 0.95) 20%, rgba(14, 14, 16, 0.8) 40%, rgba(14, 14, 16, 0.5) 60%, rgba(14, 14, 16, 0.2) 80%, transparent 100%)',
               }}
-            >
-              <div
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  right: 0,
-                  bottom: 0,
-                  left: 0,
-                  background: 'linear-gradient(to top, rgba(14, 14, 16, 1) 0%, rgba(14, 14, 16, 0.98) 10%, rgba(14, 14, 16, 0.9) 25%, rgba(14, 14, 16, 0.7) 45%, rgba(14, 14, 16, 0.4) 65%, rgba(14, 14, 16, 0.15) 85%, transparent 100%)',
-                }}
-              >
-                <Image
-                  src="/images/features-bottom-gradient.svg"
-                  alt="Gradient"
-                  width={438}
-                  height={254}
-                  unoptimized
-                  style={{
-                    display: 'block',
-                    width: '100%',
-                    height: '100%',
-                    objectPosition: 'center',
-                    objectFit: 'cover',
-                    opacity: 0.6,
-                  }}
-                />
-              </div>
-            </div>
+            />
           </div>
 
           {/* Right side - Title and Feature Cards */}
