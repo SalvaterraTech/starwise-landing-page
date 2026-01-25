@@ -317,38 +317,76 @@ export default function Benefits() {
         </div>
 
         {/* Mobile iPhone Mockup - ONLY visible on mobile */}
-        <div className="md:hidden flex justify-center mb-12">
+        <div className="md:hidden mb-8">
           <div
-            className="relative w-full max-w-[280px]"
             style={{
-              height: '500px',
+              width: '100%',
+              height: '390px',
               overflow: 'hidden',
+              borderRadius: '20px',
+              backgroundColor: 'rgb(9, 9, 10)',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'flex-start',
               position: 'relative'
             }}
           >
-            {/* Gradient fade overlay at bottom */}
+            {/* Glow effect behind the phone */}
             <div
+              className="absolute pointer-events-none"
               style={{
-                position: 'absolute',
-                bottom: 0,
-                left: 0,
-                right: 0,
-                height: '150px',
-                background: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
-                zIndex: 2,
-                pointerEvents: 'none'
+                left: '50%',
+                bottom: '-220px',
+                transform: 'translateX(-50%)',
+                width: '520px',
+                height: '520px',
+                background: 'radial-gradient(circle at center, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.10) 30%, transparent 62%)',
+                filter: 'blur(90px)',
+                zIndex: 0,
               }}
             />
-
-            {/* iPhone image */}
-            <div style={{ position: 'relative', zIndex: 1 }}>
-              <Image
+            <div
+              className="absolute pointer-events-none"
+              style={{
+                left: '50%',
+                bottom: '-180px',
+                transform: 'translateX(-50%)',
+                width: '420px',
+                height: '420px',
+                background: 'radial-gradient(circle at center, rgba(255,255,255,0.14) 0%, transparent 65%)',
+                filter: 'blur(70px)',
+                zIndex: 0,
+              }}
+            />
+            {/* Border that fades out with the glow */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                border: '1px solid rgb(50, 50, 55)',
+                borderRadius: '20px',
+                WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 72%)',
+                maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 72%)',
+                zIndex: 2,
+              }}
+            />
+            <div
+              style={{
+                width: '241px',
+                minWidth: '241px',
+                maxWidth: '241px',
+                flexShrink: 0,
+                position: 'relative',
+                zIndex: 1
+              }}
+            >
+              <img
                 src={`/images/${locale}/analysis_benefits_${locale}.png`}
                 alt="Mobile App Preview"
-                width={546}
-                height={1080}
-                className="w-full h-auto"
-                unoptimized
+                style={{
+                  width: '241px',
+                  height: 'auto',
+                  display: 'block'
+                }}
               />
             </div>
           </div>
